@@ -1,14 +1,5 @@
 # Toy Story 2 (PS1) — PopTracker Pack
 
-**Version 1.0.0 — Initial Release**
-_June 2026_
-
-The first release of the PopTracker pack for the **Toy Story 2 (PS1)** Archipelago
-randomizer. It connects directly to your Archipelago server and auto-tracks your
-progress as you play — no manual clicking required.
-
----
-
 ## Requirements
 
 - **PopTracker** 0.18.0 or newer (built/tested against 0.32.0)
