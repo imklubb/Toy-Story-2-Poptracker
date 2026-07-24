@@ -3,7 +3,7 @@
         {
             "package_version": "2.1.2",
             "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.2.zip",
-            "sha256": "43a9d26cc090621e5d530654fc954cdc2519d8a3e65d27dd10440a7b108ee057",
+            "sha256": "9bd4c98b422f5f076032a6f14d91b8bef9477f7832a535127af27886c687c03a",
             "changelog": [
                 "Auto-update support: PopTracker now prompts you when a new pack version is released",
                 "(Connector 2.1.2: level-select mash fix, savestate desync guard)"
