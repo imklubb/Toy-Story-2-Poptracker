@@ -1,0 +1,853 @@
+[
+  {
+    "name": "Double Jump",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Double Jump.png",
+    "codes": "double_jump"
+  },
+  {
+    "name": "Laser",
+    "type": "consumable",
+    "img": "images/ICONS/Movement/Laser.png",
+    "codes": "laser",
+    "min_quantity": 0,
+    "max_quantity": 3,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Ledge Grab",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Ledge Grab.png",
+    "codes": "ledge_grab"
+  },
+  {
+    "name": "Pole Climb",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Pole Climb.png",
+    "codes": "pole_climb"
+  },
+  {
+    "name": "Pole Vault",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Pole Vault.png",
+    "codes": "pole_vault"
+  },
+  {
+    "name": "Push",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Push.png",
+    "codes": "push"
+  },
+  {
+    "name": "Rope Sliding",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Rope Sliding.png",
+    "codes": "rope_sliding"
+  },
+  {
+    "name": "Progressive Spin",
+    "type": "consumable",
+    "img": "images/ICONS/Movement/Spin.png",
+    "codes": "spin",
+    "min_quantity": 0,
+    "max_quantity": 3,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Stomp",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Stomp.png",
+    "codes": "stomp"
+  },
+  {
+    "name": "Visor",
+    "type": "toggle",
+    "img": "images/ICONS/Movement/Visor.png",
+    "codes": "visor"
+  },
+  {
+    "name": "Battery",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Battery.png",
+    "codes": "battery",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Final Showdown Ticket",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Final Showdown Ticket.png",
+    "codes": "final_showdown_ticket",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Green Laser",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Green Laser.png",
+    "codes": "green_laser"
+  },
+  {
+    "name": "Hint Block",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Hint Block.png",
+    "codes": "hint_block"
+  },
+  {
+    "name": "Life",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Life.png",
+    "codes": "life",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Pizza Planet Token",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "codes": "pizza_planet_token",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Potato Head",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Potato Head.png",
+    "codes": "potato_head"
+  },
+  {
+    "name": "Rex",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Rex.png",
+    "codes": "rex"
+  },
+  {
+    "name": "Missing Arm",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Parts/Missing Arm.png",
+    "codes": "missing_arm"
+  },
+  {
+    "name": "Missing Ear",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Parts/Missing Ear.png",
+    "codes": "missing_ear"
+  },
+  {
+    "name": "Missing Eye",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Parts/Missing Eye.png",
+    "codes": "missing_eye"
+  },
+  {
+    "name": "Missing Foot",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Parts/Missing Foot.png",
+    "codes": "missing_foot"
+  },
+  {
+    "name": "Missing Mouth",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Parts/Missing Mouth.png",
+    "codes": "missing_mouth"
+  },
+  {
+    "name": "Alien",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Alien.png",
+    "codes": "alien",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Chick",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Chick.png",
+    "codes": "chick",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Critter",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Critter.png",
+    "codes": "critter",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Duck",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Duck.png",
+    "codes": "duck",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Luggage",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Luggage.png",
+    "codes": "luggage",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Mouse",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Mouse.png",
+    "codes": "mouse",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Passenger Tike",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Passenger Tike.png",
+    "codes": "passenger_tike",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Sheep",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Sheep.png",
+    "codes": "sheep",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Soldier",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Soldier.png",
+    "codes": "soldier",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Worker Tike",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Worker Tike.png",
+    "codes": "worker_tike",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Airport Infiltration - Hover Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Airport Infiltration - Hover Boots.png",
+    "codes": "gadget_airport_infiltration_hover_boots"
+  },
+  {
+    "name": "Al's Penthouse - Cosmic Shield",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Al's Penthouse - Cosmic Shield.png",
+    "codes": "gadget_als_penthouse_cosmic_shield"
+  },
+  {
+    "name": "Al's Space Land - Cosmic Shield",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Al's Space Land - Cosmic Shield.png",
+    "codes": "gadget_als_space_land_cosmic_shield"
+  },
+  {
+    "name": "Al's Toy Barn - Disc Launcher",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Al's Toy Barn - Disc Launcher.png",
+    "codes": "gadget_als_toy_barn_disc_launcher"
+  },
+  {
+    "name": "Al's Toy Barn - Hover Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Al's Toy Barn - Hover Boots.png",
+    "codes": "gadget_als_toy_barn_hover_boots"
+  },
+  {
+    "name": "Al's Toy Barn - Rocket Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Al's Toy Barn - Rocket Boots.png",
+    "codes": "gadget_als_toy_barn_rocket_boots"
+  },
+  {
+    "name": "Alleys and Gullies - Disc Launcher",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Alleys and Gullies - Disc Launcher.png",
+    "codes": "gadget_alleys_and_gullies_disc_launcher"
+  },
+  {
+    "name": "Alleys and Gullies - Grappling Hook",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Alleys and Gullies - Grappling Hook.png",
+    "codes": "gadget_alleys_and_gullies_grappling_hook"
+  },
+  {
+    "name": "Alleys and Gullies - Rocket Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Alleys and Gullies - Rocket Boots.png",
+    "codes": "gadget_alleys_and_gullies_rocket_boots"
+  },
+  {
+    "name": "Andy's House - Cosmic Shield",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Andy's House - Cosmic Shield.png",
+    "codes": "gadget_andys_house_cosmic_shield"
+  },
+  {
+    "name": "Andy's Neighborhood - Rocket Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Andy's Neighborhood - Rocket Boots.png",
+    "codes": "gadget_andys_neighborhood_rocket_boots"
+  },
+  {
+    "name": "Construction Yard - Disc Launcher",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Construction Yard - Disc Launcher.png",
+    "codes": "gadget_construction_yard_disc_launcher"
+  },
+  {
+    "name": "Elevator Hop - Grappling Hook",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Elevator Hop - Grappling Hook.png",
+    "codes": "gadget_elevator_hop_grappling_hook"
+  },
+  {
+    "name": "Tarmac Trouble - Rocket Boots",
+    "type": "toggle",
+    "img": "images/ICONS/Gadgets/Tarmac Trouble - Rocket Boots.png",
+    "codes": "gadget_tarmac_trouble_rocket_boots"
+  },
+  {
+    "name": "Airport Infiltration Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Airport Infiltration Coins.png",
+    "codes": "coin_airport_infiltration",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Al's Penthouse Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Al's Penthouse Coins.png",
+    "codes": "coin_als_penthouse",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Al's Space Land Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Al's Space Land Coins.png",
+    "codes": "coin_als_space_land",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Al's Toy Barn Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Al's Toy Barn Coins.png",
+    "codes": "coin_als_toy_barn",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Alleys and Gullies Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Alleys and Gullies Coins.png",
+    "codes": "coin_alleys_and_gullies",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Andy's House Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Andy's House Coins.png",
+    "codes": "coin_andys_house",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Andy's Neighborhood Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Andy's Neighborhood Coins.png",
+    "codes": "coin_andys_neighborhood",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Construction Yard Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Construction Yard Coins.png",
+    "codes": "coin_construction_yard",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Elevator Hop Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Elevator Hop Coins.png",
+    "codes": "coin_elevator_hop",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Tarmac Trouble Coins",
+    "type": "consumable",
+    "img": "images/ICONS/Coins/Tarmac Trouble Coins.png",
+    "codes": "coin_tarmac_trouble",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Airport Infiltration",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Airport Infiltration.png",
+    "codes": "unlock_airport_infiltration"
+  },
+  {
+    "name": "Al's Penthouse",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Al's Penthouse.png",
+    "codes": "unlock_als_penthouse"
+  },
+  {
+    "name": "Al's Space Land",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Al's Space Land.png",
+    "codes": "unlock_als_space_land"
+  },
+  {
+    "name": "Al's Toy Barn",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Al's Toy Barn.png",
+    "codes": "unlock_als_toy_barn"
+  },
+  {
+    "name": "Alleys and Gullies",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Alleys and Gullies.png",
+    "codes": "unlock_alleys_and_gullies"
+  },
+  {
+    "name": "Andy's House",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Andy's House.png",
+    "codes": "unlock_andys_house"
+  },
+  {
+    "name": "Andy's Neighborhood",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Andy's Neighborhood.png",
+    "codes": "unlock_andys_neighborhood"
+  },
+  {
+    "name": "Bombs Away",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Bombs Away.png",
+    "codes": "unlock_bombs_away"
+  },
+  {
+    "name": "Construction Yard",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Construction Yard.png",
+    "codes": "unlock_construction_yard"
+  },
+  {
+    "name": "Elevator Hop",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Elevator Hop.png",
+    "codes": "unlock_elevator_hop"
+  },
+  {
+    "name": "Final Showdown",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Final Showdown.png",
+    "codes": "unlock_final_showdown"
+  },
+  {
+    "name": "Slime Time",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Slime Time.png",
+    "codes": "unlock_slime_time"
+  },
+  {
+    "name": "Tarmac Trouble",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Tarmac Trouble.png",
+    "codes": "unlock_tarmac_trouble"
+  },
+  {
+    "name": "The Evil Emperor Zurg",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/The Evil Emperor Zurg.png",
+    "codes": "unlock_the_evil_emperor_zurg"
+  },
+  {
+    "name": "Toy Barn Encounter",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Toy Barn Encounter.png",
+    "codes": "unlock_toy_barn_encounter"
+  },
+  {
+    "name": "Game Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Open Mode.png",
+        "codes": "set_mode",
+        "name": "Open"
+      },
+      {
+        "img": "images/ICONS/Misc/Linear Mode.png",
+        "codes": "set_mode_1",
+        "name": "Linear"
+      }
+    ]
+  },
+  {
+    "name": "Skips",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_skips",
+        "name": "Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Easy Skips.png",
+        "codes": "set_skips_1",
+        "name": "Easy"
+      },
+      {
+        "img": "images/ICONS/Misc/Hard Skips.png",
+        "codes": "set_skips_2",
+        "name": "Hard"
+      },
+      {
+        "img": "images/ICONS/Misc/Insane Skips.png",
+        "codes": "set_skips_3",
+        "name": "Insane"
+      }
+    ]
+  },
+  {
+    "name": "Movesanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_movesanity",
+        "name": "Movesanity Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Movesanity On.png",
+        "codes": "set_movesanity_1",
+        "name": "Movesanity On"
+      },
+      {
+        "img": "images/ICONS/Misc/Movesanity Lite.png",
+        "codes": "set_movesanity_2",
+        "name": "Movesanity Lite (Weapons)"
+      },
+      {
+        "img": "images/ICONS/Misc/Movesanity Lite.png",
+        "codes": "set_movesanity_3",
+        "name": "Movesanity Lite (Traversal)"
+      }
+    ]
+  },
+  {
+    "name": "Goal: Pizza Planet Tokens",
+    "type": "toggle",
+    "img": "images/ICONS/Misc/Tokens Setting.png",
+    "codes": "set_goal_ppt"
+  },
+  {
+    "name": "Goal: Defeat Bosses",
+    "type": "toggle",
+    "img": "images/ICONS/Misc/Boss Required.png",
+    "codes": "set_goal_bosses"
+  },
+  {
+    "name": "Goal: Unlock Levels",
+    "type": "toggle",
+    "img": "images/ICONS/Misc/Goal.png",
+    "codes": "set_goal_unlock"
+  },
+  {
+    "name": "Pizza Planet Token Pool",
+    "type": "consumable",
+    "img": "images/ICONS/Misc/Tokens Setting.png",
+    "codes": "set_token_pool",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Bosses Required",
+    "type": "consumable",
+    "img": "images/ICONS/Misc/Boss Required.png",
+    "codes": "set_bosses_req",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Bombs Away Gate",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Bomb's Away.png",
+    "codes": "set_gate_bombs",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Slime Time Gate",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Slime Time.png",
+    "codes": "set_gate_slime",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Toy Barn Encounter Gate",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Toy Barn Encounter.png",
+    "codes": "set_gate_toybarn",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Evil Emperor Zurg Gate",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Zurg.png",
+    "codes": "set_gate_zurg",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Final Showdown Gate (Open)",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Final Showdown.png",
+    "codes": "set_gate_final",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Final Showdown Gate (Linear)",
+    "type": "consumable",
+    "img": "images/ICONS/Bosses/Final Showdown.png",
+    "codes": "set_gate_linfinal",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coinsanity Check Bundle Size",
+    "type": "consumable",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "codes": "set_coin_check",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coinsanity Received Bundle Size",
+    "type": "consumable",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "codes": "set_coin_recv",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Missing Toy Bundle Size",
+    "type": "consumable",
+    "img": "images/ICONS/Missing Toys/Sheep.png",
+    "codes": "set_toy_recv",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coinsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Coinsanity Off.png",
+        "codes": "set_coinsanity",
+        "name": "Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Coinsanity On.png",
+        "codes": "set_coinsanity_1",
+        "name": "On"
+      }
+    ]
+  },
+  {
+    "name": "Lifesanity",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Life.png",
+    "codes": "set_lifesanity"
+  },
+  {
+    "name": "Batterysanity",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Battery.png",
+    "codes": "set_batterysanity"
+  },
+  {
+    "name": "Green Laser Sanity",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Green Laser.png",
+    "codes": "set_greenlasersanity"
+  },
+  {
+    "name": "Rexsanity",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Rex.png",
+    "codes": "set_rexsanity"
+  },
+  {
+    "name": "Hint Block Sanity",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Hint Block.png",
+    "codes": "set_hintblocksanity"
+  },
+  {
+    "name": "Omit Airport Infiltration",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Airport Infiltration.png",
+    "codes": "set_omit_airport"
+  },
+  {
+    "name": "Omit Elevator Hop",
+    "type": "toggle",
+    "img": "images/ICONS/Level Unlocks/Elevator Hop.png",
+    "codes": "set_omit_elevator"
+  },
+  {
+    "name": "Coin Bundles L0",
+    "type": "consumable",
+    "codes": "coinbundle0",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L1",
+    "type": "consumable",
+    "codes": "coinbundle1",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L2",
+    "type": "consumable",
+    "codes": "coinbundle2",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L3",
+    "type": "consumable",
+    "codes": "coinbundle3",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L4",
+    "type": "consumable",
+    "codes": "coinbundle4",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L5",
+    "type": "consumable",
+    "codes": "coinbundle5",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L6",
+    "type": "consumable",
+    "codes": "coinbundle6",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L7",
+    "type": "consumable",
+    "codes": "coinbundle7",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L8",
+    "type": "consumable",
+    "codes": "coinbundle8",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Coin Bundles L9",
+    "type": "consumable",
+    "codes": "coinbundle9",
+    "img": "images/ICONS/Misc/Coin Settings.png",
+    "min_quantity": 0,
+    "max_quantity": 110,
+    "initial_quantity": 0
+  }
+]

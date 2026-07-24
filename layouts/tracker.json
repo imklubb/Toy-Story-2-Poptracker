@@ -1,0 +1,428 @@
+{
+ "tracker_default": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": [
+   {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+     {
+      "type": "group",
+      "header": "Movement",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "double_jump",
+         "ledge_grab",
+         "pole_climb",
+         "pole_vault",
+         "rope_sliding"
+        ],
+        [
+         "push",
+         "visor",
+         "laser",
+         "spin",
+         "stomp"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Collectables",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "pizza_planet_token",
+         "final_showdown_ticket"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Potato Head Parts",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "missing_ear",
+         "missing_eye",
+         "missing_arm",
+         "missing_foot",
+         "missing_mouth"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Missing Toys",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "sheep",
+         "soldier",
+         "worker_tike",
+         "duck",
+         "chick"
+        ],
+        [
+         "alien",
+         "mouse",
+         "critter",
+         "passenger_tike",
+         "luggage"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Gadgets",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "gadget_andys_neighborhood_rocket_boots",
+         "gadget_alleys_and_gullies_rocket_boots",
+         "gadget_als_toy_barn_rocket_boots",
+         "gadget_tarmac_trouble_rocket_boots"
+        ],
+        [
+         "gadget_andys_house_cosmic_shield",
+         "gadget_als_space_land_cosmic_shield",
+         "gadget_als_penthouse_cosmic_shield"
+        ],
+        [
+         "gadget_construction_yard_disc_launcher",
+         "gadget_alleys_and_gullies_disc_launcher",
+         "gadget_als_toy_barn_disc_launcher"
+        ],
+        [
+         "gadget_alleys_and_gullies_grappling_hook",
+         "gadget_elevator_hop_grappling_hook"
+        ],
+        [
+         "gadget_als_toy_barn_hover_boots",
+         "gadget_airport_infiltration_hover_boots"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Coins",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "coin_andys_house",
+         "coin_andys_neighborhood",
+         "coin_construction_yard",
+         "coin_alleys_and_gullies",
+         "coin_als_toy_barn"
+        ],
+        [
+         "coin_als_space_land",
+         "coin_elevator_hop",
+         "coin_als_penthouse",
+         "coin_airport_infiltration",
+         "coin_tarmac_trouble"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Level Unlocks",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "unlock_andys_house",
+         "unlock_andys_neighborhood",
+         "unlock_bombs_away"
+        ],
+        [
+         "unlock_construction_yard",
+         "unlock_alleys_and_gullies",
+         "unlock_slime_time"
+        ],
+        [
+         "unlock_als_toy_barn",
+         "unlock_als_space_land",
+         "unlock_toy_barn_encounter"
+        ],
+        [
+         "unlock_elevator_hop",
+         "unlock_als_penthouse",
+         "unlock_the_evil_emperor_zurg"
+        ],
+        [
+         "unlock_airport_infiltration",
+         "unlock_tarmac_trouble",
+         "unlock_final_showdown"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "type": "tabbed",
+    "tabs": [
+     {
+      "title": "Level Select",
+      "content": {
+       "type": "map",
+       "maps": [
+        "level_select"
+       ]
+      }
+     },
+     {
+      "title": "Andy's House",
+      "content": {
+       "type": "map",
+       "maps": [
+        "andys_house"
+       ]
+      }
+     },
+     {
+      "title": "Andy's Neighborhood",
+      "content": {
+       "type": "map",
+       "maps": [
+        "andys_neighborhood"
+       ]
+      }
+     },
+     {
+      "title": "Construction Yard",
+      "content": {
+       "type": "map",
+       "maps": [
+        "construction_yard"
+       ]
+      }
+     },
+     {
+      "title": "Alleys and Gullies",
+      "content": {
+       "type": "map",
+       "maps": [
+        "alleys_and_gullies"
+       ]
+      }
+     },
+     {
+      "title": "Al's Toy Barn",
+      "content": {
+       "type": "map",
+       "maps": [
+        "als_toy_barn"
+       ]
+      }
+     },
+     {
+      "title": "Al's Space Land",
+      "content": {
+       "type": "map",
+       "maps": [
+        "als_space_land"
+       ]
+      }
+     },
+     {
+      "title": "Elevator Hop",
+      "content": {
+       "type": "map",
+       "maps": [
+        "elevator_hop"
+       ]
+      }
+     },
+     {
+      "title": "Al's Penthouse",
+      "content": {
+       "type": "map",
+       "maps": [
+        "als_penthouse"
+       ]
+      }
+     },
+     {
+      "title": "Airport Infiltration",
+      "content": {
+       "type": "map",
+       "maps": [
+        "airport_infiltration"
+       ]
+      }
+     },
+     {
+      "title": "Tarmac Trouble",
+      "content": {
+       "type": "map",
+       "maps": [
+        "tarmac_trouble"
+       ]
+      }
+     },
+     {
+      "title": "Bosses",
+      "content": {
+       "type": "map",
+       "maps": [
+        "bosses"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "settings_popup": {
+  "type": "array",
+  "orientation": "vertical",
+  "content": [
+   {
+    "type": "group",
+    "header": "Mode & Goal",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_mode",
+       "set_skips",
+       "set_movesanity"
+      ],
+      [
+       "set_goal_ppt",
+       "set_goal_bosses",
+       "set_goal_unlock"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Tokens & Bosses",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_token_pool",
+       "set_bosses_req"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Token Gate — Open Mode",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_gate_final"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Token Gates — Linear Mode",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_gate_bombs",
+       "set_gate_slime",
+       "set_gate_toybarn",
+       "set_gate_zurg",
+       "set_gate_linfinal"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Missing Toy Bundles",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_toy_recv"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Coinsanity",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_coinsanity",
+       "set_coin_check",
+       "set_coin_recv"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Sanities",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_lifesanity",
+       "set_batterysanity",
+       "set_greenlasersanity",
+       "set_rexsanity",
+       "set_hintblocksanity"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Omitted Levels",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_omit_airport",
+       "set_omit_elevator"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+}
