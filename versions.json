@@ -2,7 +2,7 @@
     "versions": [
         {
             "package_version": "2.1.2",
-            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/v2.1.2.zip",
+            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.2.zip",
             "sha256": "REPLACE_WITH_SHA256_OF_THE_GITHUB_TAG_ZIP",
             "changelog": [
                 "Auto-update support: PopTracker now prompts you when a new pack version is released",
@@ -11,7 +11,7 @@
         },
         {
             "package_version": "2.1.1",
-            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/v2.1.1.zip",
+            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.1.zip",
             "sha256": "REPLACE_WITH_SHA256_OF_THE_GITHUB_TAG_ZIP",
             "changelog": [
                 "Universal Tracker map page support",
@@ -20,7 +20,7 @@
         },
         {
             "package_version": "2.1.0",
-            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/v2.1.0.zip",
+            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.0.zip",
             "sha256": "REPLACE_WITH_SHA256_OF_THE_GITHUB_TAG_ZIP",
             "changelog": [
                 "Universal Tracker map page added",
@@ -29,7 +29,7 @@
         },
         {
             "package_version": "2.0.1",
-            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/v2.0.1.zip",
+            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.0.1.zip",
             "sha256": "REPLACE_WITH_SHA256_OF_THE_GITHUB_TAG_ZIP",
             "changelog": [
                 "Earlier release"
