@@ -387,7 +387,8 @@
       [
        "set_coinsanity",
        "set_coin_check",
-       "set_coin_recv"
+       "set_coin_recv",
+       "set_hamm"
       ]
      ]
     }

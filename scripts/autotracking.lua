@@ -326,6 +326,11 @@ local function applySettings(sd)
   setCount("set_coin_recv",    num(sd,"coinsanity_received_bundle_size"))
   setCount("set_toy_recv",     num(sd,"missing_toy_bundle_size"))
   setStage("set_coinsanity",       num(sd,"coinsanity"))
+  -- Hamm's 50-coin turn-ins (2.2.0). Older seeds have no such key, so a
+  -- missing value must mean ON -- that was the only behaviour before the
+  -- option existed, and defaulting it off would hide ten real checks.
+  local _hamm = sd["hamm_fifty_coin_checks"]
+  setStage("set_hamm", (_hamm == nil) and 1 or num(sd,"hamm_fifty_coin_checks"))
   setActive("set_lifesanity",      num(sd,"lifesanity")~=0)
   setActive("set_batterysanity",   num(sd,"batterysanity")~=0)
   setActive("set_greenlasersanity",num(sd,"green_laser_sanity")~=0)

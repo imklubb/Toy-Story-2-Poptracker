@@ -692,6 +692,25 @@
     "initial_quantity": 0
   },
   {
+    "name": "Hamm's 50 Coin Checks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Hamm Off.png",
+        "codes": "set_hamm",
+        "name": "Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Hamm On.png",
+        "codes": "set_hamm_1",
+        "name": "On"
+      }
+    ]
+  },
+  {
     "name": "Missing Toy Bundle Size",
     "type": "consumable",
     "img": "images/ICONS/Missing Toys/Sheep.png",

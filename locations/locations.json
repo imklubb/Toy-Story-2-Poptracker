@@ -19,7 +19,10 @@
      "$no_gating,$skips_easy_or_hard,$hamm50|0|coin_andys_house"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -2944,7 +2947,10 @@
      "$no_gating,$hamm50|1|coin_andys_neighborhood,double_jump,ledge_grab,pole_climb"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Soldier (Tree)",
@@ -2995,12 +3001,12 @@
     "name": "Hidden Token",
     "item_count": 1,
     "access_rules": [
-     "unlock_andys_neighborhood,double_jump,stomp",
-     "$no_gating,double_jump,stomp",
-     "unlock_andys_neighborhood,$skips_easy_or_hard,ledge_grab,stomp",
-     "$no_gating,$skips_easy_or_hard,ledge_grab,stomp",
-     "unlock_andys_neighborhood,$skips_hard,double_jump,ledge_grab,pole_climb",
-     "$no_gating,$skips_hard,double_jump,ledge_grab,pole_climb",
+     "unlock_andys_neighborhood,stomp,double_jump",
+     "$no_gating,stomp,double_jump",
+     "unlock_andys_neighborhood,$skips_easy_or_hard,stomp,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,stomp,ledge_grab",
+     "unlock_andys_neighborhood,$skips_hard,double_jump,pole_climb",
+     "$no_gating,$skips_hard,double_jump,pole_climb",
      "unlock_andys_neighborhood,$skips_insane,gadget_andys_neighborhood_rocket_boots,double_jump",
      "$no_gating,$skips_insane,gadget_andys_neighborhood_rocket_boots,double_jump"
     ],
@@ -5786,7 +5792,10 @@
      "$no_gating,$skips_easy_or_hard,$hamm50|2|coin_construction_yard,double_jump"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Worker Tike (Wheelbarrow)",
@@ -7956,7 +7965,10 @@
      "$no_gating,$hamm50|3|coin_alleys_and_gullies,ledge_grab,rope_sliding"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -10897,7 +10909,10 @@
      "$no_gating,$hamm50|4|coin_als_toy_barn,gadget_als_toy_barn_hover_boots"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -11017,8 +11032,8 @@
     "access_rules": [
      "unlock_als_toy_barn,double_jump,ledge_grab",
      "$no_gating,double_jump,ledge_grab",
-     "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_hover_boots",
-     "$no_gating,double_jump,gadget_als_toy_barn_hover_boots"
+     "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots",
+     "$no_gating,gadget_als_toy_barn_hover_boots"
     ],
     "visibility_rules": [
      "set_batterysanity"
@@ -11106,14 +11121,12 @@
     "name": "Battery (Gumball Machine)",
     "item_count": 1,
     "access_rules": [
-     "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_rocket_boots,stomp",
-     "$no_gating,double_jump,gadget_als_toy_barn_rocket_boots,stomp",
+     "unlock_als_toy_barn,stomp,double_jump,gadget_als_toy_barn_rocket_boots",
+     "$no_gating,stomp,double_jump,gadget_als_toy_barn_rocket_boots",
      "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
      "$no_gating,double_jump,pole_vault,rope_sliding",
-     "unlock_als_toy_barn,ledge_grab,pole_vault,rope_sliding",
-     "$no_gating,ledge_grab,pole_vault,rope_sliding",
-     "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault",
-     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault"
+     "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,pole_vault,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,pole_vault,ledge_grab"
     ],
     "visibility_rules": [
      "set_batterysanity"
@@ -13081,7 +13094,10 @@
      "$no_gating,$skips_easy_or_hard,double_jump,$hamm50|5|coin_als_space_land"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Alien (End of Zurg Aisle)",
@@ -15654,7 +15670,10 @@
      "$no_gating,$skips_easy_or_hard,double_jump,pole_vault,$hamm50|6|coin_elevator_hop"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -17520,7 +17539,10 @@
      "$no_gating,$skips_easy_or_hard,$hamm50|7|coin_als_penthouse,double_jump,ledge_grab,stomp"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Hint Block (Bathtub)",
@@ -19683,7 +19705,10 @@
      "$no_gating,$skips_hard,$lg_or_coinsanity,$hamm50|8|coin_airport_infiltration,double_jump,stomp"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -21803,7 +21828,10 @@
      "$no_gating,$hamm50|9|coin_tarmac_trouble"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
-    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "visibility_rules": [
+     "set_hamm_1"
+    ]
    },
    {
     "name": "Missing Toys Token",
@@ -21843,7 +21871,9 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,double_jump,ledge_grab,pole_climb,stomp",
-     "$no_gating,double_jump,ledge_grab,pole_climb,stomp"
+     "$no_gating,double_jump,ledge_grab,pole_climb,stomp",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab,stomp"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
     "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -21853,7 +21883,9 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,double_jump,ledge_grab,pole_climb",
-     "$no_gating,double_jump,ledge_grab,pole_climb"
+     "$no_gating,double_jump,ledge_grab,pole_climb",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab"
     ],
     "visibility_rules": [
      "set_batterysanity"
@@ -21865,8 +21897,12 @@
     "name": "Hint Block (Light Puzzle)",
     "item_count": 1,
     "access_rules": [
-     "unlock_tarmac_trouble,double_jump,pole_climb",
-     "$no_gating,double_jump,pole_climb"
+     "unlock_tarmac_trouble,pole_climb,double_jump",
+     "$no_gating,pole_climb,double_jump",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "visibility_rules": [
      "set_hintblocksanity"
@@ -21878,10 +21914,18 @@
     "name": "Boss Token",
     "item_count": 1,
     "access_rules": [
-     "unlock_tarmac_trouble,double_jump,pole_climb,spin",
-     "$no_gating,double_jump,pole_climb,spin",
-     "unlock_tarmac_trouble,double_jump,pole_climb,stomp",
-     "$no_gating,double_jump,pole_climb,stomp"
+     "unlock_tarmac_trouble,pole_climb,double_jump,spin",
+     "$no_gating,pole_climb,double_jump,spin",
+     "unlock_tarmac_trouble,pole_climb,double_jump,stomp",
+     "$no_gating,pole_climb,double_jump,stomp",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+     "unlock_tarmac_trouble,$skips_hard,double_jump,spin",
+     "$no_gating,$skips_hard,double_jump,spin",
+     "unlock_tarmac_trouble,$skips_hard,double_jump,stomp",
+     "$no_gating,$skips_hard,double_jump,stomp"
     ],
     "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
     "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -21890,8 +21934,12 @@
     "name": "Battery (Boss Arena)",
     "item_count": 1,
     "access_rules": [
-     "unlock_tarmac_trouble,double_jump,pole_climb",
-     "$no_gating,double_jump,pole_climb"
+     "unlock_tarmac_trouble,pole_climb,double_jump",
+     "$no_gating,pole_climb,double_jump",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "visibility_rules": [
      "set_batterysanity"
@@ -21904,7 +21952,11 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,pole_climb",
-     "$no_gating,pole_climb"
+     "$no_gating,pole_climb",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
     "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -21926,7 +21978,11 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,pole_climb",
-     "$no_gating,pole_climb"
+     "$no_gating,pole_climb",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
     "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -21936,7 +21992,11 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,pole_climb",
-     "$no_gating,pole_climb"
+     "$no_gating,pole_climb",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
     "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -21956,7 +22016,11 @@
     "item_count": 1,
     "access_rules": [
      "unlock_tarmac_trouble,pole_climb",
-     "$no_gating,pole_climb"
+     "$no_gating,pole_climb",
+     "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
+     "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
+     "unlock_tarmac_trouble,$skips_hard,double_jump",
+     "$no_gating,$skips_hard,double_jump"
     ],
     "visibility_rules": [
      "set_lifesanity"
