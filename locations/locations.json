@@ -11084,8 +11084,8 @@
     "access_rules": [
      "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_rocket_boots",
      "$no_gating,double_jump,gadget_als_toy_barn_rocket_boots",
-     "unlock_als_toy_barn,double_jump,ledge_grab,pole_vault,rope_sliding",
-     "$no_gating,double_jump,ledge_grab,pole_vault,rope_sliding",
+     "unlock_als_toy_barn,double_jump,pole_vault",
+     "$no_gating,double_jump,pole_vault",
      "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
      "$no_gating,$skips_easy_or_hard,double_jump,ledge_grab",
      "unlock_als_toy_barn,$skips_hard,double_jump",
@@ -19858,6 +19858,8 @@
     "access_rules": [
      "unlock_airport_infiltration,double_jump,ledge_grab,pole_vault,stomp",
      "$no_gating,double_jump,ledge_grab,pole_vault,stomp",
+     "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
+     "$no_gating,$skips_easy_or_hard,double_jump,pole_vault,stomp",
      "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp",
      "$no_gating,$skips_hard,double_jump,ledge_grab,stomp"
     ],
