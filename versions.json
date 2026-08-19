@@ -1,13 +1,24 @@
 {
-    "versions": [
-        {
-            "package_version": "2.1.2",
-            "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.2.zip",
-            "sha256": "d99604e2f2339e5cdb360183c4ffdcf3449491b24ddf70ec4848614afed6b1b9",
-            "changelog": [
-                "Auto-update support: PopTracker now prompts you when a new pack version is released",
-                "(Connector 2.1.2: level-select mash fix, savestate desync guard)"
-            ]
-        }
-    ]
+  "versions": [
+    {
+      "package_version": "2.2.0",
+      "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.2.0.zip",
+      "sha256": "991924377da9bee427738f5eabdbe3b3f557963dc86862010827ec6c8fd9d53c",
+      "changelog": [
+        "New Setting:",
+        "Hamm's 50 Coin Checks On or Off",
+        "Logic Changes:",
+        "Several new logic changes have been made in Tarmac Trouble, Al's Toy Barn, and minor changes throughout the rest of the levels"
+      ]
+    },
+    {
+      "package_version": "2.1.2",
+      "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.1.2.zip",
+      "sha256": "d99604e2f2339e5cdb360183c4ffdcf3449491b24ddf70ec4848614afed6b1b9",
+      "changelog": [
+        "Auto-update support: PopTracker now prompts you when a new pack version is released",
+        "(Connector 2.1.2: level-select mash fix, savestate desync guard)"
+      ]
+    }
+  ]
 }
