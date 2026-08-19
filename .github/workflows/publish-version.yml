@@ -1,0 +1,222 @@
+name: Publish pack version
+
+# Tag the repo with the bare version number -- 2.2.0, not v2.2.0 -- and this
+# does the rest: it checks the tag against the manifest, hashes the archive
+# GitHub generates for that tag, and writes the entry PopTracker reads out of
+# the `versions` branch.
+#
+# The download_url is GitHub's own tag archive rather than a zip built here.
+# Nothing has to be uploaded -- .../archive/refs/tags/2.2.0.zip exists for every
+# tag, and unpacks to a single Toy-Story-2-Poptracker-2.2.0/ folder that
+# PopTracker reads directly.
+#
+# THIS FILE ONLY WORKS AT .github/workflows/publish-version.yml. A copy kept
+# anywhere else -- and .git/ especially, since git never tracks its own
+# internals -- is invisible to GitHub and silently does nothing.
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Existing tag to publish or re-publish'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-version
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Refuse to publish if the tag and the manifest disagree
+        run: |
+          set -euo pipefail
+          TAG="${{ inputs.tag || github.ref_name }}"
+          VERSION=$(jq -r '.package_version' manifest.json)
+          echo "tag: $TAG    manifest package_version: $VERSION"
+          if [ "$TAG" != "$VERSION" ]; then
+            echo "::error::Tag '$TAG' does not match manifest package_version '$VERSION'."
+            echo "::error::PopTracker compares what it downloaded against what it was promised."
+            echo "::error::A mismatch makes it offer the same update forever. Fix one and re-tag."
+            exit 1
+          fi
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+
+      - name: Hash the archive GitHub generates for the tag
+        run: |
+          set -euo pipefail
+          URL="https://github.com/${GITHUB_REPOSITORY}/archive/refs/tags/${TAG}.zip"
+
+          # The archive is built on demand the first time anything asks for it,
+          # so a tag pushed seconds ago can 404 briefly.
+          for attempt in 1 2 3 4 5 6; do
+            if curl -fsSL "$URL" -o /tmp/pack.zip; then break; fi
+            echo "attempt $attempt: archive not ready, waiting"
+            sleep 10
+          done
+          test -s /tmp/pack.zip
+
+          # And it has to actually BE the pack, holding the version it claims --
+          # a repo with the manifest one folder too deep produces an archive
+          # PopTracker cannot read, and this is where that gets caught.
+          #
+          # Match exactly one path component. unzip's wildcards cross '/', so
+          # the obvious '*/manifest.json' also matches a manifest two folders
+          # deep, which is the very thing being checked for -- and the shape a
+          # Windows "Extract All" produces if the tree is ever rebuilt from a
+          # zip. `|| true` because grep finding nothing must reach the error
+          # below rather than abort the step under `set -e`.
+          INNER=$(unzip -Z1 /tmp/pack.zip | grep -E '^[^/]+/manifest\.json$' | head -1 || true)
+          if [ -z "$INNER" ]; then
+            echo "::error::No manifest.json one level inside the archive."
+            echo "::error::The pack files must sit at the repo ROOT. If manifest.json is"
+            echo "::error::in a subfolder, the tag archive nests it twice and PopTracker"
+            echo "::error::cannot read the pack. Archive starts with:"
+            unzip -Z1 /tmp/pack.zip | head -20
+            exit 1
+          fi
+          unzip -p /tmp/pack.zip "$INNER" > /tmp/manifest.json
+          ARCHIVED=$(jq -r '.package_version' /tmp/manifest.json)
+          if [ "$ARCHIVED" != "$TAG" ]; then
+            echo "::error::The archive's manifest says $ARCHIVED, not $TAG."
+            exit 1
+          fi
+
+          echo "URL=$URL" >> "$GITHUB_ENV"
+          echo "SHA=$(sha256sum /tmp/pack.zip | cut -d' ' -f1)" >> "$GITHUB_ENV"
+          echo "archive ok: $INNER"
+
+      - name: Take the changelog from the tag message, else the release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          # An annotated tag's message wins: it is immutable and travels with the
+          # tag. A lightweight tag's "message" is really the commit's, which is
+          # not what anyone wants in an update prompt -- and GitHub's own
+          # "Draft a new release" makes lightweight tags, which is how every
+          # release in this repo has been cut.
+          if [ "$(git cat-file -t "$TAG")" = "tag" ]; then
+            git tag -l --format='%(contents)' "$TAG" > /tmp/changelog.txt
+          else
+            echo "lightweight tag -- falling back to the release notes"
+            : > /tmp/changelog.txt
+          fi
+
+          # The release body IS the authoring surface here: notes get typed into
+          # the GitHub UI. Reading them is why the release step below never
+          # writes them.
+          if [ ! -s /tmp/changelog.txt ]; then
+            gh release view "$TAG" --json body -q '.body' > /tmp/changelog.txt 2>/dev/null \
+              || : > /tmp/changelog.txt
+          fi
+
+          # Markdown -> the flat list of lines PopTracker shows: a heading keeps
+          # its text as a label, a bullet loses its marker, blanks and horizontal
+          # rules go away. CRLF is stripped first because notes written on
+          # Windows carry it and a trailing \r would render as a stray glyph.
+          sed -E -e 's/\r$//' \
+                 -e 's/^[[:space:]]*#{1,6}[[:space:]]+(.*)$/\1:/' \
+                 -e 's/^[[:space:]]*[-*+][[:space:]]+//' \
+                 -e 's/^[[:space:]]+//' \
+                 -e 's/[[:space:]]+$//' \
+                 -e 's/::$/:/' \
+                 /tmp/changelog.txt > /tmp/changelog.mid
+
+          # `|| true`: grep exits 1 when it selects nothing, which under
+          # `set -e` would kill the step for the legitimate case of an empty
+          # changelog.
+          { grep -vE '^([-*_][[:space:]]*){3,}$' /tmp/changelog.mid || true; } \
+            > /tmp/changelog.clean
+
+          jq -Rs 'split("\n") | map(select(length > 0))' \
+            < /tmp/changelog.clean > /tmp/changelog.json
+          cat /tmp/changelog.json
+
+      - name: Write the entry onto the versions branch
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin versions || true
+          if git rev-parse --verify --quiet origin/versions >/dev/null; then
+            git checkout -B versions origin/versions
+          else
+            # First release: the branch is made here rather than by hand, and
+            # it holds nothing but versions.json.
+            echo "creating the versions branch"
+            git checkout --orphan versions
+            git rm -rf --cached . >/dev/null 2>&1 || true
+            find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+            echo '{"versions": []}' > versions.json
+          fi
+          [ -f versions.json ] || echo '{"versions": []}' > versions.json
+
+          # ORDER IS THE VERSION. PopTracker's own docs: "The top entry in
+          # the list is considered the latest version." It does not compare
+          # the numbers, it takes the first one.
+          #
+          # So a version that ALREADY EXISTS is replaced where it stands, and
+          # only a genuinely new one goes to the top. The obvious version of
+          # this -- always prepend, drop any older copy -- is correct for a
+          # normal release and quietly wrong for a re-publish: re-running the
+          # workflow on 2.1.2 after 2.2.0 shipped would move 2.1.2 to the top
+          # and offer every player a DOWNGRADE. Re-publishing is the documented
+          # recovery step for a bad hash and for picking up release notes
+          # written after the tag, so that path has to be safe.
+          jq --arg v "$TAG" --arg u "$URL" --arg s "$SHA" \
+             --slurpfile c /tmp/changelog.json \
+             '. as $doc
+              | {package_version: $v, download_url: $u,
+                 sha256: $s, changelog: $c[0]} as $entry
+              | .versions = (if any($doc.versions[]; .package_version == $v)
+                             then ($doc.versions
+                                   | map(if .package_version == $v
+                                         then $entry else . end))
+                             else ([$entry] + $doc.versions) end)' \
+             versions.json > versions.next.json
+          mv versions.next.json versions.json
+          cat versions.json
+
+          git add versions.json
+          if git diff --cached --quiet; then
+            echo "versions.json already said this; nothing to push"
+          else
+            git commit -m "Publish $TAG"
+            git push origin versions
+          fi
+
+      - name: Create the release only if it does not exist yet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            # The body is where the changelog above came from. Rewriting it
+            # would erase notes typed in the UI -- and on a re-publish it would
+            # erase them with a placeholder. Leave it alone.
+            echo "release $TAG already exists; leaving its notes untouched"
+          else
+            NOTES=$(cat /tmp/changelog.txt)
+            NOTES=${NOTES:-Pack version $TAG}
+            gh release create "$TAG" --title "$TAG" --notes "$NOTES"
+            echo "::notice::Created release $TAG with placeholder notes."
+            echo "::notice::Write the real notes on it, then re-run this workflow"
+            echo "::notice::(Actions -> Publish pack version -> Run workflow, tag $TAG)"
+            echo "::notice::to copy them into versions.json."
+          fi
