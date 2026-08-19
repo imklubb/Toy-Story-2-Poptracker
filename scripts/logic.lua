@@ -3,9 +3,73 @@
 -- only makes sense in OPEN mode once connected: in LINEAR mode levels are
 -- token-gated (the unlock is not an item), and before connecting nothing is
 -- known. In both of those cases no_gating() returns 1 so checks are NOT greyed.
+-- DEPRECATED, kept only so a stray rule that still says $no_gating does not error.
+-- It returned 1 for LINEAR, which meant linear seeds had NO level gating at all:
+-- every location in every level showed reachable. Use $gating_ok|<level>.
 function no_gating()
   if not SETTINGS then return 1 end
   return (tonumber(SETTINGS.game_mode) == 1) and 1 or 0
+end
+
+-- ── Level gating ────────────────────────────────────────────────────────────
+-- Linear IS gated -- just not by unlock items. An area opens by DEFEATING the
+-- previous area's boss, and each boss has its own token gate from slot_data.
+-- This mirrors can_access_level() in rules.py exactly, including its definition
+-- of "defeated": you can logically REACH that boss level and have the attack it
+-- needs -- not that you have actually beaten it. That is what the AP generator
+-- and Universal Tracker use, so the pack now agrees with both.
+function ts2_has(code)  return (Tracker:ProviderCountForCode(code) or 0) > 0 end
+function ts2_tokens()   return Tracker:ProviderCountForCode("pizza_planet_token") or 0 end
+function ts2_gate(key)  return tonumber(SETTINGS and SETTINGS[key]) or 0 end
+function ts2_any_attack() return ts2_has("laser") or ts2_has("spin") or ts2_has("stomp") end
+
+-- Each gate references only STRICTLY EARLIER areas, so this recursion
+-- terminates -- the same reason rules.py can recurse here safely.
+function lin_bombs() return linear_reached("bombs_away") == 1 and ts2_any_attack() end
+function lin_slime() return linear_reached("slime_time") == 1 and ts2_has("laser") end
+function lin_tbe()
+  return linear_reached("toy_barn_encounter") == 1 and ts2_has("laser")
+         and (ts2_has("spin") or ts2_has("stomp"))
+end
+function lin_zurg() return linear_reached("the_evil_emperor_zurg") == 1 and ts2_has("spin") end
+
+function linear_reached(level)
+  local t = ts2_tokens()
+  -- Area 0 is free
+  if level == "andys_house" or level == "andys_neighborhood" then return 1 end
+  if level == "bombs_away" then
+    return (t >= ts2_gate("bombs_away_token_gate")) and 1 or 0 end
+  -- Area 1, opened by Bombs Away!
+  if level == "construction_yard" or level == "alleys_and_gullies" then
+    return lin_bombs() and 1 or 0 end
+  if level == "slime_time" then
+    return (lin_bombs() and t >= ts2_gate("slime_time_token_gate")) and 1 or 0 end
+  -- Area 2, opened by Slime Time
+  if level == "als_toy_barn" or level == "als_space_land" then
+    return lin_slime() and 1 or 0 end
+  if level == "toy_barn_encounter" then
+    return (lin_slime() and t >= ts2_gate("toy_barn_encounter_token_gate")) and 1 or 0 end
+  -- Area 3, opened by the Toy Barn Encounter
+  if level == "elevator_hop" or level == "als_penthouse" then
+    return lin_tbe() and 1 or 0 end
+  if level == "the_evil_emperor_zurg" then
+    return (lin_tbe() and t >= ts2_gate("evil_emperor_zurg_token_gate")) and 1 or 0 end
+  -- Area 4, opened by Zurg
+  if level == "airport_infiltration" or level == "tarmac_trouble" then
+    return lin_zurg() and 1 or 0 end
+  if level == "final_showdown" then
+    return (lin_zurg() and t >= ts2_gate("linear_final_showdown_token_gate")) and 1 or 0 end
+  return 0
+end
+
+-- The half of every access rule that used to be a bare $no_gating.
+--   not connected -> 1, so nothing is greyed before a slot is known (unchanged)
+--   OPEN          -> 0, so the unlock ITEM is the only gate (unchanged)
+--   LINEAR        -> the area/boss/token chain above (this is the fix)
+function gating_ok(level)
+  if not SETTINGS then return 1 end
+  if tonumber(SETTINGS.game_mode) ~= 1 then return 0 end
+  return linear_reached(level)
 end
 
 -- ── Skip-tier helpers ──
