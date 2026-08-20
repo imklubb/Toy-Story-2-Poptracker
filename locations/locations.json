@@ -17635,7 +17635,9 @@
      "unlock_als_penthouse,double_jump,ledge_grab,push",
      "$gating_ok|als_penthouse,double_jump,ledge_grab,push",
      "unlock_als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
-     "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push"
+     "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
+     "unlock_als_penthouse,$skips_hard,double_jump",
+     "$gating_ok|als_penthouse,$skips_hard,double_jump"
     ],
     "visibility_rules": [
      "set_hintblocksanity"
