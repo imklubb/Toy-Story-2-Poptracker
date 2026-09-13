@@ -189,6 +189,8 @@ local COIN_RANGES = {
   EH={1966214733,1966214795}, AP={1966214843,1966214914}, AI={1966214953,1966215024},
   TT={1966215063,1966215150},
 }
+-- ab -> { [1-based coin index] = true }. A SET, not a count: the badge has to
+-- answer "how many reachable coins have I not got yet", and a bare total cannot.
 local COINS_COLLECTED, COIN_COUNTED = {}, {}
 local function coinLevelForId(id)
   for ab,r in pairs(COIN_RANGES) do if id>=r[1] and id<=r[2] then return ab end end
@@ -224,19 +226,87 @@ local LI_BY_AB = {AH=0,AN=1,CY=2,AaG=3,ATB=4,ASL=5,EH=6,AP=7,AI=8,TT=9}
 -- (FF9F20) when some coins can't be reached; badge counts only reachable coins so the
 -- pin reads as a clean counter. Recomputed on every item/location/settings change so
 -- the colour and count track gadget pickups live.
+-- Coins collected when individual coins are NOT AP locations. With Coinsanity
+-- OFF there are no coin checks at all, so COINS_COLLECTED never moved and the
+-- counter sat at its starting value forever -- it told you how many coins the
+-- level has, never how many you still had to find. The client already keeps the
+-- per-level collected set in AP DataStorage under ts2_coins_<team>_<slot> (it
+-- has to: that set IS the coin wallet, and without it a re-entered level would
+-- be farmable), so the tracker reads the same record.
+--
+-- It also fixes the BUNDLED Coinsanity sizes, where COINS_COLLECTED counts
+-- "Coin Bundle N" checks -- one per N coins -- and so undercounted by a factor
+-- of the bundle size. Taking the larger of the two is what makes one branch
+-- serve all three modes: at bundle size 1 the locations ARE the record and the
+-- wallet table is empty, and in the other two the wallet is exact while the
+-- location count is the undercount.
+local WALLET_COLLECTED = {}    -- ab -> { [coin index] = true }, from DataStorage
+
+-- The badge counts coins that are BOTH reachable and not yet collected, one coin
+-- at a time.
+--
+-- It used to be (reachable count) - (collected count), which quietly assumes
+-- every coin you picked up was one the tracker had counted as reachable. Collect
+-- anything the logic did not expect -- a sequence break, or just logic being
+-- conservative -- and the subtraction goes negative, clamps at zero, and the
+-- badge vanishes while real reachable coins are still out there. That is what
+-- hid an in-logic Zurg Boat coin in Alleys and Gullies: the pin showed nothing
+-- at all rather than 1.
+--
+-- Both halves of the record already knew which coins, and both were throwing it
+-- away: clearLoc computed the coin's index and incremented a counter with it,
+-- and the DataStorage wallet arrives as a list of indices that was being reduced
+-- to its length.
+local function got_coin(ab, i)
+  return (COINS_COLLECTED[ab] and COINS_COLLECTED[ab][i])
+      or (WALLET_COLLECTED[ab] and WALLET_COLLECTED[ab][i]) or false
+end
+
 local function recomputeCoinCounts()
   for ab,total in pairs(COIN_COUNT) do
     local li = LI_BY_AB[ab]
-    local reach = (li ~= nil and coins_reachable_count and coins_reachable_count(li)) or total
-    local collected = COINS_COLLECTED[ab] or 0
+    local left, stuck = 0, 0
+    for i = 1, total do
+      if not got_coin(ab, i) then
+        if (li == nil) or (not coin_reachable) or coin_reachable(li, i) == 1 then
+          left = left + 1
+        else
+          stuck = stuck + 1
+        end
+      end
+    end
     local r = Tracker:FindObjectForCode("@"..ab.."/Reachable Coins Remaining")
-    if r then r.AvailableChestCount = math.max(0, reach - collected) end
+    if r then r.AvailableChestCount = left end
+    -- Now "there is a coin here you still cannot reach" rather than "this level
+    -- contains an unreachable coin", which kept the pin orange forever once a
+    -- level had one, even after everything reachable had been collected.
     local u = Tracker:FindObjectForCode("@"..ab.."/Unreachable Coins")
-    if u then u.AvailableChestCount = (reach < total) and 1 or 0 end
+    if u then u.AvailableChestCount = (stuck > 0) and 1 or 0 end
   end
 end
 local function resetCoinsRemaining()
   COINS_COLLECTED, COIN_COUNTED = {}, {}
+  WALLET_COLLECTED = {}
+  recomputeCoinCounts()
+end
+
+-- The DataStorage value is { ["<li>"] = { coin indices }, ... }. Keep the
+-- indices: which coins they are is exactly what the badge needs.
+local function applyWallet(value)
+  WALLET_COLLECTED = {}
+  if type(value) == "table" then
+    for li_s, idxs in pairs(value) do
+      local ab = AB_BY_LI[tonumber(li_s) or -1]
+      if ab and type(idxs) == "table" then
+        local set = {}
+        for _, v in pairs(idxs) do
+          local i = tonumber(v)
+          if i then set[i] = true end
+        end
+        WALLET_COLLECTED[ab] = set
+      end
+    end
+  end
   recomputeCoinCounts()
 end
 
@@ -255,7 +325,8 @@ local function clearLoc(id)
     if b then b.AvailableChestCount = 0 end
     if not COIN_COUNTED[id] then
       COIN_COUNTED[id] = true
-      COINS_COLLECTED[ab] = (COINS_COLLECTED[ab] or 0) + 1
+      COINS_COLLECTED[ab] = COINS_COLLECTED[ab] or {}
+      COINS_COLLECTED[ab][N] = true
     end
   end
 end
@@ -329,8 +400,58 @@ local function applySettings(sd)
   -- Hamm's 50-coin turn-ins (2.2.0). Older seeds have no such key, so a
   -- missing value must mean ON -- that was the only behaviour before the
   -- option existed, and defaulting it off would hide ten real checks.
-  local _hamm = sd["hamm_fifty_coin_checks"]
-  setStage("set_hamm", (_hamm == nil) and 1 or num(sd,"hamm_fifty_coin_checks"))
+  -- Hamm Checks: 0 Off, 1 Vanilla, 2 Shopsanity. Replaces the old
+  -- hamm_fifty_coin_checks toggle; a pre-2.3.0 seed still carries that key, so
+  -- fall back to it (on -> Vanilla) rather than dropping such a seed to Off.
+  local _hamm = sd["hamm_checks"]
+  if _hamm == nil then
+    local _legacy = sd["hamm_fifty_coin_checks"]
+    _hamm = (_legacy == nil) and 1 or (num(sd,"hamm_fifty_coin_checks") > 0 and 1 or 0)
+  else
+    _hamm = num(sd,"hamm_checks")
+  end
+  setStage("set_hamm", _hamm)
+  -- Hamm's Shop stock, and an exact-mode flag for the 50-coin token. Both
+  -- MUST be set after _hamm is resolved above.
+  --
+  -- These two drive section VISIBILITY, and visibility_rules understand only
+  -- plain codes and code:count -- no $functions, unlike access_rules. So a rule
+  -- cannot ask "is the Hamm stage exactly 1"; these carry the answer instead:
+  --   set_shop_items   = the stock, or 0 when the shop is off, so a rule of
+  --                      "set_shop_items:N" shows slot N only in Shopsanity and
+  --                      only when the seed actually stocked that many
+  --   set_hamm_vanilla = 1 only in Vanilla, so the 50-coin token stops showing
+  --                      beside the shop that replaced it
+  --
+  -- The token cannot simply test set_hamm_1: PopTracker progressive items are
+  -- CUMULATIVE, so an item on stage 2 (Shopsanity) also provides stage 1's code.
+  setCount("set_shop_items",   (_hamm == 2) and num(sd,"hamm_shop_items") or 0)
+  setCount("set_hamm_vanilla", (_hamm == 1) and 1 or 0)
+  -- Say out loud what this pack will gate the shop on. A gate list that does not
+  -- match the prices (or the Hamm's Shop section of the spoiler log) means the
+  -- running logic.lua is older than the seed -- PopTracker loads scripts once at
+  -- pack load, so an update landing under an open tracker is invisible until it
+  -- starts disagreeing with Universal Tracker about what is in logic.
+  if _hamm == 2 then
+    print("[TS2] shop logic: " .. tostring(TS2_LOGIC_REV or "UNKNOWN - logic.lua is stale"))
+    local names = {[0]="Andy's House", [1]="Andy's Neighborhood",
+                   [2]="Construction Yard", [3]="Alleys and Gullies",
+                   [4]="Al's Toy Barn", [5]="Al's Space Land",
+                   [6]="Elevator Hop", [7]="Al's Penthouse",
+                   [8]="Airport Infiltration", [9]="Tarmac Trouble"}
+    for li = 0, 9 do
+      local prices = sd.hamm_shop_prices and sd.hamm_shop_prices[names[li]]
+      if type(prices) == "table" and #prices > 0 then
+        local p, g = {}, {}
+        for i = 1, #prices do
+          p[i] = tostring(prices[i])
+          g[i] = tostring(shop_gate and shop_gate(li, i) or "?")
+        end
+        print(string.format("[TS2]   %-22s prices %s -> gates %s",
+              names[li], table.concat(p, ","), table.concat(g, ",")))
+      end
+    end
+  end
   setActive("set_lifesanity",      num(sd,"lifesanity")~=0)
   setActive("set_batterysanity",   num(sd,"batterysanity")~=0)
   setActive("set_greenlasersanity",num(sd,"green_laser_sanity")~=0)
@@ -386,6 +507,9 @@ local function activateTab(v) if v and v~="" then pcall(function() Tracker:UiHin
 -- autotab key above) and set each matching location section's Highlight.
 local HINTS_KEY = nil
 local hinted_codes = {}            -- section codes currently highlighted (for reset)
+
+-- ---- coin wallet (per-coin collected set, written by the AP client) -------
+local WALLET_KEY = nil
 
 -- AP HintStatus -> PopTracker Highlight. PopTracker exposes a global `Highlight`
 -- enum since it gained hint support (0.32.0); fall back to the raw AP status.
@@ -455,6 +579,11 @@ local function onClear(slot_data)
     HINTS_KEY = "_read_hints_"..tostring(team).."_"..tostring(Archipelago.PlayerNumber)
     Archipelago:Get({HINTS_KEY})
     Archipelago:SetNotify({HINTS_KEY})
+    -- The same key the client writes. SetNotify is what makes the counter tick
+    -- down as coins are picked up rather than only on reconnect.
+    WALLET_KEY = "ts2_coins_"..tostring(team).."_"..tostring(Archipelago.PlayerNumber)
+    Archipelago:Get({WALLET_KEY})
+    Archipelago:SetNotify({WALLET_KEY})
   end)
   if not ok then print("[TS2] onClear error: "..tostring(err)) end
 end
@@ -495,12 +624,17 @@ local function onLocation(location_id, location_name)
   clearLoc(location_id)
   recomputeCoinCounts()
 end
-local function onRetrieved(key, value)
-  if key==LEVEL_KEY then activateTab(value) elseif key==HINTS_KEY then applyHints(value) end
+local function onStorage(key, value)
+  if key == LEVEL_KEY then
+    activateTab(value)
+  elseif key == HINTS_KEY then
+    applyHints(value)
+  elseif key == WALLET_KEY then
+    applyWallet(value)
+  end
 end
-local function onSetReply(key, value, old)
-  if key==LEVEL_KEY then activateTab(value) elseif key==HINTS_KEY then applyHints(value) end
-end
+local function onRetrieved(key, value)      onStorage(key, value) end
+local function onSetReply(key, value, old)  onStorage(key, value) end
 
 Archipelago:AddClearHandler("ts2_clear", onClear)
 Archipelago:AddItemHandler("ts2_item", onItem)

@@ -258,11 +258,17 @@ function lg_or_coinsanity()
   return (Tracker:ProviderCountForCode("ledge_grab") >= 1) and 1 or 0
 end
 
-function hamm50(li, coin_code)
+-- Generalised from hamm50: "can this player raise `need` coins in this level".
+-- Both of Hamm's modes reduce to it -- the vanilla token asks for 50, a shop slot
+-- asks for its own price -- and the movement to reach Hamm is ANDed in by the
+-- access rule around it, in both cases.
+function hamm_coins(li, coin_code, need)
   li = tonumber(li)
-  -- Coinsanity ON: 50 coins come from received Coin Bundle items.
+  need = tonumber(need) or 50
+  if need <= 0 then return 1 end
+  -- Coinsanity ON: the coins come from received Coin Bundle items.
   if coinsanity_on() then
-    return (Tracker:ProviderCountForCode(coin_code) >= 50) and 1 or 0
+    return (Tracker:ProviderCountForCode(coin_code) >= need) and 1 or 0
   end
   -- Coinsanity OFF: coins are collected in-level, so "50 coins" means the player's
   -- current moves can physically reach at least 50 of this level's coins. This is
@@ -282,10 +288,94 @@ function hamm50(li, coin_code)
     end
     if ok then
       cnt = cnt + 1
-      if cnt >= 50 then return 1 end
+      if cnt >= need then return 1 end
     end
   end
-  return (cnt >= 50) and 1 or 0
+  return (cnt >= need) and 1 or 0
+end
+
+function hamm50(li, coin_code)
+  return hamm_coins(li, coin_code, 50)
+end
+
+-- ── Hamm's Shop ──
+-- Stamped so a stale copy of THIS FILE can be identified from the log. PopTracker
+-- loads scripts once at pack load, so a pack left open across an update keeps
+-- running the old logic while the apworld, the client and Universal Tracker have
+-- all moved on -- and the only symptom is the tracker quietly disagreeing with
+-- everything else about what is in logic. autotracking prints this on connect.
+TS2_LOGIC_REV = "2.3.0c thresholds; goal opens on goal conditions; SL stool coin DJ+LG; AN pool-plant easy skip removed"
+
+-- The prices come from slot_data, so they are the seed's real ones. With no game
+-- connected there is nothing to price against and the slot is left unrestricted
+-- rather than shown as unreachable.
+-- Coins needed for one shop slot: its own price, nothing more. Mirrors
+-- World._shop_gates.
+--
+-- This used to be the CUMULATIVE cheapest-first cost -- the k-th cheapest slot
+-- gated on the sum of the k cheapest -- because coins were really spent and a
+-- shop had to stay inside what its level could yield. That was sound only for a
+-- player who claimed strictly cheapest-first, which was never a rule the game
+-- enforced or the player could see. Prices are thresholds now: Hamm counts your
+-- coins and keeps none, so reaching a number once opens every slot at or under
+-- it, in any order, permanently.
+function shop_gate(li, slot)
+  if not SETTINGS or not SETTINGS.hamm_shop_prices then return 0 end
+  local names = {[0]="Andy's House", [1]="Andy's Neighborhood",
+                 [2]="Construction Yard", [3]="Alleys and Gullies",
+                 [4]="Al's Toy Barn", [5]="Al's Space Land",
+                 [6]="Elevator Hop", [7]="Al's Penthouse",
+                 [8]="Airport Infiltration", [9]="Tarmac Trouble"}
+  local prices = SETTINGS.hamm_shop_prices[names[tonumber(li)]]
+  if type(prices) ~= "table" then return 0 end
+  slot = tonumber(slot)
+  if not slot or slot < 1 or slot > #prices then return 0 end
+  return tonumber(prices[slot]) or 0
+end
+
+function hamm_shop(li, coin_code, slot)
+  return hamm_coins(li, coin_code, shop_gate(li, slot))
+end
+
+-- Visibility helper: hide the slots this seed did not stock.
+--
+-- Reads the Hamm's Shop Items COUNTER rather than SETTINGS, for the same reason
+-- coinsanity_on() reads its item stage: autotracking stages the counter from
+-- slot_data on connect, so the counter reflects both the real seed AND a manual
+-- change, where SETTINGS only ever carries the connected value and is blind to
+-- the player dragging it. With nothing connected and the counter still at 0,
+-- every slot shows -- the right default for planning a yaml.
+function shop_items_count()
+  local n = Tracker:ProviderCountForCode("set_shop_items")
+  if n and n > 0 then return n end
+  if SETTINGS and SETTINGS.hamm_shop_items ~= nil then
+    return tonumber(SETTINGS.hamm_shop_items) or 0
+  end
+  return 0
+end
+
+-- ── Hamm Checks: exact stage, not "at least" ──
+-- PopTracker progressive items are CUMULATIVE: an item on stage 2 also provides
+-- the codes of stage 1. Hamm Checks has three stages (0 Off, 1 Vanilla,
+-- 2 Shopsanity), so a visibility rule of "set_hamm_1" was true for Vanilla AND
+-- Shopsanity, and the 50-coin token kept showing next to the shop that replaced
+-- it. Two-stage items like Coinsanity never hit this, which is why the pattern
+-- looked safe. Read the stage directly and compare.
+function hamm_stage()
+  local o = Tracker:FindObjectForCode("set_hamm")
+  return (o and o.CurrentStage) or 1
+end
+function hamm_mode_vanilla() return (hamm_stage() == 1) and 1 or 0 end
+function hamm_mode_shop()    return (hamm_stage() == 2) and 1 or 0 end
+
+SHOP_MAX_STOCK = 6   -- a dialog box holds six two-line slots, no more
+
+function shop_has_slot(slot)
+  slot = tonumber(slot)
+  if slot > SHOP_MAX_STOCK then return 0 end
+  local n = shop_items_count()
+  if n <= 0 then return 1 end
+  return (slot <= n) and 1 or 0
 end
 
 -- ── Goal condition check (open mode): tokens / bosses / unlock per slot_data ──
@@ -315,4 +405,61 @@ function goalcond()
     if Tracker:ProviderCountForCode("unlock_final_showdown") < 1 then return 0 end
   end
   return 1
+end
+
+-- ── OPEN-MODE Final Showdown access ────────────────────────────────────────
+-- The final level is NOT gated on the Final Showdown Unlock item. It opens on
+-- whatever the seed's Goal Conditions are, exactly as the game does it (the
+-- client computes it, check_prospector_unlock honors it) and exactly as the
+-- apworld's final_showdown_goal_met does.
+--
+-- The pack used to require unlock_final_showdown on every open-mode path. On a
+-- TOKENS-ONLY goal that item is never in the pool at all, so the goal could
+-- never be shown as reachable no matter how many tokens you had -- which is the
+-- bug this fixes. goalcond() already demands the item for the three goals that
+-- actually include it, so nothing is lost by dropping it here.
+--
+-- Open mode only: goalcond() returns 1 in linear, where access is the area
+-- chain instead and the $gating_ok paths carry it.
+function fs_open()
+  if not SETTINGS then return 0 end
+  if tonumber(SETTINGS.game_mode) == 1 then return 0 end   -- linear: not this path
+  return goalcond()
+end
+
+-- ── Hamm Checks: keep the vanilla-only mirror honest ────────────────────────
+-- set_hamm_vanilla exists because visibility_rules understand only plain codes
+-- and code:count -- they cannot ask "is this progressive item on stage exactly
+-- 1", and PopTracker progressive items are CUMULATIVE, so an item on stage 2
+-- (Shopsanity) also provides stage 1's set_hamm_1. The mirror carries the
+-- answer: 1 in Vanilla, 0 in Off and in Shopsanity.
+--
+-- applySettings writes it on connect, which is correct and was the whole story
+-- as long as nobody touched the toggle. But the Hamm Checks item is a SETTINGS
+-- WIDGET -- clicking it is how you preview a seed, or correct the tracker
+-- without an AP connection -- and a click moves set_hamm_1 / set_hamm_2 without
+-- going anywhere near the mirror. So the 50-coin token kept showing after the
+-- toggle was clicked to Off, because as far as the mirror knew it was still
+-- whatever the last connect had said (or its initial_quantity of 1, in a
+-- session that never connected at all).
+--
+-- Watching the stage codes fixes it at the source: every path that can change
+-- the stage -- connect, click, or a restored save -- ends up here.
+--   stage 0 (Off)        provides neither code
+--   stage 1 (Vanilla)    provides set_hamm_1
+--   stage 2 (Shopsanity) provides set_hamm_1 AND set_hamm_2
+-- so vanilla is "has _1 and not _2", and every transition changes at least one
+-- of the two watched codes.
+function ts2_sync_hamm_mirror()
+  local vanilla = (Tracker:ProviderCountForCode("set_hamm_1") >= 1)
+              and (Tracker:ProviderCountForCode("set_hamm_2") < 1)
+  local o = Tracker:FindObjectForCode("set_hamm_vanilla")
+  if o then o.AcquiredCount = vanilla and 1 or 0 end
+end
+
+if ScriptHost and ScriptHost.AddWatchForCode then
+  ScriptHost:AddWatchForCode("ts2_hamm_mirror_1", "set_hamm_1",
+                             function() ts2_sync_hamm_mirror() end)
+  ScriptHost:AddWatchForCode("ts2_hamm_mirror_2", "set_hamm_2",
+                             function() ts2_sync_hamm_mirror() end)
 end

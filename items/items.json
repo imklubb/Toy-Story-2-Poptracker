@@ -692,7 +692,7 @@
     "initial_quantity": 0
   },
   {
-    "name": "Hamm's 50 Coin Checks",
+    "name": "Hamm Checks",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -706,9 +706,32 @@
       {
         "img": "images/ICONS/Misc/Hamm On.png",
         "codes": "set_hamm_1",
-        "name": "On"
+        "name": "Vanilla"
+      },
+      {
+        "img": "images/ICONS/Misc/Hamm Shop.png",
+        "codes": "set_hamm_2",
+        "name": "Shopsanity"
       }
     ]
+  },
+  {
+    "name": "Hamm's Shop Items",
+    "type": "consumable",
+    "img": "images/ICONS/Misc/Hamm Stock.png",
+    "codes": "set_shop_items",
+    "min_quantity": 0,
+    "max_quantity": 6,
+    "initial_quantity": 0
+  },
+  {
+    "name": "Hamm Vanilla (internal)",
+    "type": "consumable",
+    "img": "images/blank.png",
+    "codes": "set_hamm_vanilla",
+    "min_quantity": 0,
+    "max_quantity": 1,
+    "initial_quantity": 1
   },
   {
     "name": "Missing Toy Bundle Size",
