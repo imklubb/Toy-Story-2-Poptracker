@@ -22870,6 +22870,8 @@
           "$gating_ok|tarmac_trouble,double_jump,ledge_grab,pole_climb,stomp",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb,stomp",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb,stomp",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,stomp",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,stomp",
           "unlock_tarmac_trouble,$skips_insane,ledge_grab,pole_climb,stomp",
           "$gating_ok|tarmac_trouble,$skips_insane,ledge_grab,pole_climb,stomp"
         ],
@@ -22884,6 +22886,8 @@
           "$gating_ok|tarmac_trouble,double_jump,ledge_grab,pole_climb",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb",
+          "unlock_tarmac_trouble,$skips_hard,double_jump",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump",
           "unlock_tarmac_trouble,$skips_insane,ledge_grab,pole_climb",
           "$gating_ok|tarmac_trouble,$skips_insane,ledge_grab,pole_climb"
         ],
@@ -22922,10 +22926,10 @@
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,spin",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
-          "unlock_tarmac_trouble,$skips_insane,double_jump,spin",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump,spin",
-          "unlock_tarmac_trouble,$skips_insane,double_jump,stomp",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump,stomp"
+          "unlock_tarmac_trouble,$skips_hard,double_jump,spin",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,spin",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,stomp",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -22955,8 +22959,8 @@
           "$gating_ok|tarmac_trouble,pole_climb",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
-          "unlock_tarmac_trouble,$skips_insane,double_jump",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump"
+          "unlock_tarmac_trouble,$skips_hard,double_jump",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -22981,8 +22985,8 @@
           "$gating_ok|tarmac_trouble,pole_climb",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
-          "unlock_tarmac_trouble,$skips_insane,double_jump",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump"
+          "unlock_tarmac_trouble,$skips_hard,double_jump",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -22995,8 +22999,8 @@
           "$gating_ok|tarmac_trouble,pole_climb",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
-          "unlock_tarmac_trouble,$skips_insane,double_jump",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump"
+          "unlock_tarmac_trouble,$skips_hard,double_jump",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Luggage.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Luggage.png"
@@ -23019,8 +23023,8 @@
           "$gating_ok|tarmac_trouble,pole_climb",
           "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab",
-          "unlock_tarmac_trouble,$skips_insane,double_jump",
-          "$gating_ok|tarmac_trouble,$skips_insane,double_jump"
+          "unlock_tarmac_trouble,$skips_hard,double_jump",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump"
         ],
         "visibility_rules": [
           "set_lifesanity"
