@@ -1,6 +1,12 @@
 {
   "versions": [
     {
+      "package_version": "2.3.1",
+      "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.3.1.zip",
+      "sha256": "6842f157bb3d64ce9f770b0c47891ded59eec3f76b129f0fb87799ee51908dae",
+      "changelog": []
+    },
+    {
       "package_version": "2.3.0",
       "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.3.0.zip",
       "sha256": "7e71adf7ba908263314ed6d17b3bdb9c35360f869b835fa7b9f05e6a95c3c11c",
