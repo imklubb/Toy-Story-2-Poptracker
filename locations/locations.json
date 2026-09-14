@@ -318,8 +318,10 @@
         "name": "Life (Crib)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab,pole_climb,push,rope_sliding,visor",
-          "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,push,rope_sliding,visor",
+          "unlock_andys_house,double_jump,pole_climb,push,rope_sliding,visor",
+          "$gating_ok|andys_house,double_jump,pole_climb,push,rope_sliding,visor",
+          "unlock_andys_house,ledge_grab,pole_climb,push,rope_sliding,visor",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push,rope_sliding,visor",
           "unlock_andys_house,$skips_easy_or_hard,double_jump",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump",
           "unlock_andys_house,$skips_easy_or_hard,ledge_grab,pole_climb,push",
@@ -335,8 +337,10 @@
         "name": "Hint Block (Andy's Room Crib)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab,pole_climb,push,rope_sliding",
-          "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,push,rope_sliding",
+          "unlock_andys_house,double_jump,pole_climb,push,rope_sliding,visor",
+          "$gating_ok|andys_house,double_jump,pole_climb,push,rope_sliding,visor",
+          "unlock_andys_house,ledge_grab,pole_climb,push,rope_sliding,visor",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push,rope_sliding,visor",
           "unlock_andys_house,$skips_easy_or_hard,double_jump",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump",
           "unlock_andys_house,$skips_easy_or_hard,ledge_grab,pole_climb,push",
@@ -403,8 +407,10 @@
         "name": "Battery (Andy's Room)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab,pole_climb,push",
-          "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,push",
+          "unlock_andys_house,double_jump,pole_climb,push",
+          "$gating_ok|andys_house,double_jump,pole_climb,push",
+          "unlock_andys_house,ledge_grab,pole_climb,push",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
@@ -420,8 +426,10 @@
         "name": "Hint Block (Andy's Room Dresser Shelf)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab,pole_climb,push",
-          "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,push",
+          "unlock_andys_house,double_jump,pole_climb,push",
+          "$gating_ok|andys_house,double_jump,pole_climb,push",
+          "unlock_andys_house,ledge_grab,pole_climb,push",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
@@ -554,8 +562,10 @@
         "name": "Hint Block (Andy's Room Bed)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab,push",
-          "$gating_ok|andys_house,double_jump,ledge_grab,push",
+          "unlock_andys_house,double_jump,push",
+          "$gating_ok|andys_house,double_jump,push",
+          "unlock_andys_house,ledge_grab,push",
+          "$gating_ok|andys_house,ledge_grab,push",
           "unlock_andys_house,$skips_easy_or_hard,double_jump",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump"
         ],
@@ -34140,7 +34150,20 @@
     "sections": [
       {
         "ref": "TT/Race Token"
-      },
+      }
+    ]
+  },
+  {
+    "name": "TT​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 837,
+        "y": 685,
+        "size": 24
+      }
+    ],
+    "sections": [
       {
         "ref": "TT/Battery (Green Slime Maze)"
       }

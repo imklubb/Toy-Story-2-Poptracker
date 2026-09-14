@@ -304,7 +304,7 @@ end
 -- running the old logic while the apworld, the client and Universal Tracker have
 -- all moved on -- and the only symptom is the tracker quietly disagreeing with
 -- everything else about what is in logic. autotracking prints this on connect.
-TS2_LOGIC_REV = "2.3.0c thresholds; goal opens on goal conditions; SL stool coin DJ+LG; AN pool-plant easy skip removed"
+TS2_LOGIC_REV = "2.3.1 Andy's Room DJ-or-LG; TT battery pin split from race; goal opens on goal conditions"
 
 -- The prices come from slot_data, so they are the seed's real ones. With no game
 -- connected there is nothing to price against and the slot is left unrestricted
