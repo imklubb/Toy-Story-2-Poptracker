@@ -11451,7 +11451,9 @@
           "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
-          "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots"
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -11465,7 +11467,9 @@
           "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
-          "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots"
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Chick.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Chick.png"
@@ -11607,7 +11611,9 @@
           "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_als_toy_barn,$skips_hard,double_jump",
-          "$gating_ok|als_toy_barn,$skips_hard,double_jump"
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump",
+          "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
         "chest_unopened_img": "images/ICONS/Missing Parts/Missing Arm.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Parts/Missing Arm.png"
@@ -11639,12 +11645,14 @@
         "name": "Battery (Gumball Machine)",
         "item_count": 1,
         "access_rules": [
-          "unlock_als_toy_barn,stomp,double_jump,gadget_als_toy_barn_rocket_boots",
-          "$gating_ok|als_toy_barn,stomp,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_rocket_boots,stomp",
+          "$gating_ok|als_toy_barn,double_jump,gadget_als_toy_barn_rocket_boots,stomp",
           "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
-          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,pole_vault,ledge_grab",
-          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,pole_vault,ledge_grab"
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault",
+          "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,pole_vault,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,pole_vault,rope_sliding"
         ],
         "visibility_rules": [
           "set_batterysanity"
@@ -20525,10 +20533,10 @@
         "name": "Hamm's 50 Coins Token",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm50|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm50|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm50|8|coin_airport_infiltration,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm50|8|coin_airport_infiltration,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm50|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm50|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm50|8|coin_airport_infiltration,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm50|8|coin_airport_infiltration,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
@@ -20540,10 +20548,10 @@
         "name": "Hamm's Shop - Slot 1",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|1,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|1,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|1,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|1,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|1,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|1,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|1,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|1,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20555,10 +20563,10 @@
         "name": "Hamm's Shop - Slot 2",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|2,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|2,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|2,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|2,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|2,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|2,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|2,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|2,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20570,10 +20578,10 @@
         "name": "Hamm's Shop - Slot 3",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|3,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|3,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|3,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|3,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|3,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|3,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|3,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|3,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20585,10 +20593,10 @@
         "name": "Hamm's Shop - Slot 4",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|4,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|4,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|4,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|4,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|4,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|4,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|4,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|4,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20600,10 +20608,10 @@
         "name": "Hamm's Shop - Slot 5",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|5,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|5,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|5,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|5,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|5,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|5,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|5,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|5,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20615,10 +20623,10 @@
         "name": "Hamm's Shop - Slot 6",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|6,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|6,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|6,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,$lg_or_coinsanity,$hamm_shop|8|coin_airport_infiltration|6,double_jump,stomp"
+          "unlock_airport_infiltration,$hamm_shop|8|coin_airport_infiltration|6,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_shop|8|coin_airport_infiltration|6,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|6,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_shop|8|coin_airport_infiltration|6,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Misc/Hamm Shop.png",
         "chest_opened_img": "images/ICONS_DIM/Misc/Hamm Shop.png",
@@ -20656,8 +20664,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,pole_climb,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,pole_climb,stomp"
+          "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -20668,8 +20676,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,pole_climb,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,pole_climb,stomp"
+          "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp"
         ],
         "visibility_rules": [
           "set_batterysanity"
@@ -20748,8 +20756,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp"
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Passenger Tike.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Passenger Tike.png"
@@ -20762,8 +20770,8 @@
           "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault,stomp",
           "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp"
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Passenger Tike.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Passenger Tike.png"
@@ -20776,8 +20784,8 @@
           "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
           "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp"
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
         ],
         "chest_unopened_img": "images/ICONS/Missing Parts/Missing Mouth.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Parts/Missing Mouth.png"
