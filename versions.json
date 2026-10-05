@@ -1,6 +1,18 @@
 {
   "versions": [
     {
+      "package_version": "2.3.2",
+      "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.3.2.zip",
+      "sha256": "f9a3292355bba2a5a52ffb48ed211a6370b321dc50738ead750ebda6f2a6f405",
+      "changelog": [
+        "#Logic",
+        "The following levels have had their logic adjusted:",
+        "Al's Toy Barn",
+        "Al's Penthouse",
+        "Airport Infiltration"
+      ]
+    },
+    {
       "package_version": "2.3.1",
       "download_url": "https://github.com/imklubb/Toy-Story-2-Poptracker/archive/refs/tags/2.3.1.zip",
       "sha256": "b5fe83eba2d2bf75b2b3a5f771206258e8cb6d6f11e90acf9fdd47d043586ecf",
