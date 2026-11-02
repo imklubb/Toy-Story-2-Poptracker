@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- **PopTracker** 0.18.0 or newer (built/tested against 0.32.0)
+- **PopTracker** 0.32.0 or newer (built/tested against 0.32.0)
 - A Toy Story 2 Archipelago game in progress (apworld **1.1.0+** recommended)
 - An active connection to your Archipelago server
 
