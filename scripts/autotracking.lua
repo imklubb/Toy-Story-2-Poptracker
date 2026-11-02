@@ -39,6 +39,7 @@ local AP_ITEM_TO_CODE = {
   ["Elevator Hop Unlock"] = "unlock_elevator_hop",
   ["Final Showdown Ticket"] = "final_showdown_ticket",
   ["Final Showdown Unlock"] = "unlock_final_showdown",
+  ["Mission Star"] = "mission_star",
   ["Grappling Hook - Alleys and Gullies"] = "gadget_alleys_and_gullies_grappling_hook",
   ["Grappling Hook - Elevator Hop"] = "gadget_elevator_hop_grappling_hook",
   ["Hover Boots - Airport Infiltration"] = "gadget_airport_infiltration_hover_boots",
@@ -75,6 +76,7 @@ local AP_ITEM_TO_CODE = {
 }
 -- which of those codes are consumables (count) vs toggles (on/off)
 local CONSUMABLE = {
+  ["mission_star"] = true,
   ["alien"] = true,
   ["chick"] = true,
   ["coin_airport_infiltration"] = true,
@@ -311,6 +313,13 @@ local function applyWallet(value)
 end
 
 local function clearLoc(id)
+  -- Hamm under Shopsanity: his dearest slot IS the mission, so buying it clears
+  -- the mission pin too.
+  local mref = TS2_SHOP_MISSION_REF and TS2_SHOP_MISSION_REF[id]
+  if mref then
+    local mo = Tracker:FindObjectForCode(mref)
+    if mo then mo.AvailableChestCount = 0 end
+  end
   id = toBundleId(id)   -- size-1 sends descriptor ids; map them to the bundle id
   local code = AP_LOC and AP_LOC[id]
   if code then
@@ -387,6 +396,7 @@ local function applySettings(sd)
   setActive("set_goal_unlock", gc==2 or gc==4 or gc==5 or gc==6)
   setCount("set_token_pool",   num(sd,"pizza_planet_token_pool"))
   setCount("set_bosses_req",   num(sd,"defeated_bosses_required"))
+  ts2_load_missions(sd)
   setCount("set_gate_bombs",   num(sd,"bombs_away_token_gate"))
   setCount("set_gate_slime",   num(sd,"slime_time_token_gate"))
   setCount("set_gate_toybarn", num(sd,"toy_barn_encounter_token_gate"))
@@ -561,14 +571,61 @@ local function applyHints(value)
   if not ok then print("[TS2] applyHints error: "..tostring(err)) end
 end
 
+-- ── Star Command Missions (3.0.0) ─────────────────────────────────────────
+-- slot_data.missions: {category, level, check, star location, shop, star ID}.
+-- mission_required: {category = n} or {combined = n}. logic.lua's missions_ok()
+-- reads these globals; TS2_CHECKED is every checked location ID, so a category's
+-- count is exact even though every Mission Star item is the same.
+--
+-- Map pins: every possible mission has a hidden trapezoid (on Level Select
+-- beside the level's name, and on the level map beside the check). The toggle
+-- items msn_<level> / msn_<level>_<category> are what show them, so only the
+-- seed's own missions appear.
+TS2_MISSIONS, TS2_MISSION_REQ, TS2_CHECKED = {}, {}, {}
+TS2_SHOP_MISSION_REF = {}   -- shop slot ID -> its mission section (Hamm under Shopsanity)
+local MSN_LEVEL_AB = {
+  ["Andy's House"]="ah", ["Andy's Neighborhood"]="an", ["Construction Yard"]="cy",
+  ["Alleys and Gullies"]="aag", ["Al's Toy Barn"]="atb", ["Al's Space Land"]="asl",
+  ["Elevator Hop"]="eh", ["Al's Penthouse"]="ap", ["Airport Infiltration"]="ai",
+  ["Tarmac Trouble"]="tt",
+}
+local MSN_REF_AB = { ah="AH", an="AN", cy="CY", aag="AaG", atb="ATB", asl="ASL",
+                     eh="EH", ap="AP", ai="AI", tt="TT" }
+local MSN_CATS = { "race", "hamm", "boss", "hidden", "missing_toys", "potato_head" }
+function ts2_load_missions(sd)
+  TS2_MISSIONS, TS2_MISSION_REQ, TS2_SHOP_MISSION_REF = {}, {}, {}
+  for _, ab in pairs(MSN_LEVEL_AB) do
+    setActive("msn_"..ab, false)
+    for _, c in ipairs(MSN_CATS) do setActive("msn_"..ab.."_"..c, false) end
+  end
+  for _, m in ipairs((sd and sd.missions) or {}) do
+    TS2_MISSIONS[#TS2_MISSIONS + 1] = { cat = tostring(m[1]), id = tonumber(m[6]) }
+    local ab = MSN_LEVEL_AB[tostring(m[2])]
+    if ab then
+      setActive("msn_"..ab, true)
+      setActive("msn_"..ab.."_"..tostring(m[1]), true)
+      if tonumber(m[5]) == 1 and tonumber(m[6]) then
+        TS2_SHOP_MISSION_REF[tonumber(m[6])] = "@"..MSN_REF_AB[ab].." Missions/Hamm"
+      end
+    end
+  end
+  local total = 0
+  for k, v in pairs((sd and sd.mission_required) or {}) do
+    TS2_MISSION_REQ[tostring(k)] = tonumber(v) or 0
+    total = total + (tonumber(v) or 0)
+  end
+  setCount("set_missions_req", total)
+end
+
 local function onClear(slot_data)
   local ok,err = pcall(function()
     clearHints()          -- wipe stale hint glow from any previously-tracked seed
     resetItems()
     resetLocations()
     applySettings(slot_data)
+    TS2_CHECKED = {}
     if Archipelago.CheckedLocations then
-      for _,id in ipairs(Archipelago.CheckedLocations) do clearLoc(id) end
+      for _,id in ipairs(Archipelago.CheckedLocations) do clearLoc(id); TS2_CHECKED[id] = true end
     end
     recomputeCoinCounts()
     LEVEL_KEY = "ts2_current_level_"..tostring(Archipelago.PlayerNumber)
@@ -621,6 +678,7 @@ local function onItem(index, item_id, item_name, player)
 end
 
 local function onLocation(location_id, location_name)
+  TS2_CHECKED[location_id] = true
   clearLoc(location_id)
   recomputeCoinCounts()
 end

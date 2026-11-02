@@ -58,7 +58,9 @@ function linear_reached(level)
   if level == "airport_infiltration" or level == "tarmac_trouble" then
     return lin_zurg() and 1 or 0 end
   if level == "final_showdown" then
-    return (lin_zurg() and t >= ts2_gate("linear_final_showdown_token_gate")) and 1 or 0 end
+    -- Star Command Missions (3.0.0) keep it shut too, as the game does.
+    return (lin_zurg() and t >= ts2_gate("linear_final_showdown_token_gate")
+            and missions_ok() == 1) and 1 or 0 end
   return 0
 end
 
@@ -337,6 +339,28 @@ function hamm_shop(li, coin_code, slot)
   return hamm_coins(li, coin_code, shop_gate(li, slot))
 end
 
+-- Star Command Missions (3.0.0): a Hamm mission is his 50-coin token, or under
+-- Shopsanity his DEAREST shop slot (on a tie the later one), which is where the
+-- apworld puts the Mission Star.
+function hamm_mission(li, coin_code)
+  if hamm_mode_shop() == 1 then
+    local names = {[0]="Andy's House", [1]="Andy's Neighborhood",
+                   [2]="Construction Yard", [3]="Alleys and Gullies",
+                   [4]="Al's Toy Barn", [5]="Al's Space Land",
+                   [6]="Elevator Hop", [7]="Al's Penthouse",
+                   [8]="Airport Infiltration", [9]="Tarmac Trouble"}
+    local prices = SETTINGS and SETTINGS.hamm_shop_prices
+                   and SETTINGS.hamm_shop_prices[names[tonumber(li)]]
+    if type(prices) ~= "table" or #prices == 0 then return hamm_shop(li, coin_code, 1) end
+    local best, slot = -1, 1
+    for i, p in ipairs(prices) do
+      if (tonumber(p) or 0) >= best then best, slot = tonumber(p) or 0, i end
+    end
+    return hamm_shop(li, coin_code, slot)
+  end
+  return hamm50(li, coin_code)
+end
+
 -- Visibility helper: hide the slots this seed did not stock.
 --
 -- Reads the Hamm's Shop Items COUNTER rather than SETTINGS, for the same reason
@@ -381,8 +405,27 @@ end
 -- ── Goal condition check (open mode): tokens / bosses / unlock per slot_data ──
 -- Linear mode needs only (Stomp|Spin)+access, so returns 1 there. Boss count uses
 -- cleared boss "Defeat Reward 1" checks (the bosses you've actually beaten).
+-- Star Command Missions (3.0.0): enough Mission Stars, on top of every goal and
+-- in both modes. Per category it counts that category's checked mission
+-- locations (autotracking keeps TS2_CHECKED); combined is the Mission Star count.
+function missions_ok()
+  local req = TS2_MISSION_REQ or {}
+  if req.combined then
+    return (Tracker:ProviderCountForCode("mission_star") >= req.combined) and 1 or 0
+  end
+  for cat, need in pairs(req) do
+    local got = 0
+    for _, m in ipairs(TS2_MISSIONS or {}) do
+      if m.cat == cat and m.id and TS2_CHECKED and TS2_CHECKED[m.id] then got = got + 1 end
+    end
+    if got < need then return 0 end
+  end
+  return 1
+end
+
 function goalcond()
   if not SETTINGS then return 1 end
+  if missions_ok() == 0 then return 0 end
   if tonumber(SETTINGS.game_mode) == 1 then return 1 end   -- linear
   local goal = tonumber(SETTINGS.goal_conditions) or 0
   local needs_tokens = (goal==0 or goal==3 or goal==4 or goal==6)

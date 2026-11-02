@@ -84,6 +84,15 @@
     "initial_quantity": 0
   },
   {
+    "name": "Mission Star",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "mission_star",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
     "name": "Green Laser",
     "type": "toggle",
     "img": "images/ICONS/Collectables/Green Laser.png",
@@ -620,6 +629,15 @@
     "initial_quantity": 0
   },
   {
+    "name": "Mission Stars Required",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "set_missions_req",
+    "min_quantity": 0,
+    "max_quantity": 999,
+    "initial_quantity": 0
+  },
+  {
     "name": "Bombs Away Gate",
     "type": "consumable",
     "img": "images/ICONS/Bosses/Bomb's Away.png",
@@ -891,5 +909,395 @@
     "min_quantity": 0,
     "max_quantity": 110,
     "initial_quantity": 0
+  },
+  {
+    "name": "Andy's House Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah"
+  },
+  {
+    "name": "Andy's Neighborhood Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an"
+  },
+  {
+    "name": "Construction Yard Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy"
+  },
+  {
+    "name": "Alleys and Gullies Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag"
+  },
+  {
+    "name": "Al's Toy Barn Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb"
+  },
+  {
+    "name": "Al's Space Land Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl"
+  },
+  {
+    "name": "Elevator Hop Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh"
+  },
+  {
+    "name": "Al's Penthouse Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap"
+  },
+  {
+    "name": "Airport Infiltration Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai"
+  },
+  {
+    "name": "Tarmac Trouble Missions",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt"
+  },
+  {
+    "name": "Mission: Andy's House - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_race"
+  },
+  {
+    "name": "Mission: Andy's House - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_hamm"
+  },
+  {
+    "name": "Mission: Andy's House - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_boss"
+  },
+  {
+    "name": "Mission: Andy's House - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_hidden"
+  },
+  {
+    "name": "Mission: Andy's House - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_missing_toys"
+  },
+  {
+    "name": "Mission: Andy's House - Give Potato Head His Ear",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ah_potato_head"
+  },
+  {
+    "name": "Mission: Andy's Neighborhood - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an_race"
+  },
+  {
+    "name": "Mission: Andy's Neighborhood - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an_hamm"
+  },
+  {
+    "name": "Mission: Andy's Neighborhood - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an_boss"
+  },
+  {
+    "name": "Mission: Andy's Neighborhood - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an_hidden"
+  },
+  {
+    "name": "Mission: Andy's Neighborhood - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_an_missing_toys"
+  },
+  {
+    "name": "Mission: Construction Yard - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_race"
+  },
+  {
+    "name": "Mission: Construction Yard - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_hamm"
+  },
+  {
+    "name": "Mission: Construction Yard - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_boss"
+  },
+  {
+    "name": "Mission: Construction Yard - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_hidden"
+  },
+  {
+    "name": "Mission: Construction Yard - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_missing_toys"
+  },
+  {
+    "name": "Mission: Construction Yard - Give Potato Head His Eye",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_cy_potato_head"
+  },
+  {
+    "name": "Mission: Alleys and Gullies - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag_race"
+  },
+  {
+    "name": "Mission: Alleys and Gullies - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag_hamm"
+  },
+  {
+    "name": "Mission: Alleys and Gullies - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag_boss"
+  },
+  {
+    "name": "Mission: Alleys and Gullies - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag_hidden"
+  },
+  {
+    "name": "Mission: Alleys and Gullies - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_aag_missing_toys"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_race"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_hamm"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_boss"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_hidden"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_missing_toys"
+  },
+  {
+    "name": "Mission: Al's Toy Barn - Give Potato Head His Arm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_atb_potato_head"
+  },
+  {
+    "name": "Mission: Al's Space Land - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl_race"
+  },
+  {
+    "name": "Mission: Al's Space Land - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl_hamm"
+  },
+  {
+    "name": "Mission: Al's Space Land - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl_boss"
+  },
+  {
+    "name": "Mission: Al's Space Land - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl_hidden"
+  },
+  {
+    "name": "Mission: Al's Space Land - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_asl_missing_toys"
+  },
+  {
+    "name": "Mission: Elevator Hop - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_race"
+  },
+  {
+    "name": "Mission: Elevator Hop - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_hamm"
+  },
+  {
+    "name": "Mission: Elevator Hop - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_boss"
+  },
+  {
+    "name": "Mission: Elevator Hop - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_hidden"
+  },
+  {
+    "name": "Mission: Elevator Hop - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_missing_toys"
+  },
+  {
+    "name": "Mission: Elevator Hop - Give Potato Head His Foot",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_eh_potato_head"
+  },
+  {
+    "name": "Mission: Al's Penthouse - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap_race"
+  },
+  {
+    "name": "Mission: Al's Penthouse - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap_hamm"
+  },
+  {
+    "name": "Mission: Al's Penthouse - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap_boss"
+  },
+  {
+    "name": "Mission: Al's Penthouse - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap_hidden"
+  },
+  {
+    "name": "Mission: Al's Penthouse - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ap_missing_toys"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_race"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_hamm"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_boss"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_hidden"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_missing_toys"
+  },
+  {
+    "name": "Mission: Airport Infiltration - Give Potato Head His Mouth",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_ai_potato_head"
+  },
+  {
+    "name": "Mission: Tarmac Trouble - Race Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt_race"
+  },
+  {
+    "name": "Mission: Tarmac Trouble - Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt_hamm"
+  },
+  {
+    "name": "Mission: Tarmac Trouble - Boss Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt_boss"
+  },
+  {
+    "name": "Mission: Tarmac Trouble - Hidden Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt_hidden"
+  },
+  {
+    "name": "Mission: Tarmac Trouble - Missing Toys Token",
+    "type": "toggle",
+    "img": "images/ICONS/Collectables/Mission Star.png",
+    "codes": "msn_tt_missing_toys"
   }
 ]

@@ -168,6 +168,8 @@
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,pole_vault",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb,pole_vault",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb,pole_vault",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -182,6 +184,8 @@
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -360,6 +364,8 @@
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -377,6 +383,8 @@
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -394,6 +402,8 @@
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb",
           "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
           "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -11452,6 +11462,8 @@
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,double_jump,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
@@ -11468,6 +11480,8 @@
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,double_jump,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
@@ -11649,8 +11663,12 @@
           "$gating_ok|als_toy_barn,double_jump,gadget_als_toy_barn_rocket_boots,stomp",
           "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
+          "unlock_als_toy_barn,ledge_grab,pole_vault,rope_sliding",
+          "$gating_ok|als_toy_barn,ledge_grab,pole_vault,rope_sliding",
           "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault",
           "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault",
+          "unlock_als_toy_barn,$skips_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,ledge_grab,stomp",
           "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,pole_vault,rope_sliding"
         ],
@@ -13782,12 +13800,18 @@
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push,spin",
           "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push,stomp",
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push,stomp",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab,pole_climb",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab,pole_climb",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb,spin",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb,spin",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb,stomp",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb,stomp",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,laser,pole_climb,push",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,laser,pole_climb,push",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,spin",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,spin",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,stomp",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,stomp",
           "unlock_als_space_land,$skips_hard,double_jump,laser,pole_climb",
           "$gating_ok|als_space_land,$skips_hard,double_jump,laser,pole_climb",
           "unlock_als_space_land,$skips_hard,double_jump,pole_climb,spin",
@@ -13816,8 +13840,10 @@
         "access_rules": [
           "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push",
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
           "unlock_als_space_land,$skips_hard,double_jump,pole_climb",
           "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb"
         ],
@@ -13830,8 +13856,10 @@
         "access_rules": [
           "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push",
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
           "unlock_als_space_land,$skips_hard,double_jump,pole_climb",
           "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb"
         ],
@@ -13895,8 +13923,10 @@
         "access_rules": [
           "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push",
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push",
-          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,pole_climb",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push",
           "unlock_als_space_land,$skips_hard,double_jump,pole_climb",
           "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb"
         ],
@@ -13939,7 +13969,9 @@
           "unlock_als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding",
           "$gating_ok|als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding",
           "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
-          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab"
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_als_space_land,$skips_hard,double_jump",
+          "$gating_ok|als_space_land,$skips_hard,double_jump"
         ],
         "visibility_rules": [
           "set_batterysanity"
@@ -18439,8 +18471,8 @@
           "$gating_ok|als_penthouse,double_jump,ledge_grab,push",
           "unlock_als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
           "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
-          "unlock_als_penthouse,$skips_hard,double_jump",
-          "$gating_ok|als_penthouse,$skips_hard,double_jump"
+          "unlock_als_penthouse,$skips_hard",
+          "$gating_ok|als_penthouse,$skips_hard"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Critter.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Critter.png"
@@ -18468,8 +18500,8 @@
           "$gating_ok|als_penthouse,double_jump,ledge_grab,push",
           "unlock_als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
           "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
-          "unlock_als_penthouse,$skips_hard,double_jump",
-          "$gating_ok|als_penthouse,$skips_hard,double_jump"
+          "unlock_als_penthouse,$skips_hard",
+          "$gating_ok|als_penthouse,$skips_hard"
         ],
         "visibility_rules": [
           "set_hintblocksanity"
@@ -40540,6 +40572,2277 @@
         "restrict_visibility_rules": [
           "$coins_individual"
         ]
+      }
+    ]
+  },
+  {
+    "name": "AH Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house",
+          "$gating_ok|andys_house"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house,double_jump,$hamm_mission|0|coin_andys_house",
+          "$gating_ok|andys_house,double_jump,$hamm_mission|0|coin_andys_house",
+          "unlock_andys_house,ledge_grab,$hamm_mission|0|coin_andys_house",
+          "$gating_ok|andys_house,ledge_grab,$hamm_mission|0|coin_andys_house",
+          "unlock_andys_house,pole_climb,$hamm_mission|0|coin_andys_house",
+          "$gating_ok|andys_house,pole_climb,$hamm_mission|0|coin_andys_house",
+          "unlock_andys_house,$skips_easy_or_hard,$hamm_mission|0|coin_andys_house",
+          "$gating_ok|andys_house,$skips_easy_or_hard,$hamm_mission|0|coin_andys_house"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house,laser,pole_climb",
+          "$gating_ok|andys_house,laser,pole_climb",
+          "unlock_andys_house,pole_climb,spin",
+          "$gating_ok|andys_house,pole_climb,spin",
+          "unlock_andys_house,$skips_easy_or_hard,pole_climb,stomp",
+          "$gating_ok|andys_house,$skips_easy_or_hard,pole_climb,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house,double_jump,ledge_grab,pole_climb,push",
+          "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb,push",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab,push",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab,push",
+          "unlock_andys_house,$skips_insane,double_jump,ledge_grab",
+          "$gating_ok|andys_house,$skips_insane,double_jump,ledge_grab"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house,pole_climb,sheep:5",
+          "$gating_ok|andys_house,pole_climb,sheep:5",
+          "unlock_andys_house,double_jump,ledge_grab,sheep:5",
+          "$gating_ok|andys_house,double_jump,ledge_grab,sheep:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_missing_toys"
+        ]
+      },
+      {
+        "name": "Give Potato Head His Ear",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_house,missing_ear",
+          "$gating_ok|andys_house,missing_ear"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ah_potato_head"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 300,
+        "y": 96,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 354,
+        "y": 724,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 432,
+        "y": 375,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 1284,
+        "y": 348,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 642,
+        "y": 982,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 800,
+        "y": 310,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "AH Mission - Give Potato Head His Ear",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 249,
+        "y": 828,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ah_potato_head"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH Missions/Give Potato Head His Ear"
+      }
+    ]
+  },
+  {
+    "name": "AN Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_neighborhood,gadget_andys_neighborhood_rocket_boots",
+          "$gating_ok|andys_neighborhood,gadget_andys_neighborhood_rocket_boots",
+          "unlock_andys_neighborhood,$skips_hard",
+          "$gating_ok|andys_neighborhood,$skips_hard"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_an_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_neighborhood,double_jump,ledge_grab,pole_climb,$hamm_mission|1|coin_andys_neighborhood",
+          "$gating_ok|andys_neighborhood,double_jump,ledge_grab,pole_climb,$hamm_mission|1|coin_andys_neighborhood",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,$hamm_mission|1|coin_andys_neighborhood",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,$hamm_mission|1|coin_andys_neighborhood"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_an_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_neighborhood,double_jump,laser,ledge_grab,pole_climb,pole_vault",
+          "$gating_ok|andys_neighborhood,double_jump,laser,ledge_grab,pole_climb,pole_vault",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,double_jump,laser,pole_climb,pole_vault",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,double_jump,laser,pole_climb,pole_vault",
+          "unlock_andys_neighborhood,$skips_hard,double_jump,laser,pole_climb",
+          "$gating_ok|andys_neighborhood,$skips_hard,double_jump,laser,pole_climb",
+          "unlock_andys_neighborhood,$skips_insane,double_jump,pole_climb,spin",
+          "$gating_ok|andys_neighborhood,$skips_insane,double_jump,pole_climb,spin"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_an_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_neighborhood,stomp,double_jump",
+          "$gating_ok|andys_neighborhood,stomp,double_jump",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,stomp,ledge_grab",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,stomp,ledge_grab",
+          "unlock_andys_neighborhood,$skips_hard,double_jump,pole_climb",
+          "$gating_ok|andys_neighborhood,$skips_hard,double_jump,pole_climb",
+          "unlock_andys_neighborhood,$skips_insane,gadget_andys_neighborhood_rocket_boots,double_jump",
+          "$gating_ok|andys_neighborhood,$skips_insane,gadget_andys_neighborhood_rocket_boots,double_jump"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_an_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_andys_neighborhood,soldier:5",
+          "$gating_ok|andys_neighborhood,soldier:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_an_missing_toys"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 643,
+        "y": 96,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AN Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 833,
+        "y": 573,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AN Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AN Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 530,
+        "y": 449,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AN Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "AN Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 443,
+        "y": 242,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AN Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "AN Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 492,
+        "y": 832,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AN Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "AN Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 978,
+        "y": 964,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_an_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AN Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "CY Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,double_jump,ledge_grab",
+          "$gating_ok|construction_yard,double_jump,ledge_grab",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,$hamm_mission|2|coin_construction_yard,double_jump,ledge_grab,push",
+          "$gating_ok|construction_yard,$hamm_mission|2|coin_construction_yard,double_jump,ledge_grab,push",
+          "unlock_construction_yard,$skips_easy_or_hard,$hamm_mission|2|coin_construction_yard,double_jump",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,$hamm_mission|2|coin_construction_yard,double_jump"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,double_jump,gadget_construction_yard_disc_launcher,ledge_grab,pole_climb,stomp",
+          "$gating_ok|construction_yard,double_jump,gadget_construction_yard_disc_launcher,ledge_grab,pole_climb,stomp",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,gadget_construction_yard_disc_launcher",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,gadget_construction_yard_disc_launcher"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,double_jump,ledge_grab,pole_climb,push,stomp",
+          "$gating_ok|construction_yard,double_jump,ledge_grab,pole_climb,push,stomp",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,ledge_grab,push,stomp",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,ledge_grab,push,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,double_jump,worker_tike:5",
+          "$gating_ok|construction_yard,double_jump,worker_tike:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_missing_toys"
+        ]
+      },
+      {
+        "name": "Give Potato Head His Eye",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_construction_yard,missing_eye",
+          "$gating_ok|construction_yard,missing_eye"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_cy_potato_head"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 990,
+        "y": 96,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 484,
+        "y": 392,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 463,
+        "y": 762,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 1042,
+        "y": 944,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 1164,
+        "y": 713,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 869,
+        "y": 762,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "CY Mission - Give Potato Head His Eye",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 1164,
+        "y": 509,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_cy_potato_head"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY Missions/Give Potato Head His Eye"
+      }
+    ]
+  },
+  {
+    "name": "AaG Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_alleys_and_gullies,double_jump,ledge_grab,push",
+          "$gating_ok|alleys_and_gullies,double_jump,ledge_grab,push"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_aag_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_alleys_and_gullies,$hamm_mission|3|coin_alleys_and_gullies,double_jump,rope_sliding",
+          "$gating_ok|alleys_and_gullies,$hamm_mission|3|coin_alleys_and_gullies,double_jump,rope_sliding",
+          "unlock_alleys_and_gullies,$hamm_mission|3|coin_alleys_and_gullies,ledge_grab,rope_sliding",
+          "$gating_ok|alleys_and_gullies,$hamm_mission|3|coin_alleys_and_gullies,ledge_grab,rope_sliding"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_aag_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,laser,pole_climb,rope_sliding,visor",
+          "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,laser,pole_climb,rope_sliding,visor",
+          "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,stomp,visor",
+          "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,stomp,visor",
+          "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,spin,visor",
+          "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,spin,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_aag_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_alleys_and_gullies,double_jump,ledge_grab,pole_climb,pole_vault,rope_sliding,stomp",
+          "$gating_ok|alleys_and_gullies,double_jump,ledge_grab,pole_climb,pole_vault,rope_sliding,stomp",
+          "unlock_alleys_and_gullies,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding,stomp",
+          "$gating_ok|alleys_and_gullies,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding,stomp",
+          "unlock_alleys_and_gullies,$skips_hard,double_jump,ledge_grab,rope_sliding",
+          "$gating_ok|alleys_and_gullies,$skips_hard,double_jump,ledge_grab,rope_sliding"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_aag_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_alleys_and_gullies,duck:5",
+          "$gating_ok|alleys_and_gullies,duck:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_aag_missing_toys"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1320,
+        "y": 96,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AaG Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 1037,
+        "y": 205,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AaG Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AaG Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 558,
+        "y": 967,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AaG Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "AaG Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 693,
+        "y": 209,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AaG Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "AaG Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 372,
+        "y": 1042,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AaG Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "AaG Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 709,
+        "y": 589,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_aag_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AaG Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "ATB Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
+          "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
+          "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,$hamm_mission|4|coin_als_toy_barn,double_jump,ledge_grab",
+          "$gating_ok|als_toy_barn,$hamm_mission|4|coin_als_toy_barn,double_jump,ledge_grab",
+          "unlock_als_toy_barn,$hamm_mission|4|coin_als_toy_barn,pole_climb",
+          "$gating_ok|als_toy_barn,$hamm_mission|4|coin_als_toy_barn,pole_climb",
+          "unlock_als_toy_barn,$hamm_mission|4|coin_als_toy_barn,gadget_als_toy_barn_hover_boots",
+          "$gating_ok|als_toy_barn,$hamm_mission|4|coin_als_toy_barn,gadget_als_toy_barn_hover_boots"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,double_jump,pole_climb,ledge_grab,laser",
+          "$gating_ok|als_toy_barn,double_jump,pole_climb,ledge_grab,laser",
+          "unlock_als_toy_barn,double_jump,pole_climb,ledge_grab,spin",
+          "$gating_ok|als_toy_barn,double_jump,pole_climb,ledge_grab,spin",
+          "unlock_als_toy_barn,double_jump,pole_climb,ledge_grab,stomp",
+          "$gating_ok|als_toy_barn,double_jump,pole_climb,ledge_grab,stomp",
+          "unlock_als_toy_barn,double_jump,pole_climb,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "$gating_ok|als_toy_barn,double_jump,pole_climb,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,laser",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,laser",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,spin",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,spin",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,stomp",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,stomp",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,pole_climb,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,laser",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,laser",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,gadget_als_toy_barn_disc_launcher",
+          "unlock_als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,laser",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,laser",
+          "unlock_als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,spin",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,spin",
+          "unlock_als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,stomp",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,stomp",
+          "unlock_als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,gadget_als_toy_barn_disc_launcher",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,gadget_als_toy_barn_disc_launcher"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_disc_launcher,ledge_grab",
+          "$gating_ok|als_toy_barn,double_jump,gadget_als_toy_barn_disc_launcher,ledge_grab"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,chick:5",
+          "$gating_ok|als_toy_barn,chick:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_missing_toys"
+        ]
+      },
+      {
+        "name": "Give Potato Head His Arm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_toy_barn,double_jump,missing_arm",
+          "$gating_ok|als_toy_barn,double_jump,missing_arm"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_atb_potato_head"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1562,
+        "y": 96,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 874,
+        "y": 280,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 1042,
+        "y": 345,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 320,
+        "y": 317,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 1119,
+        "y": 266,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 673,
+        "y": 713,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "ATB Mission - Give Potato Head His Arm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 563,
+        "y": 936,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_atb_potato_head"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB Missions/Give Potato Head His Arm"
+      }
+    ]
+  },
+  {
+    "name": "ASL Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_space_land,double_jump,ledge_grab,rope_sliding",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,rope_sliding"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_asl_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding,$hamm_mission|5|coin_als_space_land",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding,$hamm_mission|5|coin_als_space_land",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,$hamm_mission|5|coin_als_space_land",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,$hamm_mission|5|coin_als_space_land"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_asl_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_space_land,double_jump,laser,ledge_grab,pole_climb,push",
+          "$gating_ok|als_space_land,double_jump,laser,ledge_grab,pole_climb,push",
+          "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push,spin",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push,spin",
+          "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push,stomp",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push,stomp",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,laser,ledge_grab",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,laser,pole_climb,push",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,laser,pole_climb,push",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,spin",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,spin",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,stomp",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,stomp",
+          "unlock_als_space_land,$skips_hard,double_jump,laser,pole_climb",
+          "$gating_ok|als_space_land,$skips_hard,double_jump,laser,pole_climb",
+          "unlock_als_space_land,$skips_hard,double_jump,pole_climb,spin",
+          "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb,spin",
+          "unlock_als_space_land,$skips_hard,double_jump,pole_climb,stomp",
+          "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_asl_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_space_land,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,stomp",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,stomp",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_asl_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_space_land,alien:5",
+          "$gating_ok|als_space_land,alien:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_asl_missing_toys"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 308,
+        "y": 426,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASL Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 731,
+        "y": 148,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "ASL Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 141,
+        "y": 603,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "ASL Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 1071,
+        "y": 930,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "ASL Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 202,
+        "y": 873,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "ASL Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 1002,
+        "y": 600,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_asl_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "EH Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,double_jump,ledge_grab,pole_vault,$hamm_mission|6|coin_elevator_hop",
+          "$gating_ok|elevator_hop,double_jump,ledge_grab,pole_vault,$hamm_mission|6|coin_elevator_hop",
+          "unlock_elevator_hop,$skips_easy_or_hard,double_jump,pole_vault,$hamm_mission|6|coin_elevator_hop",
+          "$gating_ok|elevator_hop,$skips_easy_or_hard,double_jump,pole_vault,$hamm_mission|6|coin_elevator_hop"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,laser,stomp,visor",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,laser,stomp,visor",
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,spin,stomp,visor",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,spin,stomp,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,gadget_elevator_hop_grappling_hook,mouse:5,visor",
+          "$gating_ok|elevator_hop,gadget_elevator_hop_grappling_hook,mouse:5,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_missing_toys"
+        ]
+      },
+      {
+        "name": "Give Potato Head His Foot",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_elevator_hop,missing_foot",
+          "$gating_ok|elevator_hop,missing_foot"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_eh_potato_head"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 607,
+        "y": 429,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EH Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 1257,
+        "y": 467,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "EH Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 235,
+        "y": 806,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "EH Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 1083,
+        "y": 884,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "EH Mission - Hidden Token + Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 628,
+        "y": 354,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh_hidden",
+          "msn_eh_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH Missions/Hidden Token"
+      },
+      {
+        "ref": "EH Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "EH Mission - Give Potato Head His Foot",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 814,
+        "y": 847,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_eh_potato_head"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH Missions/Give Potato Head His Foot"
+      }
+    ]
+  },
+  {
+    "name": "AP Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_penthouse,ledge_grab",
+          "$gating_ok|als_penthouse,ledge_grab",
+          "unlock_als_penthouse,$skips_easy_or_hard,double_jump",
+          "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ap_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_penthouse,$hamm_mission|7|coin_als_penthouse,laser,visor",
+          "$gating_ok|als_penthouse,$hamm_mission|7|coin_als_penthouse,laser,visor",
+          "unlock_als_penthouse,$hamm_mission|7|coin_als_penthouse,double_jump,laser",
+          "$gating_ok|als_penthouse,$hamm_mission|7|coin_als_penthouse,double_jump,laser",
+          "unlock_als_penthouse,$skips_easy_or_hard,$hamm_mission|7|coin_als_penthouse,spin",
+          "$gating_ok|als_penthouse,$skips_easy_or_hard,$hamm_mission|7|coin_als_penthouse,spin",
+          "unlock_als_penthouse,$skips_easy_or_hard,$hamm_mission|7|coin_als_penthouse,double_jump,ledge_grab,stomp",
+          "$gating_ok|als_penthouse,$skips_easy_or_hard,$hamm_mission|7|coin_als_penthouse,double_jump,ledge_grab,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ap_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_penthouse,double_jump,ledge_grab,push,spin",
+          "$gating_ok|als_penthouse,double_jump,ledge_grab,push,spin",
+          "unlock_als_penthouse,double_jump,ledge_grab,push,stomp",
+          "$gating_ok|als_penthouse,double_jump,ledge_grab,push,stomp",
+          "unlock_als_penthouse,double_jump,laser,ledge_grab,push",
+          "$gating_ok|als_penthouse,double_jump,laser,ledge_grab,push"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ap_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_penthouse,double_jump,ledge_grab,push,stomp",
+          "$gating_ok|als_penthouse,double_jump,ledge_grab,push,stomp",
+          "unlock_als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
+          "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,push",
+          "unlock_als_penthouse,$skips_hard,double_jump",
+          "$gating_ok|als_penthouse,$skips_hard,double_jump"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ap_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_als_penthouse,critter:5,double_jump,laser,visor",
+          "$gating_ok|als_penthouse,critter:5,double_jump,laser,visor"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ap_missing_toys"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 970,
+        "y": 426,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AP Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 707,
+        "y": 806,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AP Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 193,
+        "y": 525,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "AP Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 1252,
+        "y": 363,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "AP Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 1102,
+        "y": 806,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "AP Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 439,
+        "y": 806,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ap_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "AI Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,double_jump,ledge_grab,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,ledge_grab,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,$hamm_mission|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$hamm_mission|8|coin_airport_infiltration,double_jump,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,$hamm_mission|8|coin_airport_infiltration,double_jump,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,$hamm_mission|8|coin_airport_infiltration,double_jump,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,double_jump,gadget_airport_infiltration_hover_boots,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,gadget_airport_infiltration_hover_boots,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,double_jump,passenger_tike:5,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,double_jump,passenger_tike:5,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,double_jump,passenger_tike:5,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,passenger_tike:5,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_missing_toys"
+        ]
+      },
+      {
+        "name": "Give Potato Head His Mouth",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_airport_infiltration,double_jump,missing_mouth,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,double_jump,missing_mouth,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_hard,double_jump,missing_mouth,stomp",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,missing_mouth,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_ai_potato_head"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1276,
+        "y": 424,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 943,
+        "y": 543,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 500,
+        "y": 935,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 255,
+        "y": 395,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 1264,
+        "y": 472,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 1505,
+        "y": 279,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "AI Mission - Give Potato Head His Mouth",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 96,
+        "y": 570,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_ai_potato_head"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI Missions/Give Potato Head His Mouth"
+      }
+    ]
+  },
+  {
+    "name": "TT Missions",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Race Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_tarmac_trouble",
+          "$gating_ok|tarmac_trouble"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_tt_race"
+        ]
+      },
+      {
+        "name": "Hamm",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_tarmac_trouble,$hamm_mission|9|coin_tarmac_trouble",
+          "$gating_ok|tarmac_trouble,$hamm_mission|9|coin_tarmac_trouble"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_tt_hamm"
+        ]
+      },
+      {
+        "name": "Boss Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_tarmac_trouble,double_jump,pole_climb,spin",
+          "$gating_ok|tarmac_trouble,double_jump,pole_climb,spin",
+          "unlock_tarmac_trouble,double_jump,pole_climb,stomp",
+          "$gating_ok|tarmac_trouble,double_jump,pole_climb,stomp",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,spin",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,stomp",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,spin",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,spin",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,stomp",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_tt_boss"
+        ]
+      },
+      {
+        "name": "Hidden Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_tarmac_trouble,double_jump,ledge_grab,pole_climb,stomp",
+          "$gating_ok|tarmac_trouble,double_jump,ledge_grab,pole_climb,stomp",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb,stomp",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,pole_climb,stomp",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,stomp",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,stomp",
+          "unlock_tarmac_trouble,$skips_insane,ledge_grab,pole_climb,stomp",
+          "$gating_ok|tarmac_trouble,$skips_insane,ledge_grab,pole_climb,stomp"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_tt_hidden"
+        ]
+      },
+      {
+        "name": "Missing Toys Token",
+        "item_count": 1,
+        "access_rules": [
+          "unlock_tarmac_trouble,luggage:5",
+          "$gating_ok|tarmac_trouble,luggage:5"
+        ],
+        "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+        "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+        "visibility_rules": [
+          "msn_tt_missing_toys"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1530,
+        "y": 430,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TT Mission - Race Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 811,
+        "y": 603,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt_race"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT Missions/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "TT Mission - Hamm",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 989,
+        "y": 968,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt_hamm"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT Missions/Hamm"
+      }
+    ]
+  },
+  {
+    "name": "TT Mission - Boss Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 485,
+        "y": 786,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt_boss"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT Missions/Boss Token"
+      }
+    ]
+  },
+  {
+    "name": "TT Mission - Hidden Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 673,
+        "y": 224,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt_hidden"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT Missions/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "TT Mission - Missing Toys Token",
+    "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 1182,
+        "y": 442,
+        "size": 12,
+        "shape": "trapezoid",
+        "restrict_visibility_rules": [
+          "msn_tt_missing_toys"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT Missions/Missing Toys Token"
       }
     ]
   }
