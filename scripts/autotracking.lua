@@ -40,6 +40,7 @@ local AP_ITEM_TO_CODE = {
   ["Final Showdown Ticket"] = "final_showdown_ticket",
   ["Final Showdown Unlock"] = "unlock_final_showdown",
   ["Mission Star"] = "mission_star",
+  ["Progressive Battery Capacity"] = "battery_capacity",
   ["Grappling Hook - Alleys and Gullies"] = "gadget_alleys_and_gullies_grappling_hook",
   ["Grappling Hook - Elevator Hop"] = "gadget_elevator_hop_grappling_hook",
   ["Hover Boots - Airport Infiltration"] = "gadget_airport_infiltration_hover_boots",
@@ -77,6 +78,7 @@ local AP_ITEM_TO_CODE = {
 -- which of those codes are consumables (count) vs toggles (on/off)
 local CONSUMABLE = {
   ["mission_star"] = true,
+  ["battery_capacity"] = true,
   ["alien"] = true,
   ["chick"] = true,
   ["coin_airport_infiltration"] = true,
@@ -104,6 +106,7 @@ local CONSUMABLE = {
 }
 -- every auto-filled code, reset on (re)connect
 local ALL_CODES = {
+  "battery_capacity",
   "alien",
   "chick",
   "coin_airport_infiltration",
@@ -509,7 +512,17 @@ end
 -- The client should DataStorage-Set this key to the tab title to switch to,
 -- e.g. "Andy's House", "Bosses", or "Level Select".
 local LEVEL_KEY = nil
-local function activateTab(v) if v and v~="" then pcall(function() Tracker:UiHint("ActivateTab", tostring(v)) end) end end
+-- The "Auto Tab" setting (settings popup, Tracker group) turns this off: its
+-- first stage (set_autotab) is On, the second (set_autotab_off) is Off.
+local function autotabOn()
+  local o = Tracker:FindObjectForCode("set_autotab")
+  return not (o and o.CurrentStage == 1)
+end
+local function activateTab(v)
+  if v and v~="" and autotabOn() then
+    pcall(function() Tracker:UiHint("ActivateTab", tostring(v)) end)
+  end
+end
 
 -- ---- hint highlighting --------------------------------------------------
 -- Glow locations that have been hinted on AP. Hints live in AP data storage
