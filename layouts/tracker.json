@@ -41,7 +41,8 @@
         [
          "pizza_planet_token",
          "final_showdown_ticket",
-         "mission_star"
+         "mission_star",
+         "battery_capacity"
         ]
        ]
       }
@@ -423,6 +424,19 @@
       [
        "set_omit_airport",
        "set_omit_elevator"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
+    "header": "Tracker",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_autotab"
       ]
      ]
     }

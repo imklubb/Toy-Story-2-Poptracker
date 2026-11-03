@@ -93,6 +93,15 @@
     "initial_quantity": 0
   },
   {
+    "name": "Progressive Battery Capacity",
+    "type": "consumable",
+    "img": "images/ICONS/Collectables/Battery.png",
+    "codes": "battery_capacity",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "initial_quantity": 0
+  },
+  {
     "name": "Green Laser",
     "type": "toggle",
     "img": "images/ICONS/Collectables/Green Laser.png",
@@ -1299,5 +1308,23 @@
     "type": "toggle",
     "img": "images/ICONS/Collectables/Mission Star.png",
     "codes": "msn_tt_missing_toys"
+  },
+  {
+    "name": "Auto Tab",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Auto Tab On.png",
+        "codes": "set_autotab",
+        "name": "Auto Tab On"
+      },
+      {
+        "img": "images/ICONS/Misc/Auto Tab Off.png",
+        "codes": "set_autotab_off",
+        "name": "Auto Tab Off"
+      }
+    ]
   }
 ]
