@@ -476,8 +476,10 @@
         "access_rules": [
           "unlock_andys_house,double_jump,ledge_grab,pole_climb",
           "$gating_ok|andys_house,double_jump,ledge_grab,pole_climb",
-          "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
-          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump",
+          "unlock_andys_house,$skips_easy_or_hard,ledge_grab",
+          "$gating_ok|andys_house,$skips_easy_or_hard,ledge_grab",
           "unlock_andys_house,$skips_hard,double_jump",
           "$gating_ok|andys_house,$skips_hard,double_jump"
         ],
@@ -11458,8 +11460,8 @@
         "access_rules": [
           "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
-          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
-          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "unlock_als_toy_barn,$skips_hard,double_jump,rope_sliding",
@@ -11476,8 +11478,8 @@
         "access_rules": [
           "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
-          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
-          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "unlock_als_toy_barn,$skips_hard,double_jump,rope_sliding",
@@ -41487,10 +41489,12 @@
         "access_rules": [
           "unlock_als_toy_barn,double_jump,pole_vault,rope_sliding",
           "$gating_ok|als_toy_barn,double_jump,pole_vault,rope_sliding",
-          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
-          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,rope_sliding",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab",
           "unlock_als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
           "$gating_ok|als_toy_barn,$skips_hard,double_jump,gadget_als_toy_barn_rocket_boots",
+          "unlock_als_toy_barn,$skips_hard,double_jump,rope_sliding",
+          "$gating_ok|als_toy_barn,$skips_hard,double_jump,rope_sliding",
           "unlock_als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding",
           "$gating_ok|als_toy_barn,$skips_hard,gadget_als_toy_barn_hover_boots,ledge_grab,rope_sliding"
         ],
