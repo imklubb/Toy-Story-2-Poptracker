@@ -6161,8 +6161,8 @@
         "access_rules": [
           "unlock_construction_yard,double_jump,ledge_grab",
           "$gating_ok|construction_yard,double_jump,ledge_grab",
-          "unlock_construction_yard,$skips_easy_or_hard,double_jump",
-          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump"
+          "unlock_construction_yard,$skips_easy_or_hard",
+          "$gating_ok|construction_yard,$skips_easy_or_hard"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png"
@@ -41044,8 +41044,8 @@
         "access_rules": [
           "unlock_construction_yard,double_jump,ledge_grab",
           "$gating_ok|construction_yard,double_jump,ledge_grab",
-          "unlock_construction_yard,$skips_easy_or_hard,double_jump",
-          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump"
+          "unlock_construction_yard,$skips_easy_or_hard",
+          "$gating_ok|construction_yard,$skips_easy_or_hard"
         ],
         "chest_unopened_img": "images/ICONS/Collectables/Mission Star.png",
         "chest_opened_img": "images/ICONS_DIM/Collectables/Mission Star.png",
