@@ -557,12 +557,10 @@
         "name": "Hint Block (Andy's Room Bookshelf)",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house,double_jump,ledge_grab",
-          "$gating_ok|andys_house,double_jump,ledge_grab",
-          "unlock_andys_house,$skips_easy_or_hard,double_jump",
-          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump",
-          "unlock_andys_house,$skips_easy_or_hard,ledge_grab",
-          "$gating_ok|andys_house,$skips_easy_or_hard,ledge_grab"
+          "unlock_andys_house,double_jump",
+          "$gating_ok|andys_house,double_jump",
+          "unlock_andys_house,ledge_grab",
+          "$gating_ok|andys_house,ledge_grab"
         ],
         "visibility_rules": [
           "set_hintblocksanity"
