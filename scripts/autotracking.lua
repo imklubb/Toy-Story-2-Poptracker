@@ -104,8 +104,10 @@ local CONSUMABLE = {
   ["soldier"] = true,
   ["worker_tike"] = true,
 }
--- every auto-filled code, reset on (re)connect
+-- every auto-filled code, reset on (re)connect. Every CONSUMABLE must be here:
+-- one left out keeps counting up across reconnects (3.1.3: Mission Star was).
 local ALL_CODES = {
+  "mission_star",
   "battery_capacity",
   "alien",
   "chick",
@@ -246,6 +248,16 @@ local LI_BY_AB = {AH=0,AN=1,CY=2,AaG=3,ATB=4,ASL=5,EH=6,AP=7,AI=8,TT=9}
 -- wallet table is empty, and in the other two the wallet is exact while the
 -- location count is the undercount.
 local WALLET_COLLECTED = {}    -- ab -> { [coin index] = true }, from DataStorage
+local WALLET_RAW = {}          -- storage key -> its last value (there can be two keys)
+
+-- Coinsanity with a CHECK bundle size other than 1 ("bundled"). The checks are
+-- "Coin Bundle N" milestones, but since 3.1.2 the per-coin pins show too, as a
+-- map of which coins you have and haven't picked up -- filled in from the
+-- client's DataStorage record of every coin, not from the bundle checks.
+local function coins_bundled_mode()
+  return SETTINGS and tonumber(SETTINGS.coinsanity or 0) ~= 0
+     and tonumber(SETTINGS.coinsanity_checks_bundle_size or 1) ~= 1
+end
 
 -- The badge counts coins that are BOTH reachable and not yet collected, one coin
 -- at a time.
@@ -292,23 +304,49 @@ end
 local function resetCoinsRemaining()
   COINS_COLLECTED, COIN_COUNTED = {}, {}
   WALLET_COLLECTED = {}
+  WALLET_RAW = {}
   recomputeCoinCounts()
 end
 
--- The DataStorage value is { ["<li>"] = { coin indices }, ... }. Keep the
--- indices: which coins they are is exactly what the badge needs.
-local function applyWallet(value)
+-- The DataStorage value comes in two shapes, and both can be in play:
+--   3.1.0+  { ["<li>:<idx>"] = 1, ... }   one entry per coin
+--   3.0.0   { ["<li>"] = { idx, ... }, ... }
+-- and since 3.1.2 the key is scoped by seed, with the old un-scoped key read
+-- too (the client still merges it). Everything from every key is unioned.
+-- Keep the indices: which coins they are is exactly what the badge needs.
+local function applyWallet(key, value)
+  WALLET_RAW[key] = value
   WALLET_COLLECTED = {}
-  if type(value) == "table" then
-    for li_s, idxs in pairs(value) do
-      local ab = AB_BY_LI[tonumber(li_s) or -1]
-      if ab and type(idxs) == "table" then
-        local set = {}
-        for _, v in pairs(idxs) do
-          local i = tonumber(v)
-          if i then set[i] = true end
+  local function add(li, i)
+    local ab = AB_BY_LI[tonumber(li) or -1]
+    i = tonumber(i)
+    if ab and i then
+      WALLET_COLLECTED[ab] = WALLET_COLLECTED[ab] or {}
+      WALLET_COLLECTED[ab][i] = true
+    end
+  end
+  for _, v in pairs(WALLET_RAW) do
+    if type(v) == "table" then
+      for k, x in pairs(v) do
+        local li, i = tostring(k):match("^(%d+):(%d+)$")
+        if li then
+          add(li, i)
+        elseif type(x) == "table" then
+          for _, idx in pairs(x) do add(k, idx) end
         end
-        WALLET_COLLECTED[ab] = set
+      end
+    end
+  end
+  -- Bundled Coinsanity: grey out each coin's own pin as it is picked up.
+  if coins_bundled_mode() then
+    for ab, set in pairs(WALLET_COLLECTED) do
+      local r = COIN_RANGES[ab]
+      if r then
+        for i in pairs(set) do
+          local code = AP_LOC and AP_LOC[r[1] + i - 1]
+          local o = code and Tracker:FindObjectForCode(code)
+          if o then o.AvailableChestCount = 0 end
+        end
       end
     end
   end
@@ -323,19 +361,24 @@ local function clearLoc(id)
     local mo = Tracker:FindObjectForCode(mref)
     if mo then mo.AvailableChestCount = 0 end
   end
+  local was_desc = id >= DESC_OFFSET
   id = toBundleId(id)   -- size-1 sends descriptor ids; map them to the bundle id
+  local ab = coinLevelForId(id)
+  -- Bundled Coinsanity: "Coin Bundle N" is the Nth milestone, not coin N, so it
+  -- must not grey out coin N's own pin. Those pins come from the DataStorage
+  -- coin record instead (applyWallet).
+  local milestone = ab and coins_bundled_mode() and not was_desc
   local code = AP_LOC and AP_LOC[id]
-  if code then
+  if code and not milestone then
     local o = Tracker:FindObjectForCode(code)
     if o then o.AvailableChestCount = 0 end
   end
-  local ab = coinLevelForId(id)
   if ab then
     -- mirror the clear onto the parallel "Coin Bundle N" section (bundle-mode pins)
     local N = id - COIN_RANGES[ab][1] + 1
     local b = Tracker:FindObjectForCode("@"..ab.."/Coin Bundle "..N)
     if b then b.AvailableChestCount = 0 end
-    if not COIN_COUNTED[id] then
+    if not COIN_COUNTED[id] and not milestone then
       COIN_COUNTED[id] = true
       COINS_COLLECTED[ab] = COINS_COLLECTED[ab] or {}
       COINS_COLLECTED[ab][N] = true
@@ -501,6 +544,10 @@ local function applySettings(sd)
   recomputeCoinCounts()
 end
 
+-- The index of the last item counted. Items are counted up, not set, so the
+-- same item arriving twice (a resync after a dropped connection resends what
+-- was already delivered) would count twice. Reset on every clear.
+local LAST_ITEM_INDEX = -1
 local function resetItems()
   for _,code in ipairs(ALL_CODES) do
     local o=obj(code)
@@ -532,7 +579,7 @@ local HINTS_KEY = nil
 local hinted_codes = {}            -- section codes currently highlighted (for reset)
 
 -- ---- coin wallet (per-coin collected set, written by the AP client) -------
-local WALLET_KEY = nil
+local WALLET_KEYS = {}    -- storage key -> true
 
 -- AP HintStatus -> PopTracker Highlight. PopTracker exposes a global `Highlight`
 -- enum since it gained hint support (0.32.0); fall back to the raw AP status.
@@ -634,6 +681,7 @@ local function onClear(slot_data)
   local ok,err = pcall(function()
     clearHints()          -- wipe stale hint glow from any previously-tracked seed
     resetItems()
+    LAST_ITEM_INDEX = -1
     resetLocations()
     applySettings(slot_data)
     TS2_CHECKED = {}
@@ -651,9 +699,17 @@ local function onClear(slot_data)
     Archipelago:SetNotify({HINTS_KEY})
     -- The same key the client writes. SetNotify is what makes the counter tick
     -- down as coins are picked up rather than only on reconnect.
-    WALLET_KEY = "ts2_coins_"..tostring(team).."_"..tostring(Archipelago.PlayerNumber)
-    Archipelago:Get({WALLET_KEY})
-    Archipelago:SetNotify({WALLET_KEY})
+    -- 3.1.2: the client scopes the key by seed (slot_data carries the seed
+    -- name for exactly this), and still reads the old un-scoped one.
+    local wbase = "ts2_coins_"..tostring(team).."_"..tostring(Archipelago.PlayerNumber)
+    local wkeys = {wbase}
+    if slot_data and slot_data.seed_name and slot_data.seed_name ~= "" then
+      table.insert(wkeys, 1, wbase.."_"..tostring(slot_data.seed_name))
+    end
+    WALLET_KEYS = {}
+    for _, k in ipairs(wkeys) do WALLET_KEYS[k] = true end
+    Archipelago:Get(wkeys)
+    Archipelago:SetNotify(wkeys)
   end)
   if not ok then print("[TS2] onClear error: "..tostring(err)) end
 end
@@ -667,6 +723,10 @@ local TOY_BUNDLE_TO_CODE = {
   ["5 Passenger Tikes"]="passenger_tike", ["5 Luggage"]="luggage",
 }
 local function onItem(index, item_id, item_name, player)
+  if index ~= nil then
+    if index <= LAST_ITEM_INDEX then return end
+    LAST_ITEM_INDEX = index
+  end
   local bcode = TOY_BUNDLE_TO_CODE[item_name]
   if bcode then
     local bo = obj(bcode)
@@ -700,8 +760,8 @@ local function onStorage(key, value)
     activateTab(value)
   elseif key == HINTS_KEY then
     applyHints(value)
-  elseif key == WALLET_KEY then
-    applyWallet(value)
+  elseif WALLET_KEYS[key] then
+    applyWallet(key, value)
   end
 end
 local function onRetrieved(key, value)      onStorage(key, value) end

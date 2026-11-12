@@ -101,7 +101,12 @@ function skips_insane()       return (skips_value() >= 3) and 1 or 0 end
 -- its own check (show the per-group diamonds); anything else (5/10/15/20/25, or 0
 -- = "all") = bundled (show the single lump pin instead).
 function coins_individual()
-  return (Tracker:ProviderCountForCode("set_coin_check") == 1) and 1 or 0
+  if Tracker:ProviderCountForCode("set_coin_check") == 1 then return 1 end
+  -- 3.1.2: with a bigger check bundle size the per-coin pins still show, next
+  -- to the Coin Bundles pin, as a map of the coins not picked up yet (filled in
+  -- from the client's coin record, see applyWallet in autotracking.lua).
+  if SETTINGS and tonumber(SETTINGS.coinsanity or 0) ~= 0 then return 1 end
+  return 0
 end
 function coins_bundled()
   return (Tracker:ProviderCountForCode("set_coin_check") ~= 1) and 1 or 0
