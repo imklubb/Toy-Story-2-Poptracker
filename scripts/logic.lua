@@ -511,3 +511,35 @@ if ScriptHost and ScriptHost.AddWatchForCode then
   ScriptHost:AddWatchForCode("ts2_hamm_mirror_2", "set_hamm_2",
                              function() ts2_sync_hamm_mirror() end)
 end
+
+-- ── Rexsanity: Hide 'n Seek (3.2.0) ─────────────────────────────────────────
+-- The Rexsanity setting has three stages: Off, On (set_rexsanity), Hide 'n
+-- Seek (set_rex_hns, which also provides set_rexsanity). In Hide 'n Seek each
+-- level's Rex is in one of five hiding spots; the seed's pick comes from
+-- slot_data (REX_SPOTS, filled in by autotracking.lua, keyed by level slug).
+-- Each "Talk to Rex" section carries the default spot's rules with
+-- $rex_default and every hiding spot's rules with $rexspot|<level>|<n>, so the
+-- one that applies is the one shown. Not connected (spot unknown): any spot.
+REX_SPOTS = REX_SPOTS or {}
+function rex_hns() return (Tracker:ProviderCountForCode("set_rex_hns") or 0) > 0 end
+function rex_default() return rex_hns() and 0 or 1 end
+function rexspot(level, n)
+  if not rex_hns() then return 0 end
+  local s = REX_SPOTS[level]
+  if s == nil then return 1 end
+  return (tonumber(s) == tonumber(n)) and 1 or 0
+end
+
+-- The maps: in Hide 'n Seek every level map (and the level select) swaps to
+-- its _RexHide picture, with Rex peeking out of a corner where his pin sits.
+-- Loading a maps file again replaces the maps of the same names.
+local REX_MAPS_ON = false
+function ts2_sync_rex_maps()
+  local on = rex_hns()
+  if on == REX_MAPS_ON then return end
+  REX_MAPS_ON = on
+  Tracker:AddMaps(on and "maps/maps_rexhide.json" or "maps/maps.json")
+end
+if ScriptHost and ScriptHost.AddWatchForCode then
+  ScriptHost:AddWatchForCode("ts2_rex_maps", "set_rex_hns", function() ts2_sync_rex_maps() end)
+end

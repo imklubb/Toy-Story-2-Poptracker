@@ -807,9 +807,26 @@
   },
   {
     "name": "Rexsanity",
-    "type": "toggle",
-    "img": "images/ICONS/Collectables/Rex.png",
-    "codes": "set_rexsanity"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS_DIM/Collectables/Rex.png",
+        "codes": "set_rexsanity_off",
+        "name": "Rexsanity Off"
+      },
+      {
+        "img": "images/ICONS/Collectables/Rex.png",
+        "codes": "set_rexsanity",
+        "name": "Rexsanity On"
+      },
+      {
+        "img": "images/ICONS/Misc/Rex Hide n Seek.png",
+        "codes": "set_rex_hns",
+        "name": "Rexsanity: Hide 'n Seek"
+      }
+    ]
   },
   {
     "name": "Hint Block Sanity",

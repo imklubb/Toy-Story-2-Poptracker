@@ -408,7 +408,7 @@
        "set_lifesanity",
        "set_batterysanity",
        "set_greenlasersanity",
-       "set_rexsanity",
+       "set_rexsanity_off",
        "set_hintblocksanity"
       ]
      ]

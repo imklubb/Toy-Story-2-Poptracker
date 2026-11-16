@@ -544,8 +544,40 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_house",
-          "$gating_ok|andys_house"
+          "unlock_andys_house,$rex_default",
+          "$gating_ok|andys_house,$rex_default",
+          "unlock_andys_house,double_jump,pole_climb,push,rope_sliding,visor,$rexspot|andys_house|1",
+          "$gating_ok|andys_house,double_jump,pole_climb,push,rope_sliding,visor,$rexspot|andys_house|1",
+          "unlock_andys_house,ledge_grab,pole_climb,push,rope_sliding,visor,$rexspot|andys_house|1",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push,rope_sliding,visor,$rexspot|andys_house|1",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,$rexspot|andys_house|1",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,$rexspot|andys_house|1",
+          "unlock_andys_house,$skips_easy_or_hard,ledge_grab,pole_climb,push,$rexspot|andys_house|1",
+          "$gating_ok|andys_house,$skips_easy_or_hard,ledge_grab,pole_climb,push,$rexspot|andys_house|1",
+          "unlock_andys_house,double_jump,pole_climb,$rexspot|andys_house|2",
+          "$gating_ok|andys_house,double_jump,pole_climb,$rexspot|andys_house|2",
+          "unlock_andys_house,ledge_grab,pole_climb,push,$rexspot|andys_house|2",
+          "$gating_ok|andys_house,ledge_grab,pole_climb,push,$rexspot|andys_house|2",
+          "unlock_andys_house,double_jump,ledge_grab,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,double_jump,ledge_grab,$rexspot|andys_house|3",
+          "unlock_andys_house,double_jump,stomp,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,double_jump,stomp,$rexspot|andys_house|3",
+          "unlock_andys_house,ledge_grab,stomp,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,ledge_grab,stomp,$rexspot|andys_house|3",
+          "unlock_andys_house,pole_climb,stomp,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,pole_climb,stomp,$rexspot|andys_house|3",
+          "unlock_andys_house,$skips_easy_or_hard,stomp,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,$skips_easy_or_hard,stomp,$rexspot|andys_house|3",
+          "unlock_andys_house,$skips_hard,double_jump,ledge_grab,$rexspot|andys_house|3",
+          "$gating_ok|andys_house,$skips_hard,double_jump,ledge_grab,$rexspot|andys_house|3",
+          "unlock_andys_house,double_jump,ledge_grab,push,$rexspot|andys_house|4",
+          "$gating_ok|andys_house,double_jump,ledge_grab,push,$rexspot|andys_house|4",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|andys_house|4",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|andys_house|4",
+          "unlock_andys_house,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|andys_house|4",
+          "$gating_ok|andys_house,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|andys_house|4",
+          "unlock_andys_house,$rexspot|andys_house|5",
+          "$gating_ok|andys_house,$rexspot|andys_house|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -3418,8 +3450,28 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_andys_neighborhood",
-          "$gating_ok|andys_neighborhood"
+          "unlock_andys_neighborhood,$rex_default",
+          "$gating_ok|andys_neighborhood,$rex_default",
+          "unlock_andys_neighborhood,$rexspot|andys_neighborhood|1",
+          "$gating_ok|andys_neighborhood,$rexspot|andys_neighborhood|1",
+          "unlock_andys_neighborhood,double_jump,stomp,$rexspot|andys_neighborhood|2",
+          "$gating_ok|andys_neighborhood,double_jump,stomp,$rexspot|andys_neighborhood|2",
+          "unlock_andys_neighborhood,ledge_grab,stomp,$rexspot|andys_neighborhood|2",
+          "$gating_ok|andys_neighborhood,ledge_grab,stomp,$rexspot|andys_neighborhood|2",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|andys_neighborhood|2",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|andys_neighborhood|2",
+          "unlock_andys_neighborhood,double_jump,ledge_grab,pole_climb,pole_vault,$rexspot|andys_neighborhood|3",
+          "$gating_ok|andys_neighborhood,double_jump,ledge_grab,pole_climb,pole_vault,$rexspot|andys_neighborhood|3",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,pole_vault,$rexspot|andys_neighborhood|3",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,pole_vault,$rexspot|andys_neighborhood|3",
+          "unlock_andys_neighborhood,$skips_hard,double_jump,pole_climb,$rexspot|andys_neighborhood|3",
+          "$gating_ok|andys_neighborhood,$skips_hard,double_jump,pole_climb,$rexspot|andys_neighborhood|3",
+          "unlock_andys_neighborhood,$rexspot|andys_neighborhood|4",
+          "$gating_ok|andys_neighborhood,$rexspot|andys_neighborhood|4",
+          "unlock_andys_neighborhood,double_jump,ledge_grab,pole_climb,$rexspot|andys_neighborhood|5",
+          "$gating_ok|andys_neighborhood,double_jump,ledge_grab,pole_climb,$rexspot|andys_neighborhood|5",
+          "unlock_andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|andys_neighborhood|5",
+          "$gating_ok|andys_neighborhood,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|andys_neighborhood|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -6383,8 +6435,28 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_construction_yard",
-          "$gating_ok|construction_yard"
+          "unlock_construction_yard,$rex_default",
+          "$gating_ok|construction_yard,$rex_default",
+          "unlock_construction_yard,double_jump,ledge_grab,pole_climb,stomp,$rexspot|construction_yard|1",
+          "$gating_ok|construction_yard,double_jump,ledge_grab,pole_climb,stomp,$rexspot|construction_yard|1",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|1",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|1",
+          "unlock_construction_yard,double_jump,ledge_grab,$rexspot|construction_yard|2",
+          "$gating_ok|construction_yard,double_jump,ledge_grab,$rexspot|construction_yard|2",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|2",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|2",
+          "unlock_construction_yard,double_jump,ledge_grab,pole_climb,stomp,$rexspot|construction_yard|3",
+          "$gating_ok|construction_yard,double_jump,ledge_grab,pole_climb,stomp,$rexspot|construction_yard|3",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|3",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,$rexspot|construction_yard|3",
+          "unlock_construction_yard,double_jump,ledge_grab,stomp,$rexspot|construction_yard|4",
+          "$gating_ok|construction_yard,double_jump,ledge_grab,stomp,$rexspot|construction_yard|4",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|construction_yard|4",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|construction_yard|4",
+          "unlock_construction_yard,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|construction_yard|4",
+          "$gating_ok|construction_yard,$skips_easy_or_hard,double_jump,pole_climb,$rexspot|construction_yard|4",
+          "unlock_construction_yard,$rexspot|construction_yard|5",
+          "$gating_ok|construction_yard,$rexspot|construction_yard|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -8609,8 +8681,24 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_alleys_and_gullies",
-          "$gating_ok|alleys_and_gullies"
+          "unlock_alleys_and_gullies,$rex_default",
+          "$gating_ok|alleys_and_gullies,$rex_default",
+          "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor,$rexspot|alleys_and_gullies|1",
+          "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor,$rexspot|alleys_and_gullies|1",
+          "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,visor,$rexspot|alleys_and_gullies|2",
+          "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,visor,$rexspot|alleys_and_gullies|2",
+          "unlock_alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor,$rexspot|alleys_and_gullies|2",
+          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor,$rexspot|alleys_and_gullies|2",
+          "unlock_alleys_and_gullies,double_jump,ledge_grab,push,$rexspot|alleys_and_gullies|3",
+          "$gating_ok|alleys_and_gullies,double_jump,ledge_grab,push,$rexspot|alleys_and_gullies|3",
+          "unlock_alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,visor,$rexspot|alleys_and_gullies|4",
+          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,visor,$rexspot|alleys_and_gullies|4",
+          "unlock_alleys_and_gullies,double_jump,ledge_grab,rope_sliding,$rexspot|alleys_and_gullies|5",
+          "$gating_ok|alleys_and_gullies,double_jump,ledge_grab,rope_sliding,$rexspot|alleys_and_gullies|5",
+          "unlock_alleys_and_gullies,$skips_easy_or_hard,double_jump,rope_sliding,$rexspot|alleys_and_gullies|5",
+          "$gating_ok|alleys_and_gullies,$skips_easy_or_hard,double_jump,rope_sliding,$rexspot|alleys_and_gullies|5",
+          "unlock_alleys_and_gullies,$skips_easy_or_hard,ledge_grab,rope_sliding,$rexspot|alleys_and_gullies|5",
+          "$gating_ok|alleys_and_gullies,$skips_easy_or_hard,ledge_grab,rope_sliding,$rexspot|alleys_and_gullies|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -11731,10 +11819,30 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_als_toy_barn,double_jump,ledge_grab",
-          "$gating_ok|als_toy_barn,double_jump,ledge_grab",
-          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots",
-          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots"
+          "unlock_als_toy_barn,double_jump,ledge_grab,$rex_default",
+          "$gating_ok|als_toy_barn,double_jump,ledge_grab,$rex_default",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,$rex_default",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,$rex_default",
+          "unlock_als_toy_barn,double_jump,$rexspot|als_toy_barn|1",
+          "$gating_ok|als_toy_barn,double_jump,$rexspot|als_toy_barn|1",
+          "unlock_als_toy_barn,ledge_grab,$rexspot|als_toy_barn|1",
+          "$gating_ok|als_toy_barn,ledge_grab,$rexspot|als_toy_barn|1",
+          "unlock_als_toy_barn,$rexspot|als_toy_barn|2",
+          "$gating_ok|als_toy_barn,$rexspot|als_toy_barn|2",
+          "unlock_als_toy_barn,double_jump,gadget_als_toy_barn_hover_boots,$rexspot|als_toy_barn|3",
+          "$gating_ok|als_toy_barn,double_jump,gadget_als_toy_barn_hover_boots,$rexspot|als_toy_barn|3",
+          "unlock_als_toy_barn,double_jump,ledge_grab,push,$rexspot|als_toy_barn|4",
+          "$gating_ok|als_toy_barn,double_jump,ledge_grab,push,$rexspot|als_toy_barn|4",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_toy_barn|4",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_toy_barn|4",
+          "unlock_als_toy_barn,double_jump,ledge_grab,pole_climb,$rexspot|als_toy_barn|5",
+          "$gating_ok|als_toy_barn,double_jump,ledge_grab,pole_climb,$rexspot|als_toy_barn|5",
+          "unlock_als_toy_barn,gadget_als_toy_barn_hover_boots,ledge_grab,pole_climb,$rexspot|als_toy_barn|5",
+          "$gating_ok|als_toy_barn,gadget_als_toy_barn_hover_boots,ledge_grab,pole_climb,$rexspot|als_toy_barn|5",
+          "unlock_als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,$rexspot|als_toy_barn|5",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,gadget_als_toy_barn_hover_boots,$rexspot|als_toy_barn|5",
+          "unlock_als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_toy_barn|5",
+          "$gating_ok|als_toy_barn,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_toy_barn|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -13781,8 +13889,30 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_als_space_land",
-          "$gating_ok|als_space_land"
+          "unlock_als_space_land,$rex_default",
+          "$gating_ok|als_space_land,$rex_default",
+          "unlock_als_space_land,double_jump,ledge_grab,pole_climb,push,$rexspot|als_space_land|1",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_climb,push,$rexspot|als_space_land|1",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_space_land|1",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_space_land|1",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,$rexspot|als_space_land|1",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,pole_climb,push,$rexspot|als_space_land|1",
+          "unlock_als_space_land,$skips_hard,double_jump,pole_climb,$rexspot|als_space_land|1",
+          "$gating_ok|als_space_land,$skips_hard,double_jump,pole_climb,$rexspot|als_space_land|1",
+          "unlock_als_space_land,double_jump,ledge_grab,$rexspot|als_space_land|2",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,$rexspot|als_space_land|2",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,$rexspot|als_space_land|2",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,$rexspot|als_space_land|2",
+          "unlock_als_space_land,$rexspot|als_space_land|3",
+          "$gating_ok|als_space_land,$rexspot|als_space_land|3",
+          "unlock_als_space_land,double_jump,ledge_grab,pole_vault,$rexspot|als_space_land|4",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_vault,$rexspot|als_space_land|4",
+          "unlock_als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding,$rexspot|als_space_land|5",
+          "$gating_ok|als_space_land,double_jump,ledge_grab,pole_vault,rope_sliding,$rexspot|als_space_land|5",
+          "unlock_als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_space_land|5",
+          "$gating_ok|als_space_land,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|als_space_land|5",
+          "unlock_als_space_land,$skips_hard,double_jump,$rexspot|als_space_land|5",
+          "$gating_ok|als_space_land,$skips_hard,double_jump,$rexspot|als_space_land|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -16522,8 +16652,18 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_elevator_hop,gadget_elevator_hop_grappling_hook,visor",
-          "$gating_ok|elevator_hop,gadget_elevator_hop_grappling_hook,visor"
+          "unlock_elevator_hop,gadget_elevator_hop_grappling_hook,visor,$rex_default",
+          "$gating_ok|elevator_hop,gadget_elevator_hop_grappling_hook,visor,$rex_default",
+          "unlock_elevator_hop,$rexspot|elevator_hop|1",
+          "$gating_ok|elevator_hop,$rexspot|elevator_hop|1",
+          "unlock_elevator_hop,double_jump,pole_vault,$rexspot|elevator_hop|2",
+          "$gating_ok|elevator_hop,double_jump,pole_vault,$rexspot|elevator_hop|2",
+          "unlock_elevator_hop,gadget_elevator_hop_grappling_hook,visor,$rexspot|elevator_hop|3",
+          "$gating_ok|elevator_hop,gadget_elevator_hop_grappling_hook,visor,$rexspot|elevator_hop|3",
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor,$rexspot|elevator_hop|4",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,stomp,visor,$rexspot|elevator_hop|4",
+          "unlock_elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,visor,$rexspot|elevator_hop|5",
+          "$gating_ok|elevator_hop,double_jump,gadget_elevator_hop_grappling_hook,visor,$rexspot|elevator_hop|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -18653,8 +18793,22 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_als_penthouse",
-          "$gating_ok|als_penthouse"
+          "unlock_als_penthouse,$rex_default",
+          "$gating_ok|als_penthouse,$rex_default",
+          "unlock_als_penthouse,gadget_als_penthouse_cosmic_shield,$rexspot|als_penthouse|1",
+          "$gating_ok|als_penthouse,gadget_als_penthouse_cosmic_shield,$rexspot|als_penthouse|1",
+          "unlock_als_penthouse,double_jump,laser,ledge_grab,stomp,$rexspot|als_penthouse|2",
+          "$gating_ok|als_penthouse,double_jump,laser,ledge_grab,stomp,$rexspot|als_penthouse|2",
+          "unlock_als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,stomp,$rexspot|als_penthouse|2",
+          "$gating_ok|als_penthouse,$skips_easy_or_hard,double_jump,ledge_grab,stomp,$rexspot|als_penthouse|2",
+          "unlock_als_penthouse,double_jump,ledge_grab,push,stomp,$rexspot|als_penthouse|3",
+          "$gating_ok|als_penthouse,double_jump,ledge_grab,push,stomp,$rexspot|als_penthouse|3",
+          "unlock_als_penthouse,$skips_hard,double_jump,push,stomp,$rexspot|als_penthouse|3",
+          "$gating_ok|als_penthouse,$skips_hard,double_jump,push,stomp,$rexspot|als_penthouse|3",
+          "unlock_als_penthouse,$rexspot|als_penthouse|4",
+          "$gating_ok|als_penthouse,$rexspot|als_penthouse|4",
+          "unlock_als_penthouse,double_jump,ledge_grab,push,$rexspot|als_penthouse|5",
+          "$gating_ok|als_penthouse,double_jump,ledge_grab,push,$rexspot|als_penthouse|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -20868,10 +21022,28 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_airport_infiltration,double_jump,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,double_jump,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
-          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
+          "unlock_airport_infiltration,double_jump,pole_vault,stomp,$rex_default",
+          "$gating_ok|airport_infiltration,double_jump,pole_vault,stomp,$rex_default",
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp,$rex_default",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp,$rex_default",
+          "unlock_airport_infiltration,$rexspot|airport_infiltration|1",
+          "$gating_ok|airport_infiltration,$rexspot|airport_infiltration|1",
+          "unlock_airport_infiltration,double_jump,pole_vault,stomp,$rexspot|airport_infiltration|2",
+          "$gating_ok|airport_infiltration,double_jump,pole_vault,stomp,$rexspot|airport_infiltration|2",
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp,$rexspot|airport_infiltration|2",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp,$rexspot|airport_infiltration|2",
+          "unlock_airport_infiltration,double_jump,pole_climb,pole_vault,stomp,$rexspot|airport_infiltration|3",
+          "$gating_ok|airport_infiltration,double_jump,pole_climb,pole_vault,stomp,$rexspot|airport_infiltration|3",
+          "unlock_airport_infiltration,double_jump,ledge_grab,pole_vault,stomp,$rexspot|airport_infiltration|4",
+          "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_vault,stomp,$rexspot|airport_infiltration|4",
+          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp,$rexspot|airport_infiltration|4",
+          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp,$rexspot|airport_infiltration|4",
+          "unlock_airport_infiltration,$skips_hard,double_jump,stomp,$rexspot|airport_infiltration|4",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp,$rexspot|airport_infiltration|4",
+          "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp,$rexspot|airport_infiltration|5",
+          "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp,$rexspot|airport_infiltration|5",
+          "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp,$rexspot|airport_infiltration|5",
+          "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp,$rexspot|airport_infiltration|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -23115,10 +23287,32 @@
         "name": "Talk to Rex",
         "item_count": 1,
         "access_rules": [
-          "unlock_tarmac_trouble,double_jump,ledge_grab",
-          "$gating_ok|tarmac_trouble,double_jump,ledge_grab",
-          "unlock_tarmac_trouble,$skips_easy_or_hard",
-          "$gating_ok|tarmac_trouble,$skips_easy_or_hard"
+          "unlock_tarmac_trouble,double_jump,ledge_grab,$rex_default",
+          "$gating_ok|tarmac_trouble,double_jump,ledge_grab,$rex_default",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,$rex_default",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,$rex_default",
+          "unlock_tarmac_trouble,$rexspot|tarmac_trouble|1",
+          "$gating_ok|tarmac_trouble,$rexspot|tarmac_trouble|1",
+          "unlock_tarmac_trouble,$rexspot|tarmac_trouble|2",
+          "$gating_ok|tarmac_trouble,$rexspot|tarmac_trouble|2",
+          "unlock_tarmac_trouble,double_jump,pole_climb,$rexspot|tarmac_trouble|3",
+          "$gating_ok|tarmac_trouble,double_jump,pole_climb,$rexspot|tarmac_trouble|3",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,$rexspot|tarmac_trouble|3",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,$rexspot|tarmac_trouble|3",
+          "unlock_tarmac_trouble,$skips_hard,ledge_grab,$rexspot|tarmac_trouble|3",
+          "$gating_ok|tarmac_trouble,$skips_hard,ledge_grab,$rexspot|tarmac_trouble|3",
+          "unlock_tarmac_trouble,pole_climb,$rexspot|tarmac_trouble|4",
+          "$gating_ok|tarmac_trouble,pole_climb,$rexspot|tarmac_trouble|4",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|tarmac_trouble|4",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|tarmac_trouble|4",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,$rexspot|tarmac_trouble|4",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,$rexspot|tarmac_trouble|4",
+          "unlock_tarmac_trouble,double_jump,pole_climb,$rexspot|tarmac_trouble|5",
+          "$gating_ok|tarmac_trouble,double_jump,pole_climb,$rexspot|tarmac_trouble|5",
+          "unlock_tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|tarmac_trouble|5",
+          "$gating_ok|tarmac_trouble,$skips_easy_or_hard,double_jump,ledge_grab,$rexspot|tarmac_trouble|5",
+          "unlock_tarmac_trouble,$skips_hard,double_jump,$rexspot|tarmac_trouble|5",
+          "$gating_ok|tarmac_trouble,$skips_hard,double_jump,$rexspot|tarmac_trouble|5"
         ],
         "visibility_rules": [
           "set_rexsanity"
@@ -26089,7 +26283,10 @@
         "map": "andys_house",
         "x": 1066,
         "y": 595,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -27136,7 +27333,10 @@
         "map": "andys_neighborhood",
         "x": 242,
         "y": 225,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -28164,7 +28364,10 @@
         "map": "construction_yard",
         "x": 1143,
         "y": 300,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -29006,7 +29209,10 @@
         "map": "alleys_and_gullies",
         "x": 1073,
         "y": 346,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -30150,7 +30356,10 @@
         "map": "als_toy_barn",
         "x": 533,
         "y": 276,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -30819,7 +31028,10 @@
         "map": "als_space_land",
         "x": 181,
         "y": 873,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -31768,7 +31980,10 @@
         "map": "elevator_hop",
         "x": 603,
         "y": 620,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -32732,7 +32947,10 @@
         "map": "als_penthouse",
         "x": 491,
         "y": 590,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -33590,7 +33808,10 @@
         "map": "airport_infiltration",
         "x": 75,
         "y": 299,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -34429,7 +34650,10 @@
         "map": "tarmac_trouble",
         "x": 973,
         "y": 270,
-        "size": 24
+        "size": 24,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -35578,7 +35802,10 @@
         "map": "level_select",
         "x": 241,
         "y": 323,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -35779,7 +36006,10 @@
         "map": "level_select",
         "x": 400,
         "y": 150,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36007,7 +36237,10 @@
         "map": "level_select",
         "x": 952,
         "y": 203,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36187,7 +36420,10 @@
         "map": "level_select",
         "x": 1270,
         "y": 193,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36346,7 +36582,10 @@
         "map": "level_select",
         "x": 1439,
         "y": 161,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36475,7 +36714,10 @@
         "map": "level_select",
         "x": 85,
         "y": 656,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36676,7 +36918,10 @@
         "map": "level_select",
         "x": 465,
         "y": 573,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -36826,7 +37071,10 @@
         "map": "level_select",
         "x": 844,
         "y": 616,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -37021,7 +37269,10 @@
         "map": "level_select",
         "x": 1069,
         "y": 551,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -37135,7 +37386,10 @@
         "map": "level_select",
         "x": 1427,
         "y": 478,
-        "size": 18
+        "size": 18,
+        "force_invisibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ],
     "sections": [
@@ -42845,6 +43099,690 @@
     "sections": [
       {
         "ref": "TT Missions/Missing Toys Token"
+      }
+    ]
+  },
+  {
+    "name": "AH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AH/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "andys_house",
+        "x": 107,
+        "y": 63,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Life.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Life.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 241,
+        "y": 323,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AH/Life (Crib)"
+      },
+      {
+        "ref": "AH/Battery (Andy's Room)"
+      },
+      {
+        "ref": "AH/Hint Block (Andy's Room Crib)"
+      },
+      {
+        "ref": "AH/Hint Block (Andy's Room Dresser Shelf)"
+      },
+      {
+        "ref": "AH/Hint Block (Top of Stairs)"
+      },
+      {
+        "ref": "AH/Hint Block (Andy's Room Bookshelf)"
+      },
+      {
+        "ref": "AH/Hint Block (Andy's Room Bed)"
+      }
+    ]
+  },
+  {
+    "name": "AH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AH/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1151,
+        "y": 35,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AN​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AN/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "andys_neighborhood",
+        "x": 1424,
+        "y": 703,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AN​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AN/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1177,
+        "y": 35,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CY​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "CY/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "construction_yard",
+        "x": 1488,
+        "y": 43,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CY​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Potato Head.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Potato Head.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 952,
+        "y": 203,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "CY/Give Potato Head His Eye"
+      }
+    ]
+  },
+  {
+    "name": "CY​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "CY/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1203,
+        "y": 35,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AaG​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AaG/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "alleys_and_gullies",
+        "x": 1490,
+        "y": 45,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AaG​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AaG/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1229,
+        "y": 35,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ATB​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "ATB/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "als_toy_barn",
+        "x": 116,
+        "y": 933,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ATB​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Missing Toys/Chick.png",
+    "chest_opened_img": "images/ICONS_DIM/Missing Toys/Chick.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1439,
+        "y": 161,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ATB/Chick (Shipping Boxes)"
+      },
+      {
+        "ref": "ATB/Battery (Cardboard Boxes)"
+      }
+    ]
+  },
+  {
+    "name": "ATB​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "ATB/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1255,
+        "y": 35,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASL​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 181,
+        "y": 873,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL/Hidden Token"
+      }
+    ]
+  },
+  {
+    "name": "ASL​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "ASL/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "als_space_land",
+        "x": 1487,
+        "y": 54,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASL​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 85,
+        "y": 656,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "ASL/Hidden Token"
+      },
+      {
+        "ref": "ASL/Alien (Ballpit)"
+      },
+      {
+        "ref": "ASL/Battery (Arcade Cabinet)"
+      }
+    ]
+  },
+  {
+    "name": "ASL​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "ASL/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1151,
+        "y": 61,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Missing Toys/Mouse.png",
+    "chest_opened_img": "images/ICONS_DIM/Missing Toys/Mouse.png",
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 603,
+        "y": 620,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH/Mouse (Next to Rex)"
+      },
+      {
+        "ref": "EH/Green Laser"
+      }
+    ]
+  },
+  {
+    "name": "EH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "EH/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "elevator_hop",
+        "x": 115,
+        "y": 79,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Missing Toys/Mouse.png",
+    "chest_opened_img": "images/ICONS_DIM/Missing Toys/Mouse.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 465,
+        "y": 573,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "EH/Mouse (Next to Rex)"
+      },
+      {
+        "ref": "EH/Green Laser"
+      }
+    ]
+  },
+  {
+    "name": "EH​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "EH/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1177,
+        "y": 61,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AP​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AP/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "als_penthouse",
+        "x": 112,
+        "y": 896,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AP​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 844,
+        "y": 616,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AP/Race Token"
+      }
+    ]
+  },
+  {
+    "name": "AP​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AP/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1203,
+        "y": 61,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AI​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AI/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "airport_infiltration",
+        "x": 1492,
+        "y": 63,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AI​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1069,
+        "y": 551,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "AI/Boss Token"
+      },
+      {
+        "ref": "AI/Passenger Tike (Near Boss Arena)"
+      },
+      {
+        "ref": "AI/Give Potato Head His Mouth"
+      },
+      {
+        "ref": "AI/Battery (Boss Arena)"
+      },
+      {
+        "ref": "AI/Battery (Luggage Pile)"
+      }
+    ]
+  },
+  {
+    "name": "AI​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "AI/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1229,
+        "y": 61,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TT​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "TT/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "tarmac_trouble",
+        "x": 115,
+        "y": 900,
+        "size": 24,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TT​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Pizza Planet Token.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Pizza Planet Token.png",
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1427,
+        "y": 478,
+        "size": 18,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "ref": "TT/Hidden Token"
+      },
+      {
+        "ref": "TT/Luggage (Zone 2 Cart)"
+      },
+      {
+        "ref": "TT/Battery (Helicopter Pad)"
+      },
+      {
+        "ref": "TT/Hint Block (Light Puzzle)"
+      }
+    ]
+  },
+  {
+    "name": "TT​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "chest_unopened_img": "images/ICONS/Collectables/Rex.png",
+    "chest_opened_img": "images/ICONS_DIM/Collectables/Rex.png",
+    "sections": [
+      {
+        "ref": "TT/Talk to Rex"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "level_select",
+        "x": 1255,
+        "y": 61,
+        "size": 20,
+        "restrict_visibility_rules": [
+          "set_rex_hns"
+        ]
       }
     ]
   }

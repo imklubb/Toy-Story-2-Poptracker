@@ -511,7 +511,16 @@ local function applySettings(sd)
   setActive("set_lifesanity",      num(sd,"lifesanity")~=0)
   setActive("set_batterysanity",   num(sd,"batterysanity")~=0)
   setActive("set_greenlasersanity",num(sd,"green_laser_sanity")~=0)
-  setActive("set_rexsanity",       num(sd,"rexsanity")~=0)
+  -- 3.2.0: Off / On / Hide 'n Seek, and the seed's hiding spots
+  setStage("set_rexsanity",        math.max(0, math.min(2, num(sd,"rexsanity"))))
+  REX_SPOTS = {}
+  if type(sd.rex_spots) == "table" then
+    for lv, n in pairs(sd.rex_spots) do
+      local key = tostring(lv):lower():gsub("'", ""):gsub("[^a-z0-9]+", "_")
+      REX_SPOTS[key] = tonumber(n)
+    end
+  end
+  if ts2_sync_rex_maps then ts2_sync_rex_maps() end
   setActive("set_hintblocksanity", num(sd,"hint_block_sanity")~=0)
   setActive("set_omit_airport",    num(sd,"omit_airport_infiltration")~=0)
   setActive("set_omit_elevator",   num(sd,"omit_elevator_hop")~=0)
