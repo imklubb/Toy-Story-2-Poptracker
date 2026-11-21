@@ -20850,6 +20850,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,gadget_airport_infiltration_hover_boots,pole_climb,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,gadget_airport_infiltration_hover_boots,pole_climb,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp",
           "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp"
         ],
@@ -20862,6 +20864,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,gadget_airport_infiltration_hover_boots,ledge_grab,pole_climb,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,gadget_airport_infiltration_hover_boots,pole_climb,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,gadget_airport_infiltration_hover_boots,pole_climb,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_hard,double_jump,pole_climb,stomp",
           "$gating_ok|airport_infiltration,$skips_hard,double_jump,pole_climb,stomp"
         ],
@@ -20942,6 +20946,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
           "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
         ],
@@ -20954,8 +20960,8 @@
         "access_rules": [
           "unlock_airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
           "$gating_ok|airport_infiltration,double_jump,ledge_grab,pole_climb,pole_vault,stomp",
-          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault,stomp",
-          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,ledge_grab,pole_vault,stomp",
+          "unlock_airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
+          "$gating_ok|airport_infiltration,$skips_easy_or_hard,double_jump,pole_vault,stomp",
           "unlock_airport_infiltration,$skips_hard,double_jump,stomp",
           "$gating_ok|airport_infiltration,$skips_hard,double_jump,stomp"
         ],
