@@ -8591,7 +8591,11 @@
           "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor",
           "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor",
           "unlock_alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor",
-          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor"
+          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor",
+          "unlock_alleys_and_gullies,$skips_easy_or_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,visor",
+          "$gating_ok|alleys_and_gullies,$skips_easy_or_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,visor",
+          "unlock_alleys_and_gullies,$skips_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,visor",
+          "$gating_ok|alleys_and_gullies,$skips_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,visor"
         ],
         "chest_unopened_img": "images/ICONS/Missing Toys/Duck.png",
         "chest_opened_img": "images/ICONS_DIM/Missing Toys/Duck.png"
@@ -8630,7 +8634,9 @@
           "unlock_alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor",
           "$gating_ok|alleys_and_gullies,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,rope_sliding,visor",
           "unlock_alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor",
-          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor"
+          "$gating_ok|alleys_and_gullies,gadget_alleys_and_gullies_grappling_hook,ledge_grab,pole_climb,rope_sliding,visor",
+          "unlock_alleys_and_gullies,$skips_easy_or_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,visor",
+          "$gating_ok|alleys_and_gullies,$skips_easy_or_hard,double_jump,gadget_alleys_and_gullies_grappling_hook,pole_climb,visor"
         ],
         "visibility_rules": [
           "set_batterysanity"
