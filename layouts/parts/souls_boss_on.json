@@ -1,0 +1,21 @@
+{
+ "ts2_souls_boss": {
+  "type": "group",
+  "header": "Bosses",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_bombs_away",
+     "soul_toy_barn_encounter"
+    ],
+    [
+     "soul_slime_time",
+     "soul_zurg"
+    ]
+   ]
+  }
+ }
+}

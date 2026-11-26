@@ -1,0 +1,37 @@
+{
+ "ts2_unlocks": {
+  "type": "group",
+  "header": "Level Unlocks",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "2,2",
+   "rows": [
+    [
+     "unlock_andys_house",
+     "unlock_andys_neighborhood",
+     "unlock_bombs_away"
+    ],
+    [
+     "unlock_construction_yard",
+     "unlock_alleys_and_gullies",
+     "unlock_slime_time"
+    ],
+    [
+     "unlock_als_toy_barn",
+     "unlock_als_space_land",
+     "unlock_toy_barn_encounter"
+    ],
+    [
+     "unlock_elevator_hop",
+     "unlock_als_penthouse",
+     "unlock_the_evil_emperor_zurg"
+    ],
+    [
+     "unlock_airport_infiltration",
+     "unlock_tarmac_trouble",
+     "unlock_final_showdown"
+    ]
+   ]
+  }
+ }
+}

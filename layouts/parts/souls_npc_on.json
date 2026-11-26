@@ -1,0 +1,38 @@
+{
+ "ts2_souls_npc": {
+  "type": "group",
+  "header": "NPCs",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_hamm",
+     "soul_bo_peep",
+     "soul_rc_car",
+     "soul_mr_potato_head",
+     "soul_rex",
+     "soul_sarge",
+     "soul_foreman_tike",
+     "soul_slinky",
+     "soul_mother_duck",
+     "soul_mama_chicken",
+     "soul_papa_chicken"
+    ],
+    [
+     "soul_mothership",
+     "soul_flying_saucer",
+     "soul_mama_mouse",
+     "soul_papa_mouse",
+     "soul_jessie",
+     "soul_bullseye",
+     "soul_pilot_tike",
+     "soul_rocky_gibraltar",
+     "soul_luggage_handler_tike",
+     "soul_woody"
+    ]
+   ]
+  }
+ }
+}

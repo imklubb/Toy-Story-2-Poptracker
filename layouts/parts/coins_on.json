@@ -1,0 +1,26 @@
+{
+ "ts2_coins": {
+  "type": "group",
+  "header": "Coins",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "2,2",
+   "rows": [
+    [
+     "coin_andys_house",
+     "coin_andys_neighborhood",
+     "coin_construction_yard",
+     "coin_alleys_and_gullies",
+     "coin_als_toy_barn"
+    ],
+    [
+     "coin_als_space_land",
+     "coin_elevator_hop",
+     "coin_als_penthouse",
+     "coin_airport_infiltration",
+     "coin_tarmac_trouble"
+    ]
+   ]
+  }
+ }
+}

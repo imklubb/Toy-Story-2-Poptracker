@@ -1,0 +1,16 @@
+{
+ "ts2_souls_miniboss": {
+  "type": "group",
+  "header": "Minibosses",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_stinky_pete"
+    ]
+   ]
+  }
+ }
+}

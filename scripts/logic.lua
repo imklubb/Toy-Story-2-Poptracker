@@ -25,13 +25,22 @@ function ts2_any_attack() return ts2_has("laser") or ts2_has("spin") or ts2_has(
 
 -- Each gate references only STRICTLY EARLIER areas, so this recursion
 -- terminates -- the same reason rules.py can recurse here safely.
-function lin_bombs() return linear_reached("bombs_away") == 1 and ts2_any_attack() end
-function lin_slime() return linear_reached("slime_time") == 1 and ts2_has("laser") end
+-- 3.4.0: a boss's fight only starts with its soul (Boss Souls), and the Toy
+-- Barn Encounter's boss only goes down once the robots it calls in do.
+local function souls_met(...)
+  if not soul then return true end
+  for _, c in ipairs({ ... }) do if soul(c) == 0 then return false end end
+  return true
+end
+function lin_bombs() return linear_reached("bombs_away") == 1 and ts2_any_attack() and souls_met("soul_bombs_away") end
+function lin_slime() return linear_reached("slime_time") == 1 and ts2_has("laser") and souls_met("soul_slime_time") end
 function lin_tbe()
   return linear_reached("toy_barn_encounter") == 1 and ts2_has("laser")
          and (ts2_has("spin") or ts2_has("stomp"))
+         and souls_met("soul_toy_barn_encounter", "soul_bouncer_zurg_robot", "soul_propeller_zurg_robot",
+                       "soul_zurg_car", "soul_zurg_soldier", "soul_floating_zurg_robot")
 end
-function lin_zurg() return linear_reached("the_evil_emperor_zurg") == 1 and ts2_has("spin") end
+function lin_zurg() return linear_reached("the_evil_emperor_zurg") == 1 and ts2_has("spin") and souls_met("soul_zurg") end
 
 function linear_reached(level)
   local t = ts2_tokens()
@@ -121,6 +130,8 @@ end
 -- ── Coin-bundle reachability: "are >= N*bundle_size of this level's coins reachable?" ──
 -- COIN_REQ (per level/skip-tier per-coin DNFs) is provided by coin_logic.lua.
 local function code_met(code)
+  -- 3.4.0: a coin's soul (souls.lua): met when it's in or its group is off
+  if code:sub(1, 5) == "soul_" then return soul and soul(code) == 1 end
   local nm, n = code:match("^(.-):(%d+)$")
   if nm then return Tracker:ProviderCountForCode(nm) >= tonumber(n) end
   return Tracker:ProviderCountForCode(code) >= 1

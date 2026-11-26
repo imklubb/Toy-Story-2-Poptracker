@@ -1,0 +1,27 @@
+{
+ "ts2_souls_toy": {
+  "type": "group",
+  "header": "Toys",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_sheep",
+     "soul_soldier",
+     "soul_worker_tike",
+     "soul_duck",
+     "soul_chick"
+    ],
+    [
+     "soul_alien",
+     "soul_mouse",
+     "soul_critter",
+     "soul_passenger_tike",
+     "soul_luggage"
+    ]
+   ]
+  }
+ }
+}

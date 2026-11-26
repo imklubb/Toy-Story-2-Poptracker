@@ -1,0 +1,27 @@
+{
+ "ts2_souls_miniboss": {
+  "type": "group",
+  "header": "Minibosses",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_tin_robot",
+     "soul_zurg_kite",
+     "soul_jackhammer",
+     "soul_clown_top",
+     "soul_dinosaur"
+    ],
+    [
+     "soul_buzz_lightyear_buggy",
+     "soul_spider_gunro",
+     "soul_gunslinger",
+     "soul_stinky_pete",
+     "soul_blacksmith"
+    ]
+   ]
+  }
+ }
+}

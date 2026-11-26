@@ -1,35 +1,14 @@
 {
  "tracker_default": {
-  "type": "array",
-  "orientation": "horizontal",
+  "type": "dock",
   "content": [
    {
     "type": "array",
     "orientation": "vertical",
     "content": [
      {
-      "type": "group",
-      "header": "Movement",
-      "content": {
-       "type": "itemgrid",
-       "item_margin": "2,2",
-       "rows": [
-        [
-         "double_jump",
-         "ledge_grab",
-         "pole_climb",
-         "pole_vault",
-         "rope_sliding"
-        ],
-        [
-         "push",
-         "visor",
-         "laser",
-         "spin",
-         "stomp"
-        ]
-       ]
-      }
+      "type": "layout",
+      "key": "ts2_movement"
      },
      {
       "type": "group",
@@ -123,176 +102,178 @@
       }
      },
      {
-      "type": "group",
-      "header": "Coins",
-      "content": {
-       "type": "itemgrid",
-       "item_margin": "2,2",
-       "rows": [
-        [
-         "coin_andys_house",
-         "coin_andys_neighborhood",
-         "coin_construction_yard",
-         "coin_alleys_and_gullies",
-         "coin_als_toy_barn"
-        ],
-        [
-         "coin_als_space_land",
-         "coin_elevator_hop",
-         "coin_als_penthouse",
-         "coin_airport_infiltration",
-         "coin_tarmac_trouble"
-        ]
-       ]
-      }
+      "type": "layout",
+      "key": "ts2_coins"
      },
      {
-      "type": "group",
-      "header": "Level Unlocks",
-      "content": {
-       "type": "itemgrid",
-       "item_margin": "2,2",
-       "rows": [
-        [
-         "unlock_andys_house",
-         "unlock_andys_neighborhood",
-         "unlock_bombs_away"
-        ],
-        [
-         "unlock_construction_yard",
-         "unlock_alleys_and_gullies",
-         "unlock_slime_time"
-        ],
-        [
-         "unlock_als_toy_barn",
-         "unlock_als_space_land",
-         "unlock_toy_barn_encounter"
-        ],
-        [
-         "unlock_elevator_hop",
-         "unlock_als_penthouse",
-         "unlock_the_evil_emperor_zurg"
-        ],
-        [
-         "unlock_airport_infiltration",
-         "unlock_tarmac_trouble",
-         "unlock_final_showdown"
-        ]
-       ]
-      }
+      "type": "layout",
+      "key": "ts2_unlocks"
      }
-    ]
+    ],
+    "dock": "left"
    },
    {
-    "type": "tabbed",
-    "tabs": [
+    "type": "dock",
+    "content": [
      {
-      "title": "Level Select",
-      "content": {
-       "type": "map",
-       "maps": [
-        "level_select"
-       ]
-      }
+      "type": "array",
+      "orientation": "vertical",
+      "h_alignment": "center",
+      "dock": "bottom",
+      "content": [
+       {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "content": [
+         {
+          "type": "layout",
+          "key": "ts2_souls_npc"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_toy"
+         }
+        ]
+       },
+       {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "content": [
+         {
+          "type": "layout",
+          "key": "ts2_souls_enemy"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_lock"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_miniboss"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_boss"
+         }
+        ]
+       }
+      ]
      },
      {
-      "title": "Andy's House",
-      "content": {
-       "type": "map",
-       "maps": [
-        "andys_house"
-       ]
-      }
-     },
-     {
-      "title": "Andy's Neighborhood",
-      "content": {
-       "type": "map",
-       "maps": [
-        "andys_neighborhood"
-       ]
-      }
-     },
-     {
-      "title": "Construction Yard",
-      "content": {
-       "type": "map",
-       "maps": [
-        "construction_yard"
-       ]
-      }
-     },
-     {
-      "title": "Alleys and Gullies",
-      "content": {
-       "type": "map",
-       "maps": [
-        "alleys_and_gullies"
-       ]
-      }
-     },
-     {
-      "title": "Al's Toy Barn",
-      "content": {
-       "type": "map",
-       "maps": [
-        "als_toy_barn"
-       ]
-      }
-     },
-     {
-      "title": "Al's Space Land",
-      "content": {
-       "type": "map",
-       "maps": [
-        "als_space_land"
-       ]
-      }
-     },
-     {
-      "title": "Elevator Hop",
-      "content": {
-       "type": "map",
-       "maps": [
-        "elevator_hop"
-       ]
-      }
-     },
-     {
-      "title": "Al's Penthouse",
-      "content": {
-       "type": "map",
-       "maps": [
-        "als_penthouse"
-       ]
-      }
-     },
-     {
-      "title": "Airport Infiltration",
-      "content": {
-       "type": "map",
-       "maps": [
-        "airport_infiltration"
-       ]
-      }
-     },
-     {
-      "title": "Tarmac Trouble",
-      "content": {
-       "type": "map",
-       "maps": [
-        "tarmac_trouble"
-       ]
-      }
-     },
-     {
-      "title": "Bosses",
-      "content": {
-       "type": "map",
-       "maps": [
-        "bosses"
-       ]
-      }
+      "type": "tabbed",
+      "tabs": [
+       {
+        "title": "Level Select",
+        "content": {
+         "type": "map",
+         "maps": [
+          "level_select"
+         ]
+        }
+       },
+       {
+        "title": "Andy's House",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_house"
+         ]
+        }
+       },
+       {
+        "title": "Andy's Neighborhood",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_neighborhood"
+         ]
+        }
+       },
+       {
+        "title": "Construction Yard",
+        "content": {
+         "type": "map",
+         "maps": [
+          "construction_yard"
+         ]
+        }
+       },
+       {
+        "title": "Alleys and Gullies",
+        "content": {
+         "type": "map",
+         "maps": [
+          "alleys_and_gullies"
+         ]
+        }
+       },
+       {
+        "title": "Al's Toy Barn",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_toy_barn"
+         ]
+        }
+       },
+       {
+        "title": "Al's Space Land",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_space_land"
+         ]
+        }
+       },
+       {
+        "title": "Elevator Hop",
+        "content": {
+         "type": "map",
+         "maps": [
+          "elevator_hop"
+         ]
+        }
+       },
+       {
+        "title": "Al's Penthouse",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_penthouse"
+         ]
+        }
+       },
+       {
+        "title": "Airport Infiltration",
+        "content": {
+         "type": "map",
+         "maps": [
+          "airport_infiltration"
+         ]
+        }
+       },
+       {
+        "title": "Tarmac Trouble",
+        "content": {
+         "type": "map",
+         "maps": [
+          "tarmac_trouble"
+         ]
+        }
+       },
+       {
+        "title": "Bosses",
+        "content": {
+         "type": "map",
+         "maps": [
+          "bosses"
+         ]
+        }
+       }
+      ],
+      "dock": "top"
      }
     ]
    }
@@ -416,6 +397,28 @@
    },
    {
     "type": "group",
+    "header": "Souls",
+    "content": {
+     "type": "itemgrid",
+     "item_margin": "2,2",
+     "rows": [
+      [
+       "set_souls_npc_off",
+       "set_souls_toy_off",
+       "set_souls_enemy_off",
+       "set_souls_lock_off"
+      ],
+      [
+       "set_souls_miniboss_off",
+       "set_souls_boss_off",
+       "set_souls_fs_off",
+       "set_souls_wj_off"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "group",
     "header": "Omitted Levels",
     "content": {
      "type": "itemgrid",
@@ -440,6 +443,627 @@
       ]
      ]
     }
+   }
+  ]
+ },
+ "ts2_coins": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_unlocks": {
+  "type": "group",
+  "header": "Level Unlocks",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "2,2",
+   "rows": [
+    [
+     "unlock_andys_house",
+     "unlock_andys_neighborhood",
+     "unlock_bombs_away"
+    ],
+    [
+     "unlock_construction_yard",
+     "unlock_alleys_and_gullies",
+     "unlock_slime_time"
+    ],
+    [
+     "unlock_als_toy_barn",
+     "unlock_als_space_land",
+     "unlock_toy_barn_encounter"
+    ],
+    [
+     "unlock_elevator_hop",
+     "unlock_als_penthouse",
+     "unlock_the_evil_emperor_zurg"
+    ],
+    [
+     "unlock_airport_infiltration",
+     "unlock_tarmac_trouble",
+     "unlock_final_showdown"
+    ]
+   ]
+  }
+ },
+ "ts2_souls_npc": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_souls_toy": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_souls_enemy": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_souls_lock": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_souls_miniboss": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_souls_boss": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "ts2_movement": {
+  "type": "array",
+  "orientation": "horizontal",
+  "content": []
+ },
+ "tracker_horizontal": {
+  "type": "dock",
+  "content": [
+   {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+     {
+      "type": "layout",
+      "key": "ts2_movement"
+     },
+     {
+      "type": "group",
+      "header": "Collectables",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "pizza_planet_token",
+         "final_showdown_ticket",
+         "mission_star",
+         "battery_capacity"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Potato Head Parts",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "missing_ear",
+         "missing_eye",
+         "missing_arm",
+         "missing_foot",
+         "missing_mouth"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Missing Toys",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "sheep",
+         "soldier",
+         "worker_tike",
+         "duck",
+         "chick"
+        ],
+        [
+         "alien",
+         "mouse",
+         "critter",
+         "passenger_tike",
+         "luggage"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Gadgets",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "gadget_andys_neighborhood_rocket_boots",
+         "gadget_alleys_and_gullies_rocket_boots",
+         "gadget_als_toy_barn_rocket_boots",
+         "gadget_tarmac_trouble_rocket_boots"
+        ],
+        [
+         "gadget_andys_house_cosmic_shield",
+         "gadget_als_space_land_cosmic_shield",
+         "gadget_als_penthouse_cosmic_shield"
+        ],
+        [
+         "gadget_construction_yard_disc_launcher",
+         "gadget_alleys_and_gullies_disc_launcher",
+         "gadget_als_toy_barn_disc_launcher"
+        ],
+        [
+         "gadget_alleys_and_gullies_grappling_hook",
+         "gadget_elevator_hop_grappling_hook"
+        ],
+        [
+         "gadget_als_toy_barn_hover_boots",
+         "gadget_airport_infiltration_hover_boots"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "layout",
+      "key": "ts2_coins"
+     },
+     {
+      "type": "layout",
+      "key": "ts2_unlocks"
+     }
+    ],
+    "dock": "left"
+   },
+   {
+    "type": "dock",
+    "content": [
+     {
+      "type": "array",
+      "orientation": "horizontal",
+      "h_alignment": "center",
+      "dock": "bottom",
+      "content": [
+       {
+        "type": "layout",
+        "key": "ts2_souls_npc"
+       },
+       {
+        "type": "layout",
+        "key": "ts2_souls_toy"
+       },
+       {
+        "type": "layout",
+        "key": "ts2_souls_enemy"
+       },
+       {
+        "type": "layout",
+        "key": "ts2_souls_lock"
+       },
+       {
+        "type": "layout",
+        "key": "ts2_souls_miniboss"
+       },
+       {
+        "type": "layout",
+        "key": "ts2_souls_boss"
+       }
+      ]
+     },
+     {
+      "type": "tabbed",
+      "tabs": [
+       {
+        "title": "Level Select",
+        "content": {
+         "type": "map",
+         "maps": [
+          "level_select"
+         ]
+        }
+       },
+       {
+        "title": "Andy's House",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_house"
+         ]
+        }
+       },
+       {
+        "title": "Andy's Neighborhood",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_neighborhood"
+         ]
+        }
+       },
+       {
+        "title": "Construction Yard",
+        "content": {
+         "type": "map",
+         "maps": [
+          "construction_yard"
+         ]
+        }
+       },
+       {
+        "title": "Alleys and Gullies",
+        "content": {
+         "type": "map",
+         "maps": [
+          "alleys_and_gullies"
+         ]
+        }
+       },
+       {
+        "title": "Al's Toy Barn",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_toy_barn"
+         ]
+        }
+       },
+       {
+        "title": "Al's Space Land",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_space_land"
+         ]
+        }
+       },
+       {
+        "title": "Elevator Hop",
+        "content": {
+         "type": "map",
+         "maps": [
+          "elevator_hop"
+         ]
+        }
+       },
+       {
+        "title": "Al's Penthouse",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_penthouse"
+         ]
+        }
+       },
+       {
+        "title": "Airport Infiltration",
+        "content": {
+         "type": "map",
+         "maps": [
+          "airport_infiltration"
+         ]
+        }
+       },
+       {
+        "title": "Tarmac Trouble",
+        "content": {
+         "type": "map",
+         "maps": [
+          "tarmac_trouble"
+         ]
+        }
+       },
+       {
+        "title": "Bosses",
+        "content": {
+         "type": "map",
+         "maps": [
+          "bosses"
+         ]
+        }
+       }
+      ],
+      "dock": "top"
+     }
+    ]
+   }
+  ]
+ },
+ "tracker_vertical": {
+  "type": "dock",
+  "content": [
+   {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+     {
+      "type": "layout",
+      "key": "ts2_movement"
+     },
+     {
+      "type": "group",
+      "header": "Collectables",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "pizza_planet_token",
+         "final_showdown_ticket",
+         "mission_star",
+         "battery_capacity"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Potato Head Parts",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "missing_ear",
+         "missing_eye",
+         "missing_arm",
+         "missing_foot",
+         "missing_mouth"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Missing Toys",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "sheep",
+         "soldier",
+         "worker_tike",
+         "duck",
+         "chick"
+        ],
+        [
+         "alien",
+         "mouse",
+         "critter",
+         "passenger_tike",
+         "luggage"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "group",
+      "header": "Gadgets",
+      "content": {
+       "type": "itemgrid",
+       "item_margin": "2,2",
+       "rows": [
+        [
+         "gadget_andys_neighborhood_rocket_boots",
+         "gadget_alleys_and_gullies_rocket_boots",
+         "gadget_als_toy_barn_rocket_boots",
+         "gadget_tarmac_trouble_rocket_boots"
+        ],
+        [
+         "gadget_andys_house_cosmic_shield",
+         "gadget_als_space_land_cosmic_shield",
+         "gadget_als_penthouse_cosmic_shield"
+        ],
+        [
+         "gadget_construction_yard_disc_launcher",
+         "gadget_alleys_and_gullies_disc_launcher",
+         "gadget_als_toy_barn_disc_launcher"
+        ],
+        [
+         "gadget_alleys_and_gullies_grappling_hook",
+         "gadget_elevator_hop_grappling_hook"
+        ],
+        [
+         "gadget_als_toy_barn_hover_boots",
+         "gadget_airport_infiltration_hover_boots"
+        ]
+       ]
+      }
+     },
+     {
+      "type": "layout",
+      "key": "ts2_coins"
+     },
+     {
+      "type": "layout",
+      "key": "ts2_unlocks"
+     }
+    ],
+    "dock": "left"
+   },
+   {
+    "type": "dock",
+    "content": [
+     {
+      "type": "array",
+      "orientation": "vertical",
+      "h_alignment": "center",
+      "dock": "bottom",
+      "content": [
+       {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "content": [
+         {
+          "type": "layout",
+          "key": "ts2_souls_npc"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_toy"
+         }
+        ]
+       },
+       {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "content": [
+         {
+          "type": "layout",
+          "key": "ts2_souls_enemy"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_lock"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_miniboss"
+         },
+         {
+          "type": "layout",
+          "key": "ts2_souls_boss"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "tabbed",
+      "tabs": [
+       {
+        "title": "Level Select",
+        "content": {
+         "type": "map",
+         "maps": [
+          "level_select"
+         ]
+        }
+       },
+       {
+        "title": "Andy's House",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_house"
+         ]
+        }
+       },
+       {
+        "title": "Andy's Neighborhood",
+        "content": {
+         "type": "map",
+         "maps": [
+          "andys_neighborhood"
+         ]
+        }
+       },
+       {
+        "title": "Construction Yard",
+        "content": {
+         "type": "map",
+         "maps": [
+          "construction_yard"
+         ]
+        }
+       },
+       {
+        "title": "Alleys and Gullies",
+        "content": {
+         "type": "map",
+         "maps": [
+          "alleys_and_gullies"
+         ]
+        }
+       },
+       {
+        "title": "Al's Toy Barn",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_toy_barn"
+         ]
+        }
+       },
+       {
+        "title": "Al's Space Land",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_space_land"
+         ]
+        }
+       },
+       {
+        "title": "Elevator Hop",
+        "content": {
+         "type": "map",
+         "maps": [
+          "elevator_hop"
+         ]
+        }
+       },
+       {
+        "title": "Al's Penthouse",
+        "content": {
+         "type": "map",
+         "maps": [
+          "als_penthouse"
+         ]
+        }
+       },
+       {
+        "title": "Airport Infiltration",
+        "content": {
+         "type": "map",
+         "maps": [
+          "airport_infiltration"
+         ]
+        }
+       },
+       {
+        "title": "Tarmac Trouble",
+        "content": {
+         "type": "map",
+         "maps": [
+          "tarmac_trouble"
+         ]
+        }
+       },
+       {
+        "title": "Bosses",
+        "content": {
+         "type": "map",
+         "maps": [
+          "bosses"
+         ]
+        }
+       }
+      ],
+      "dock": "top"
+     }
+    ]
    }
   ]
  }

@@ -1,0 +1,26 @@
+{
+ "ts2_movement": {
+  "type": "group",
+  "header": "Movement",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "2,2",
+   "rows": [
+    [
+     "double_jump",
+     "ledge_grab",
+     "pole_climb",
+     "pole_vault",
+     "rope_sliding"
+    ],
+    [
+     "push",
+     "visor",
+     "laser",
+     "spin",
+     "stomp"
+    ]
+   ]
+  }
+ }
+}

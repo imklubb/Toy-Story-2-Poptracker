@@ -1343,5 +1343,507 @@
         "name": "Auto Tab Off"
       }
     ]
+  },
+  {
+    "name": "Soul of Woody",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Woody.png",
+    "codes": "soul_woody"
+  },
+  {
+    "name": "Soul of Bo Peep",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Bo Peep.png",
+    "codes": "soul_bo_peep"
+  },
+  {
+    "name": "Soul of RC Car",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/RC Car.png",
+    "codes": "soul_rc_car"
+  },
+  {
+    "name": "Soul of Mr. Potato Head",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Mr. Potato Head.png",
+    "codes": "soul_mr_potato_head"
+  },
+  {
+    "name": "Soul of Hamm",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Hamm.png",
+    "codes": "soul_hamm"
+  },
+  {
+    "name": "Soul of Sarge",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Sarge.png",
+    "codes": "soul_sarge"
+  },
+  {
+    "name": "Soul of Foreman Tike",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Foreman Tike.png",
+    "codes": "soul_foreman_tike"
+  },
+  {
+    "name": "Soul of Slinky",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Slinky.png",
+    "codes": "soul_slinky"
+  },
+  {
+    "name": "Soul of Mother Duck",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Mother Duck.png",
+    "codes": "soul_mother_duck"
+  },
+  {
+    "name": "Soul of Mama Chicken",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Mama Chicken.png",
+    "codes": "soul_mama_chicken"
+  },
+  {
+    "name": "Soul of Papa Chicken",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Papa Chicken.png",
+    "codes": "soul_papa_chicken"
+  },
+  {
+    "name": "Soul of Mothership",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Mothership.png",
+    "codes": "soul_mothership"
+  },
+  {
+    "name": "Soul of Flying Saucer",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Flying Saucer.png",
+    "codes": "soul_flying_saucer"
+  },
+  {
+    "name": "Soul of Mama Mouse",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Mama Mouse.png",
+    "codes": "soul_mama_mouse"
+  },
+  {
+    "name": "Soul of Papa Mouse",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Papa Mouse.png",
+    "codes": "soul_papa_mouse"
+  },
+  {
+    "name": "Soul of Jessie",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Jessie.png",
+    "codes": "soul_jessie"
+  },
+  {
+    "name": "Soul of Bullseye",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Bullseye.png",
+    "codes": "soul_bullseye"
+  },
+  {
+    "name": "Soul of Rocky Gibraltar",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Rocky Gibraltar.png",
+    "codes": "soul_rocky_gibraltar"
+  },
+  {
+    "name": "Soul of Pilot Tike",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Pilot Tike.png",
+    "codes": "soul_pilot_tike"
+  },
+  {
+    "name": "Soul of Luggage Handler Tike",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Luggage Handler Tike.png",
+    "codes": "soul_luggage_handler_tike"
+  },
+  {
+    "name": "Soul of Rex",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Rex.png",
+    "codes": "soul_rex"
+  },
+  {
+    "name": "Soul of Sheep",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Sheep.png",
+    "codes": "soul_sheep"
+  },
+  {
+    "name": "Soul of Soldier",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Soldier.png",
+    "codes": "soul_soldier"
+  },
+  {
+    "name": "Soul of Worker Tike",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Worker Tike.png",
+    "codes": "soul_worker_tike"
+  },
+  {
+    "name": "Soul of Duck",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Duck.png",
+    "codes": "soul_duck"
+  },
+  {
+    "name": "Soul of Chick",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Chick.png",
+    "codes": "soul_chick"
+  },
+  {
+    "name": "Soul of Alien",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Alien.png",
+    "codes": "soul_alien"
+  },
+  {
+    "name": "Soul of Mouse",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Mouse.png",
+    "codes": "soul_mouse"
+  },
+  {
+    "name": "Soul of Critter",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Critter.png",
+    "codes": "soul_critter"
+  },
+  {
+    "name": "Soul of Passenger Tike",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Passenger Tike.png",
+    "codes": "soul_passenger_tike"
+  },
+  {
+    "name": "Soul of Luggage",
+    "type": "toggle",
+    "img": "images/ICONS/Missing Toys/Luggage.png",
+    "codes": "soul_luggage"
+  },
+  {
+    "name": "Soul of Bouncer Zurg Robot",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Bouncer Zurg Robot.png",
+    "codes": "soul_bouncer_zurg_robot"
+  },
+  {
+    "name": "Soul of Propeller Zurg Robot",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Propeller Zurg Robot.png",
+    "codes": "soul_propeller_zurg_robot"
+  },
+  {
+    "name": "Soul of Lawnmower",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Lawnmower.png",
+    "codes": "soul_lawnmower"
+  },
+  {
+    "name": "Soul of Zurg Car",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Zurg Car.png",
+    "codes": "soul_zurg_car"
+  },
+  {
+    "name": "Soul of Floating Zurg Robot",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Floating Zurg Robot.png",
+    "codes": "soul_floating_zurg_robot"
+  },
+  {
+    "name": "Soul of Zurg Soldier",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Zurg Soldier.png",
+    "codes": "soul_zurg_soldier"
+  },
+  {
+    "name": "Soul of Plane",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Plane.png",
+    "codes": "soul_plane"
+  },
+  {
+    "name": "Soul of Zurg Boat",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Zurg Boat.png",
+    "codes": "soul_zurg_boat"
+  },
+  {
+    "name": "Soul of Snake",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Snake.png",
+    "codes": "soul_snake"
+  },
+  {
+    "name": "Soul of Vulture",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Vulture.png",
+    "codes": "soul_vulture"
+  },
+  {
+    "name": "Soul of Gunman",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Gunman.png",
+    "codes": "soul_gunman"
+  },
+  {
+    "name": "Soul of Hula Hoop",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Hula Hoop.png",
+    "codes": "soul_hula_hoop"
+  },
+  {
+    "name": "Soul of Lock",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Lock.png",
+    "codes": "soul_lock"
+  },
+  {
+    "name": "Soul of Tin Robot",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Tin Robot.png",
+    "codes": "soul_tin_robot"
+  },
+  {
+    "name": "Soul of Zurg Kite",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Zurg Kite.png",
+    "codes": "soul_zurg_kite"
+  },
+  {
+    "name": "Soul of Jackhammer",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Jackhammer.png",
+    "codes": "soul_jackhammer"
+  },
+  {
+    "name": "Soul of Clown Top",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Clown Top.png",
+    "codes": "soul_clown_top"
+  },
+  {
+    "name": "Soul of Dinosaur",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Dinosaur.png",
+    "codes": "soul_dinosaur"
+  },
+  {
+    "name": "Soul of Buzz Lightyear Buggy",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Buzz Lightyear Buggy.png",
+    "codes": "soul_buzz_lightyear_buggy"
+  },
+  {
+    "name": "Soul of Spider Gunro",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Spider Gunro.png",
+    "codes": "soul_spider_gunro"
+  },
+  {
+    "name": "Soul of Gunslinger",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Gunslinger.png",
+    "codes": "soul_gunslinger"
+  },
+  {
+    "name": "Soul of Stinky Pete",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Stinky Pete.png",
+    "codes": "soul_stinky_pete"
+  },
+  {
+    "name": "Soul of Blacksmith",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Blacksmith.png",
+    "codes": "soul_blacksmith"
+  },
+  {
+    "name": "Soul of Slime Time",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Slime Time.png",
+    "codes": "soul_slime_time"
+  },
+  {
+    "name": "Soul of Bombs Away",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Bombs Away.png",
+    "codes": "soul_bombs_away"
+  },
+  {
+    "name": "Soul of Toy Barn Encounter",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Toy Barn Encounter.png",
+    "codes": "soul_toy_barn_encounter"
+  },
+  {
+    "name": "Soul of Zurg",
+    "type": "toggle",
+    "img": "images/ICONS/Souls/Zurg.png",
+    "codes": "soul_zurg"
+  },
+  {
+    "name": "NPC Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_npc_off",
+        "name": "NPC Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/NPC Souls On.png",
+        "codes": "set_souls_npc",
+        "name": "NPC Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Missing Toy Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_toy_off",
+        "name": "Missing Toy Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Missing Toy Souls On.png",
+        "codes": "set_souls_toy",
+        "name": "Missing Toy Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Enemy Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_enemy_off",
+        "name": "Enemy Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Enemy Souls On.png",
+        "codes": "set_souls_enemy",
+        "name": "Enemy Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Lock Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_lock_off",
+        "name": "Lock Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Lock Souls On.png",
+        "codes": "set_souls_lock",
+        "name": "Lock Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_miniboss_off",
+        "name": "Miniboss Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Miniboss Souls On.png",
+        "codes": "set_souls_miniboss",
+        "name": "Miniboss Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Boss Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_boss_off",
+        "name": "Boss Souls Off"
+      },
+      {
+        "img": "images/ICONS/Misc/Boss Souls On.png",
+        "codes": "set_souls_boss",
+        "name": "Boss Souls On"
+      }
+    ]
+  },
+  {
+    "name": "Require Final Showdown Soul(s)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_fs_off",
+        "name": "Final Showdown Souls Not Required"
+      },
+      {
+        "img": "images/ICONS/Misc/Final Showdown Souls Required.png",
+        "codes": "set_souls_fs",
+        "name": "Final Showdown Soul(s) Required"
+      }
+    ]
+  },
+  {
+    "name": "Require Woody and/or Jessie Soul to Goal",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ICONS/Misc/Off Setting.png",
+        "codes": "set_souls_wj_off",
+        "name": "Goal Needs Neither"
+      },
+      {
+        "img": "images/ICONS/Misc/Goal Needs Woody.png",
+        "codes": "set_souls_wj_woody",
+        "name": "Goal Needs Woody"
+      },
+      {
+        "img": "images/ICONS/Misc/Goal Needs Jessie.png",
+        "codes": "set_souls_wj_jessie",
+        "name": "Goal Needs Jessie"
+      },
+      {
+        "img": "images/ICONS/Misc/Goal Needs Woody and Jessie.png",
+        "codes": "set_souls_wj_both",
+        "name": "Goal Needs Woody and Jessie"
+      }
+    ]
   }
 ]

@@ -1,0 +1,29 @@
+{
+ "ts2_souls_enemy": {
+  "type": "group",
+  "header": "Enemies",
+  "content": {
+   "type": "itemgrid",
+   "item_margin": "1,1",
+   "item_size": 28,
+   "rows": [
+    [
+     "soul_propeller_zurg_robot",
+     "soul_bouncer_zurg_robot",
+     "soul_zurg_car",
+     "soul_floating_zurg_robot",
+     "soul_plane",
+     "soul_zurg_boat"
+    ],
+    [
+     "soul_zurg_soldier",
+     "soul_snake",
+     "soul_vulture",
+     "soul_gunman",
+     "soul_lawnmower",
+     "soul_hula_hoop"
+    ]
+   ]
+  }
+ }
+}

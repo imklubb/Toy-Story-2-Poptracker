@@ -177,6 +177,12 @@ local ALL_CODES = {
   "worker_tike",
 }
 
+-- 3.4.0 Souls (souls.lua): every "Soul of X" item is a toggle.
+for _, s in ipairs(TS2_SOULS or {}) do
+  AP_ITEM_TO_CODE[s.name] = s.code
+  ALL_CODES[#ALL_CODES + 1] = s.code
+end
+
 -- Parsed options, exposed globally so later logic/marker scripts can read it.
 SETTINGS = {}
 
@@ -522,6 +528,17 @@ local function applySettings(sd)
   end
   if ts2_sync_rex_maps then ts2_sync_rex_maps() end
   setActive("set_hintblocksanity", num(sd,"hint_block_sanity")~=0)
+  -- 3.4.0 Souls: each group On/Off, the Final Showdown's souls, and Woody /
+  -- Jessie for the goal. Then the tracker makes room to fit (souls.lua).
+  setStage("set_souls_npc_off",      num(sd,"npc_souls")~=0 and 1 or 0)
+  setStage("set_souls_toy_off",      num(sd,"missing_toy_souls")~=0 and 1 or 0)
+  setStage("set_souls_enemy_off",    num(sd,"enemy_souls")~=0 and 1 or 0)
+  setStage("set_souls_lock_off",     num(sd,"lock_souls")~=0 and 1 or 0)
+  setStage("set_souls_miniboss_off", num(sd,"miniboss_souls")~=0 and 1 or 0)
+  setStage("set_souls_boss_off",     num(sd,"boss_souls")~=0 and 1 or 0)
+  setStage("set_souls_fs_off",       num(sd,"require_final_showdown_souls")~=0 and 1 or 0)
+  setStage("set_souls_wj_off",       math.max(0, math.min(3, num(sd,"require_woody_jessie_souls"))))
+  if ts2_sync_layouts then ts2_sync_layouts() end
   setActive("set_omit_airport",    num(sd,"omit_airport_infiltration")~=0)
   setActive("set_omit_elevator",   num(sd,"omit_elevator_hop")~=0)
   -- Pre-mark starting levels' (precollected) unlocks so their checks aren't greyed.
